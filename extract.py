@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Extract a file for each of the subontologies that we will use to automatically categorize Dockstore entries, using the simplified custom EDAM JSON representation as a base, and modifying as necessary."""
+"""Extract a file for each of the subontologies that we will use to automatically categorize Dockstore entries, using the simplified EDAM JSON representation as a base, and modifying as necessary."""
 
 import json
 import sys
@@ -29,6 +29,12 @@ def make_only_leaves_categorical(nodes):
         parent_ids.update(node['parent_ids'])
     return [{**node, 'categorical': node['categorical'] and node['id'] not in parent_ids} for node in nodes]
 
+def get_generated_dir():
+    if len(sys.argv) <= 1:
+       print(f'Usage: {sys.argv[0]} <generated_dir>', file=sys.stderr)
+       sys.exit(1)
+    return sys.argv[1]
+
 def write_json(nodes, filename):
     with open(filename, 'w') as f:
         json.dump(nodes, f, indent=4)
@@ -36,23 +42,24 @@ def write_json(nodes, filename):
 
 
 def main():
+    generated_dir = get_generated_dir()
     nodes = json.load(sys.stdin)
 
     # Use the "operation" and "topic" subontologies verbatim.
-    write_json(extract_subtree(nodes, 'operation'), 'operation.json')
-    write_json(extract_subtree(nodes, 'topic'), 'topic.json')
+    write_json(extract_subtree(nodes, 'operation'), f'{generated_dir}/operation.json')
+    write_json(extract_subtree(nodes, 'topic'), f'{generated_dir}/topic.json')
 
     # Remove the "identifier" sub-branch of the "data" subontology,
     # then write versions of it for both inputs and outputs.
     data = remove_subtree(extract_subtree(nodes, 'data'), 'data-identifier')
-    write_json(add_prefix_to_ids(data, 'input-'), 'input-data.json')
-    write_json(add_prefix_to_ids(data, 'output-'), 'output-data.json')
+    write_json(add_prefix_to_ids(data, 'input-'), f'{generated_dir}/input-data.json')
+    write_json(add_prefix_to_ids(data, 'output-'), f'{generated_dir}/output-data.json')
 
     # Change the "format" subontology so that only the leaves are categorical,
     # then write versions of it for both inputs and outputs.
     format = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
-    write_json(add_prefix_to_ids(format, 'input-'), 'input-format.json')
-    write_json(add_prefix_to_ids(format, 'output-'), 'output-format.json')
+    write_json(add_prefix_to_ids(format, 'input-'), f'{generated_dir}/input-format.json')
+    write_json(add_prefix_to_ids(format, 'output-'), f'{generated_dir}/output-format.json')
 
 
 if __name__ == '__main__':
