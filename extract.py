@@ -6,34 +6,22 @@ import sys
 
 def extract_subtree(nodes, root_id):
     id_to_node = {node['id']: node for node in nodes}
-    children = {node['id']: [] for node in nodes}
-    for node in nodes:
+    def in_tree(node):
+        if node['id'] == root_id:
+            return True
         for parent in node['parents']:
-            if parent in children:
-                children[parent].append(node['id'])
-
-    in_subtree = set()
-    queue = [root_id]
-    while queue:
-        current = queue.pop()
-        if current in in_subtree:
-            continue
-        in_subtree.add(current)
-        queue.extend(children.get(current, []))
-
-    result = [node for node in nodes if node['id'] in in_subtree]
-    id_set = in_subtree
-    return [{**node, 'parents': [p for p in node['parents'] if p in id_set]} for node in result]
-
+            parent_node = id_to_node.get(parent)
+            if (parent_node and in_tree(parent_node)):
+                return True
+        return False
+    return [node for node in nodes if in_tree(node)]
 
 def remove_subtree(nodes, root_id):
-    to_remove = {node['id'] for node in extract_subtree(nodes, root_id)}
-    return [{**node, 'parents': [p for p in node['parents'] if p not in to_remove]} for node in nodes if node['id'] not in to_remove]
-
+    remove_ids = {node['id'] for node in extract_subtree(nodes, root_id)}
+    return [{**node, 'parents': [p for p in node['parents'] if p not in remove_ids]} for node in nodes if node['id'] not in remove_ids]
 
 def add_prefix(nodes, prefix):
     return [{**node, 'id': prefix + node['id'], 'parents': [prefix + p for p in node['parents']]} for node in nodes]
-
 
 def make_only_leaves_categorical(nodes):
     has_children = set()
@@ -61,9 +49,9 @@ def main():
     write_json(add_prefix(data, 'input-'), 'input-data.json')
     write_json(add_prefix(data, 'output-'), 'output-data.json')
 
-    formats = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
-    write_json(add_prefix(formats, 'input-'), 'input-format.json')
-    write_json(add_prefix(formats, 'output-'), 'output-format.json')
+    format = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
+    write_json(add_prefix(format, 'input-'), 'input-format.json')
+    write_json(add_prefix(format, 'output-'), 'output-format.json')
 
 
 if __name__ == '__main__':
