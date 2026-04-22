@@ -1,6 +1,6 @@
 # ontology
 
-This repo manages the ontologies that Dockstore uses to automatically categorize entries, and code that we use to reproducibly generate them.
+This repo manages the ontologies that Dockstore uses to automatically categorize entries, and code that reproducibly generates them.
 
 ## Overview
 

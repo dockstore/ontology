@@ -4,7 +4,7 @@
 import json
 import re
 import sys
-import xml.etree.ElementTree as ET
+import xml.etree.ElementTree as ElementTree
 
 NS = {
     'rdf':      'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
@@ -20,11 +20,22 @@ DEPRECATED_CLASS_URI = 'http://www.w3.org/2002/07/owl#DeprecatedClass'
 
 
 def to_slug(uri, label):
+    """Convert the EDAM URI and label to a text "slug" which will be used as
+    a human-readable ID and is composed of lowercase alphanumeric characters
+    and non-consecutive internal dashes.
+    """
+
+    # Determine the EDAM subontology, which we'll use as the prefix of the slug.
+    # EDAM uris are of the following form:
+    #   http://edamontology.org/{subontology}_{four-digit-id}
+    # Example: http://edamontology.org/data_0842
     subontology = re.search(r'/([a-z]+)_\d+$', uri).group(1)
+    # Generate the main slug by converting non-alphanumerics to dashes
+    # and then deleting consecutive, leading, and trailing dashes.
     slug = re.sub('-+', '-', re.sub('[^a-z0-9]+', '-', label.lower())).strip('-')
     if (slug == subontology):
-        return slug
-    return subontology + '-' + slug;
+        return subontology
+    return subontology + '-' + slug
 
 def get_text(xml, name):
     elem = xml.find(name, NS)
@@ -57,7 +68,7 @@ def get_parent_uris(xml):
 
 def main():
     # Read and parse the EDAM XML representation.
-    root = ET.parse(sys.stdin).getroot()
+    root = ElementTree.parse(sys.stdin).getroot()
 
     # Convert the parsed XML into a list of simplified nodes.
     nodes = []
