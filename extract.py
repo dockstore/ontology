@@ -38,13 +38,18 @@ def write_json(nodes, filename):
 def main():
     nodes = json.load(sys.stdin)
 
+    # Use the "operation" and "topic" subontologies verbatim.
     write_json(extract_subtree(nodes, 'operation'), 'operation.json')
     write_json(extract_subtree(nodes, 'topic'), 'topic.json')
 
+    # Remove the "identifier" sub-branch of the "data" subontology,
+    # then write versions of it for both inputs and outputs.
     data = remove_subtree(extract_subtree(nodes, 'data'), 'data-identifier')
     write_json(add_prefix_to_ids(data, 'input-'), 'input-data.json')
     write_json(add_prefix_to_ids(data, 'output-'), 'output-data.json')
 
+    # Change the "format" subontology so that only the leaves are categorical,
+    # then write versions of it for both inputs and outputs.
     format = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
     write_json(add_prefix_to_ids(format, 'input-'), 'input-format.json')
     write_json(add_prefix_to_ids(format, 'output-'), 'output-format.json')
