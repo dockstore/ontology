@@ -20,18 +20,14 @@ def remove_subtree(nodes, root_id):
     remove_ids = {node['id'] for node in extract_subtree(nodes, root_id)}
     return [{**node, 'parents': [p for p in node['parents'] if p not in remove_ids]} for node in nodes if node['id'] not in remove_ids]
 
-def add_prefix(nodes, prefix):
+def add_prefix_to_ids(nodes, prefix):
     return [{**node, 'id': prefix + node['id'], 'parents': [prefix + p for p in node['parents']]} for node in nodes]
 
 def make_only_leaves_categorical(nodes):
-    has_children = set()
-    id_set = {node['id'] for node in nodes}
+    parent_ids = set()
     for node in nodes:
-        for parent in node['parents']:
-            if parent in id_set:
-                has_children.add(parent)
-    return [{**node, 'categorical': node['categorical'] and node['id'] not in has_children} for node in nodes]
-
+        parent_ids.update(node['parents'])
+    return [{**node, 'categorical': node['categorical'] and node['id'] not in parent_ids} for node in nodes]
 
 def write_json(nodes, filename):
     with open(filename, 'w') as f:
@@ -46,12 +42,12 @@ def main():
     write_json(extract_subtree(nodes, 'topic'), 'topic.json')
 
     data = remove_subtree(extract_subtree(nodes, 'data'), 'data-identifier')
-    write_json(add_prefix(data, 'input-'), 'input-data.json')
-    write_json(add_prefix(data, 'output-'), 'output-data.json')
+    write_json(add_prefix_to_ids(data, 'input-'), 'input-data.json')
+    write_json(add_prefix_to_ids(data, 'output-'), 'output-data.json')
 
     format = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
-    write_json(add_prefix(format, 'input-'), 'input-format.json')
-    write_json(add_prefix(format, 'output-'), 'output-format.json')
+    write_json(add_prefix_to_ids(format, 'input-'), 'input-format.json')
+    write_json(add_prefix_to_ids(format, 'output-'), 'output-format.json')
 
 
 if __name__ == '__main__':
