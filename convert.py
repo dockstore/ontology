@@ -88,8 +88,8 @@ def main():
     result = [
         {
             'id':          uri_to_slug[node['uri']],
-            'title':       node['label'],
-            'description': node['definition'],
+            'label':       node['label'],
+            'definition':  node['definition'],
             'source':      node['uri'],
             'categorical': not node['not_recommended_for_annotation'],
             'parents':     [uri_to_slug[p] for p in node['parents'] if p in uris],
