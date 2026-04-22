@@ -9,7 +9,7 @@ def extract_subtree(nodes, root_id):
     def in_tree(node):
         if node['id'] == root_id:
             return True
-        for parent in node['parents']:
+        for parent in node['parent_ids']:
             parent_node = id_to_node.get(parent)
             if (parent_node and in_tree(parent_node)):
                 return True
@@ -18,15 +18,15 @@ def extract_subtree(nodes, root_id):
 
 def remove_subtree(nodes, root_id):
     remove_ids = {node['id'] for node in extract_subtree(nodes, root_id)}
-    return [{**node, 'parents': [p for p in node['parents'] if p not in remove_ids]} for node in nodes if node['id'] not in remove_ids]
+    return [{**node, 'parent_ids': [p for p in node['parent_ids'] if p not in remove_ids]} for node in nodes if node['id'] not in remove_ids]
 
 def add_prefix_to_ids(nodes, prefix):
-    return [{**node, 'id': prefix + node['id'], 'parents': [prefix + p for p in node['parents']]} for node in nodes]
+    return [{**node, 'id': prefix + node['id'], 'parent_ids': [prefix + p for p in node['parent_ids']]} for node in nodes]
 
 def make_only_leaves_categorical(nodes):
     parent_ids = set()
     for node in nodes:
-        parent_ids.update(node['parents'])
+        parent_ids.update(node['parent_ids'])
     return [{**node, 'categorical': node['categorical'] and node['id'] not in parent_ids} for node in nodes]
 
 def write_json(nodes, filename):

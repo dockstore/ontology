@@ -26,31 +26,31 @@ def to_slug(uri, label):
         return slug
     return subontology + '-' + slug;
 
-def get_text(cls, name):
-    elem = cls.find(name, NS)
+def get_text(xml, name):
+    elem = xml.find(name, NS)
     if elem is None:
         return None
     return elem.text
 
-def get_uri(cls):
-    return cls.get(RDF_ABOUT)
+def get_uri(xml):
+    return xml.get(RDF_ABOUT)
 
-def get_deprecated(cls):
-    return get_text(cls, 'owl:deprecated')
+def get_deprecated(xml):
+    return get_text(xml, 'owl:deprecated')
 
-def get_label(cls):
-    return get_text(cls, 'rdfs:label')
+def get_label(xml):
+    return get_text(xml, 'rdfs:label')
 
-def get_definition(cls):
-    return get_text(cls, 'oboInOwl:hasDefinition')
+def get_definition(xml):
+    return get_text(xml, 'oboInOwl:hasDefinition')
 
-def get_not_recommended_for_annotation(cls):
-    return get_text(cls, 'edam:notRecommendedForAnnotation') == 'true'
+def get_not_recommended_for_annotation(xml):
+    return get_text(xml, 'edam:notRecommendedForAnnotation') == 'true'
 
-def get_parents(cls):
+def get_parent_uris(xml):
     return [
         sc.get(RDF_RESOURCE)
-        for sc in cls.findall('rdfs:subClassOf', NS)
+        for sc in xml.findall('rdfs:subClassOf', NS)
         if sc.get(RDF_RESOURCE) and sc.get(RDF_RESOURCE) != DEPRECATED_CLASS_URI
     ]
 
@@ -61,14 +61,13 @@ def main():
 
     # Convert the parsed XML into a list of simplified nodes.
     nodes = []
-    for cls in root.findall('owl:Class', NS):
-
-        deprecated = get_deprecated(cls)
-        uri = get_uri(cls)
-        label = get_label(cls)
-        definition = get_definition(cls)
-        not_recommended_for_annotation = get_not_recommended_for_annotation(cls)
-        parents = get_parents(cls)
+    for xml in root.findall('owl:Class', NS):
+        deprecated = get_deprecated(xml)
+        uri = get_uri(xml)
+        label = get_label(xml)
+        definition = get_definition(xml)
+        not_recommended_for_annotation = get_not_recommended_for_annotation(xml)
+        parent_uris = get_parent_uris(xml)
 
         if deprecated or not uri or not label or not definition:
             continue
@@ -76,23 +75,22 @@ def main():
         nodes.append({
             'uri':         uri,
             'label':       label,
-            'definition': definition,
+            'definition':  definition,
             'not_recommended_for_annotation': not_recommended_for_annotation,
-            'parents':     parents,
+            'parent_uris': parent_uris,
         })
 
     # Convert the simplified nodes to our custom representation, which uses human-readable IDs.
     # Remove any parent IDs that point at a non-existent parent.
-    uri_to_slug = {node['uri']: to_slug(node['uri'], node['label']) for node in nodes}
-    uris  = {node['uri'] for node in nodes}
+    uri_to_id = {node['uri']: to_slug(node['uri'], node['label']) for node in nodes}
     result = [
         {
-            'id':          uri_to_slug[node['uri']],
+            'id':          uri_to_id[node['uri']],
             'label':       node['label'],
             'definition':  node['definition'],
             'source':      node['uri'],
             'categorical': not node['not_recommended_for_annotation'],
-            'parents':     [uri_to_slug[p] for p in node['parents'] if p in uris],
+            'parent_ids':  [uri_to_id[p] for p in node['parent_uris'] if p in uri_to_id],
         }
         for node in nodes
     ]
