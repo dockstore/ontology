@@ -28,13 +28,11 @@ def extract_subtree(nodes, root_id):
 
 def remove_subtree(nodes, root_id):
     to_remove = {node['id'] for node in extract_subtree(nodes, root_id)}
-    result = [node for node in nodes if node['id'] not in to_remove]
-    return [{**node, 'parents': [p for p in node['parents'] if p not in to_remove]} for node in result]
+    return [{**node, 'parents': [p for p in node['parents'] if p not in to_remove]} for node in nodes if node['id'] not in to_remove]
 
 
 def add_prefix(nodes, prefix):
-    id_set = {node['id'] for node in nodes}
-    return [{**node, 'id': prefix + node['id'], 'parents': [prefix + p for p in node['parents'] if p in id_set]} for node in nodes]
+    return [{**node, 'id': prefix + node['id'], 'parents': [prefix + p for p in node['parents']]} for node in nodes]
 
 
 def make_only_leaves_categorical(nodes):
@@ -54,8 +52,7 @@ def write_json(nodes, filename):
 
 
 def main():
-    with open('simplified.json') as f:
-        nodes = json.load(f)
+    nodes = json.load(sys.stdin)
 
     write_json(extract_subtree(nodes, 'operation'), 'operation.json')
     write_json(extract_subtree(nodes, 'topic'), 'topic.json')
