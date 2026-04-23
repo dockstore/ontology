@@ -1,0 +1,13 @@
+name: Build and test
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build
+      run: bash build.sh
+    - name: Confirm that generated files match
+      run: git diff --exit-code
