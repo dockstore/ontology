@@ -1,6 +1,7 @@
 """Convert the British spellings in EDAM to American spellings.
-This in not a general purpose converter, but rather tailored to the content of EDAM.
-Additionally, the code written to be compact, correct, and easy to understand, at the expense of being computationally inefficient.
+Not a general purpose converter, but instead tailored to the content of EDAM.
+Written to be compact, correct, and easy to understand, at the expense of
+being computationally inefficient.
 """
 
 import re

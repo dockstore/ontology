@@ -50,7 +50,7 @@
     {
         "id": "topic-structure-prediction",
         "label": "Structure prediction",
-        "definition": "The prediction of molecular structure, including the prediction, modelling, recognition or design of protein secondary or tertiary structure or other structural features, and the folding of nucleic acid molecules and the prediction or design of nucleic acid (typically RNA) sequences with specific conformations.",
+        "definition": "The prediction of molecular structure, including the prediction, modeling, recognition or design of protein secondary or tertiary structure or other structural features, and the folding of nucleic acid molecules and the prediction or design of nucleic acid (typically RNA) sequences with specific conformations.",
         "source": "http://edamontology.org/topic_0082",
         "categorical": true,
         "parent_ids": [
@@ -82,7 +82,7 @@
     {
         "id": "topic-ontology-and-terminology",
         "label": "Ontology and terminology",
-        "definition": "The conceptualisation, categorisation and nomenclature (naming) of entities or phenomena within biology or bioinformatics. This includes formal ontologies, controlled vocabularies, structured glossary, symbols and terminology or other related resource.",
+        "definition": "The conceptualization, categorization and nomenclature (naming) of entities or phenomena within biology or bioinformatics. This includes formal ontologies, controlled vocabularies, structured glossary, symbols and terminology or other related resource.",
         "source": "http://edamontology.org/topic_0089",
         "categorical": true,
         "parent_ids": [
@@ -100,9 +100,9 @@
         ]
     },
     {
-        "id": "topic-data-visualisation",
-        "label": "Data visualisation",
-        "definition": "Rendering (drawing on a computer screen) or visualisation of molecular sequences, structures or other biomolecular data.",
+        "id": "topic-data-visualization",
+        "label": "Data visualization",
+        "definition": "Rendering (drawing on a computer screen) or visualization of molecular sequences, structures or other biomolecular data.",
         "source": "http://edamontology.org/topic_0092",
         "categorical": true,
         "parent_ids": [
@@ -163,7 +163,7 @@
     {
         "id": "topic-proteomics",
         "label": "Proteomics",
-        "definition": "Proteomics is in the narrow sense (sensu stricto) the application of methods to separate, characterise, identify, and quantify all proteins (the proteome) - or a substantial set of proteins - that are present in a sample. Proteomics in the broad sense is the science of proteins and peptides on the large scale.",
+        "definition": "Proteomics is in the narrow sense (sensu stricto) the application of methods to separate, characterize, identify, and quantify all proteins (the proteome) - or a substantial set of proteins - that are present in a sample. Proteomics in the broad sense is the science of proteins and peptides on the large scale.",
         "source": "http://edamontology.org/topic_0121",
         "categorical": true,
         "parent_ids": [
@@ -213,9 +213,9 @@
         ]
     },
     {
-        "id": "topic-protein-targeting-and-localisation",
-        "label": "Protein targeting and localisation",
-        "definition": "The study of how proteins are transported within and without the cell, including signal peptides, protein subcellular localisation and export.",
+        "id": "topic-protein-targeting-and-localization",
+        "label": "Protein targeting and localization",
+        "definition": "The study of how proteins are transported within and without the cell, including signal peptides, protein subcellular localization and export.",
         "source": "http://edamontology.org/topic_0140",
         "categorical": true,
         "parent_ids": [
@@ -443,7 +443,7 @@
     {
         "id": "topic-laboratory-information-management",
         "label": "Laboratory information management",
-        "definition": "Laboratory management and resources, for example, catalogues of biological resources for use in the lab including cell lines, viruses, plasmids, phages, DNA probes and primers and so on.",
+        "definition": "Laboratory management and resources, for example, catalogs of biological resources for use in the lab including cell lines, viruses, plasmids, phages, DNA probes and primers and so on.",
         "source": "http://edamontology.org/topic_0607",
         "categorical": true,
         "parent_ids": [
@@ -464,7 +464,7 @@
     {
         "id": "topic-electron-microscopy",
         "label": "Electron microscopy",
-        "definition": "The study of matter by studying the interference pattern from firing electrons at a sample, to analyse structures at resolutions higher than can be achieved using light.",
+        "definition": "The study of matter by studying the interference pattern from firing electrons at a sample, to analyze structures at resolutions higher than can be achieved using light.",
         "source": "http://edamontology.org/topic_0611",
         "categorical": true,
         "parent_ids": [
@@ -516,7 +516,7 @@
     {
         "id": "topic-probes-and-primers",
         "label": "Probes and primers",
-        "definition": "Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.",
+        "definition": "Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridization oligos in a nucleic acid sequence.",
         "source": "http://edamontology.org/topic_0632",
         "categorical": true,
         "parent_ids": [
@@ -659,7 +659,7 @@
     {
         "id": "topic-enzymes",
         "label": "Enzymes",
-        "definition": "Proteins that catalyze chemical reaction, the kinetics of enzyme-catalysed reactions, enzyme nomenclature etc.",
+        "definition": "Proteins that catalyze chemical reaction, the kinetics of enzyme-catalyzed reactions, enzyme nomenclature etc.",
         "source": "http://edamontology.org/topic_0821",
         "categorical": true,
         "parent_ids": [
@@ -709,7 +709,7 @@
     {
         "id": "topic-systems-biology",
         "label": "Systems biology",
-        "definition": "The holistic modelling and analysis of complex biological systems and the interactions therein.",
+        "definition": "The holistic modeling and analysis of complex biological systems and the interactions therein.",
         "source": "http://edamontology.org/topic_2259",
         "categorical": true,
         "parent_ids": [
@@ -727,9 +727,9 @@
         ]
     },
     {
-        "id": "topic-molecular-modelling",
-        "label": "Molecular modelling",
-        "definition": "The construction, analysis, evaluation, refinement etc. of models of a molecules properties or behaviour, including the modelling the structure of proteins in complex with small molecules or other macromolecules (docking).",
+        "id": "topic-molecular-modeling",
+        "label": "Molecular modeling",
+        "definition": "The construction, analysis, evaluation, refinement etc. of models of a molecules properties or behavior, including the modeling the structure of proteins in complex with small molecules or other macromolecules (docking).",
         "source": "http://edamontology.org/topic_2275",
         "categorical": true,
         "parent_ids": [
@@ -935,7 +935,7 @@
     {
         "id": "topic-data-management",
         "label": "Data management",
-        "definition": "Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, data formats, storage, preservation/archiving, access, and legal aspects related to using and sharing data.",
+        "definition": "Data management comprises the practices and principles of taking care of data, other than analyzing them. This includes for example taking care of the associated metadata, data formats, storage, preservation/archiving, access, and legal aspects related to using and sharing data.",
         "source": "http://edamontology.org/topic_3071",
         "categorical": true,
         "parent_ids": [
@@ -1060,7 +1060,7 @@
     {
         "id": "topic-dna-packaging",
         "label": "DNA packaging",
-        "definition": "DNA-histone complexes (chromatin), organisation of chromatin into nucleosomes and packaging into higher-order structures.",
+        "definition": "DNA-histone complexes (chromatin), organization of chromatin into nucleosomes and packaging into higher-order structures.",
         "source": "http://edamontology.org/topic_3176",
         "categorical": true,
         "parent_ids": [
@@ -1480,7 +1480,7 @@
     {
         "id": "topic-data-architecture-analysis-and-design",
         "label": "Data architecture, analysis and design",
-        "definition": "The development of policies, models and standards that cover data acquisition, storage and integration, such that it can be put to use, typically through a process of systematically applying statistical and / or logical techniques to describe, illustrate, summarise or evaluate data.",
+        "definition": "The development of policies, models and standards that cover data acquisition, storage and integration, such that it can be put to use, typically through a process of systematically applying statistical and / or logical techniques to describe, illustrate, summarize or evaluate data.",
         "source": "http://edamontology.org/topic_3365",
         "categorical": true,
         "parent_ids": [
@@ -1692,7 +1692,7 @@
     {
         "id": "topic-nutritional-science",
         "label": "Nutritional science",
-        "definition": "The study of the effects of food components on the metabolism, health, performance and disease resistance of humans and animals. It also includes the study of human behaviours related to food choices.",
+        "definition": "The study of the effects of food components on the metabolism, health, performance and disease resistance of humans and animals. It also includes the study of human behaviors related to food choices.",
         "source": "http://edamontology.org/topic_3390",
         "categorical": true,
         "parent_ids": [
@@ -1702,7 +1702,7 @@
     {
         "id": "topic-omics",
         "label": "Omics",
-        "definition": "The collective characterisation and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms.",
+        "definition": "The collective characterization and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms.",
         "source": "http://edamontology.org/topic_3391",
         "categorical": true,
         "parent_ids": [
@@ -1860,8 +1860,8 @@
         ]
     },
     {
-        "id": "topic-haematology",
-        "label": "Haematology",
+        "id": "topic-hematology",
+        "label": "Hematology",
         "definition": "The branch of medicine that deals with the blood, blood-forming organs and blood diseases.",
         "source": "http://edamontology.org/topic_3408",
         "categorical": true,
@@ -1890,8 +1890,8 @@
         ]
     },
     {
-        "id": "topic-gynaecology-and-obstetrics",
-        "label": "Gynaecology and obstetrics",
+        "id": "topic-gynecology-and-obstetrics",
+        "label": "Gynecology and obstetrics",
         "definition": "The branch of medicine that deals with the health of the female reproductive system, pregnancy and birth.",
         "source": "http://edamontology.org/topic_3411",
         "categorical": true,
@@ -1950,8 +1950,8 @@
         ]
     },
     {
-        "id": "topic-paediatrics",
-        "label": "Paediatrics",
+        "id": "topic-pediatrics",
+        "label": "Pediatrics",
         "definition": "The branch of medicine that deals with the medical care of infants, children and adolescents.",
         "source": "http://edamontology.org/topic_3418",
         "categorical": true,
@@ -1962,7 +1962,7 @@
     {
         "id": "topic-psychiatry",
         "label": "Psychiatry",
-        "definition": "The branch of medicine that deals with the management of mental illness, emotional disturbance and abnormal behaviour.",
+        "definition": "The branch of medicine that deals with the management of mental illness, emotional disturbance and abnormal behavior.",
         "source": "http://edamontology.org/topic_3419",
         "categorical": true,
         "parent_ids": [
@@ -2294,8 +2294,8 @@
         ]
     },
     {
-        "id": "topic-personalised-medicine",
-        "label": "Personalised medicine",
+        "id": "topic-personalized-medicine",
+        "label": "Personalized medicine",
         "definition": "An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.",
         "source": "http://edamontology.org/topic_3577",
         "categorical": true,
@@ -2418,7 +2418,7 @@
     {
         "id": "topic-environmental-sciences",
         "label": "Environmental sciences",
-        "definition": "Study of the environment, the interactions between its physical, chemical, and biological components and it's effect on life. Also how humans impact upon the environment, and how we can manage and utilise natural resources.",
+        "definition": "Study of the environment, the interactions between its physical, chemical, and biological components and it's effect on life. Also how humans impact upon the environment, and how we can manage and utilize natural resources.",
         "source": "http://edamontology.org/topic_3855",
         "categorical": true,
         "parent_ids": [
@@ -2470,7 +2470,7 @@
     {
         "id": "topic-genome-resequencing",
         "label": "Genome resequencing",
-        "definition": "Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).",
+        "definition": "Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organizations (CNVs, translocations, etc.).",
         "source": "http://edamontology.org/topic_3923",
         "categorical": true,
         "parent_ids": [
@@ -2626,7 +2626,7 @@
     {
         "id": "topic-cytogenetics",
         "label": "Cytogenetics",
-        "definition": "The branch of genetics concerned with the relationships between chromosomes and cellular behaviour, especially during mitosis and meiosis.",
+        "definition": "The branch of genetics concerned with the relationships between chromosomes and cellular behavior, especially during mitosis and meiosis.",
         "source": "http://edamontology.org/topic_3959",
         "categorical": true,
         "parent_ids": [
@@ -2676,7 +2676,7 @@
     {
         "id": "topic-data-rescue",
         "label": "Data rescue",
-        "definition": "Data rescue denotes digitalisation, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.",
+        "definition": "Data rescue denotes digitalization, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.",
         "source": "http://edamontology.org/topic_4011",
         "categorical": true,
         "parent_ids": [
@@ -2803,7 +2803,7 @@
     {
         "id": "topic-microfluidics",
         "label": "Microfluidics",
-        "definition": "Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.",
+        "definition": "Interdisplinary study of behavior, precise control, and manipulation of low (microliter) volume fluids in constrained space.",
         "source": "http://edamontology.org/topic_4030",
         "categorical": true,
         "parent_ids": [
@@ -2836,7 +2836,7 @@
     {
         "id": "topic-data-protection",
         "label": "Data protection",
-        "definition": "Data protection is a topic concerning data that should be protected from disclosure, damage, or unauthorised access, due to its sensitive nature.",
+        "definition": "Data protection is a topic concerning data that should be protected from disclosure, damage, or unauthorized access, due to its sensitive nature.",
         "source": "http://edamontology.org/topic_4044",
         "categorical": true,
         "parent_ids": [
@@ -2856,7 +2856,7 @@
     {
         "id": "topic-version-control",
         "label": "Version control",
-        "definition": "Version control is a technology for consistent management, storing, and sharing of evolving versions of digital artefacts, such as computer programs, scripts, documents, data, or media files.",
+        "definition": "Version control is a technology for consistent management, storing, and sharing of evolving versions of digital artifacts, such as computer programs, scripts, documents, data, or media files.",
         "source": "http://edamontology.org/topic_4046",
         "categorical": true,
         "parent_ids": [

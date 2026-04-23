@@ -2,7 +2,7 @@
     {
         "id": "input-data",
         "label": "Data",
-        "definition": "Information, represented in an information artefact (data record) that is 'understandable' by dedicated computational tools that can use the data as input or produce it as output.",
+        "definition": "Information, represented in an information artifact (data record) that is 'understandable' by dedicated computational tools that can use the data as input or produce it as output.",
         "source": "http://edamontology.org/data_0006",
         "categorical": false,
         "parent_ids": []
@@ -371,7 +371,7 @@
     {
         "id": "input-data-km",
         "label": "Km",
-        "definition": "Km is the concentration (usually in Molar units) of substrate that leads to half-maximal velocity of an enzyme-catalysed reaction.",
+        "definition": "Km is the concentration (usually in Molar units) of substrate that leads to half-maximal velocity of an enzyme-catalyzed reaction.",
         "source": "http://edamontology.org/data_0910",
         "categorical": true,
         "parent_ids": [
@@ -1032,7 +1032,7 @@
     {
         "id": "input-data-feature-table",
         "label": "Feature table",
-        "definition": "Annotation of positional sequence features, organised into a standard feature table.",
+        "definition": "Annotation of positional sequence features, organized into a standard feature table.",
         "source": "http://edamontology.org/data_1270",
         "categorical": true,
         "parent_ids": [
@@ -2029,7 +2029,7 @@
     {
         "id": "input-data-nucleic-acid-enthalpy",
         "label": "Nucleic acid enthalpy",
-        "definition": "Enthalpy of hybridised or double stranded nucleic acid (DNA or RNA/DNA).",
+        "definition": "Enthalpy of hybridized or double stranded nucleic acid (DNA or RNA/DNA).",
         "source": "http://edamontology.org/data_1584",
         "categorical": true,
         "parent_ids": [
@@ -2039,7 +2039,7 @@
     {
         "id": "input-data-nucleic-acid-entropy",
         "label": "Nucleic acid entropy",
-        "definition": "Entropy of hybridised or double stranded nucleic acid (DNA or RNA/DNA).",
+        "definition": "Entropy of hybridized or double stranded nucleic acid (DNA or RNA/DNA).",
         "source": "http://edamontology.org/data_1585",
         "categorical": true,
         "parent_ids": [
@@ -2160,7 +2160,7 @@
     {
         "id": "input-data-heat-map",
         "label": "Heat map",
-        "definition": "A graphical 2D tabular representation of expression data, typically derived from an omics experiment. A heat map is a table where rows and columns correspond to different features and contexts (for example, cells or samples) and the cell colour represents the level of expression of a gene that context.",
+        "definition": "A graphical 2D tabular representation of expression data, typically derived from an omics experiment. A heat map is a table where rows and columns correspond to different features and contexts (for example, cells or samples) and the cell color represents the level of expression of a gene that context.",
         "source": "http://edamontology.org/data_1636",
         "categorical": true,
         "parent_ids": [
@@ -2494,7 +2494,7 @@
     {
         "id": "input-data-enzyme-kinetics-data",
         "label": "Enzyme kinetics data",
-        "definition": "Data concerning chemical reaction(s) catalysed by enzyme(s).",
+        "definition": "Data concerning chemical reaction(s) catalyzed by enzyme(s).",
         "source": "http://edamontology.org/data_2024",
         "categorical": true,
         "parent_ids": [
@@ -2505,7 +2505,7 @@
     {
         "id": "input-data-michaelis-menten-plot",
         "label": "Michaelis Menten plot",
-        "definition": "A plot giving an approximation of the kinetics of an enzyme-catalysed reaction, assuming simple kinetics (i.e. no intermediate or product inhibition, allostericity or cooperativity). It plots initial reaction rate to the substrate concentration (S) from which the maximum rate (vmax) is apparent.",
+        "definition": "A plot giving an approximation of the kinetics of an enzyme-catalyzed reaction, assuming simple kinetics (i.e. no intermediate or product inhibition, allostericity or cooperativity). It plots initial reaction rate to the substrate concentration (S) from which the maximum rate (vmax) is apparent.",
         "source": "http://edamontology.org/data_2025",
         "categorical": true,
         "parent_ids": [
@@ -2665,7 +2665,7 @@
     {
         "id": "input-data-nucleic-acid-melting-temperature",
         "label": "Nucleic acid melting temperature",
-        "definition": "A temperature concerning nucleic acid denaturation, typically the temperature at which the two strands of a hybridised or double stranded nucleic acid (DNA or RNA/DNA) molecule separate.",
+        "definition": "A temperature concerning nucleic acid denaturation, typically the temperature at which the two strands of a hybridized or double stranded nucleic acid (DNA or RNA/DNA) molecule separate.",
         "source": "http://edamontology.org/data_2139",
         "categorical": true,
         "parent_ids": [
@@ -2724,8 +2724,8 @@
         ]
     },
     {
-        "id": "input-data-protein-ionisation-curve",
-        "label": "Protein ionisation curve",
+        "id": "input-data-protein-ionization-curve",
+        "label": "Protein ionization curve",
         "definition": "A plot of pK versus pH for a protein.",
         "source": "http://edamontology.org/data_2165",
         "categorical": true,
@@ -2829,7 +2829,7 @@
     {
         "id": "input-data-bit-score",
         "label": "Bit score",
-        "definition": "A score derived from the alignment of two sequences, which is then normalised with respect to the scoring system.",
+        "definition": "A score derived from the alignment of two sequences, which is then normalized with respect to the scoring system.",
         "source": "http://edamontology.org/data_2335",
         "categorical": true,
         "parent_ids": [
@@ -2989,7 +2989,7 @@
     {
         "id": "input-data-expression-data",
         "label": "Expression data",
-        "definition": "Image, hybridisation or some other data arising from a study of feature/molecule expression, typically profiling or quantification.",
+        "definition": "Image, hybridization or some other data arising from a study of feature/molecule expression, typically profiling or quantification.",
         "source": "http://edamontology.org/data_2603",
         "categorical": true,
         "parent_ids": [
@@ -3324,7 +3324,7 @@
     {
         "id": "input-data-reaction-data",
         "label": "Reaction data",
-        "definition": "Data concerning a biochemical reaction, typically data and more general annotation on the kinetics of enzyme-catalysed reaction.",
+        "definition": "Data concerning a biochemical reaction, typically data and more general annotation on the kinetics of enzyme-catalyzed reaction.",
         "source": "http://edamontology.org/data_2978",
         "categorical": true,
         "parent_ids": [
@@ -3435,12 +3435,12 @@
     {
         "id": "input-data-raw-microarray-data",
         "label": "Raw microarray data",
-        "definition": "Raw data (typically MIAME-compliant) for hybridisations from a microarray experiment.",
+        "definition": "Raw data (typically MIAME-compliant) for hybridizations from a microarray experiment.",
         "source": "http://edamontology.org/data_3110",
         "categorical": true,
         "parent_ids": [
             "input-data-experimental-measurement",
-            "input-data-microarray-hybridisation-data"
+            "input-data-microarray-hybridization-data"
         ]
     },
     {
@@ -3450,13 +3450,13 @@
         "source": "http://edamontology.org/data_3111",
         "categorical": true,
         "parent_ids": [
-            "input-data-microarray-hybridisation-data"
+            "input-data-microarray-hybridization-data"
         ]
     },
     {
         "id": "input-data-gene-expression-matrix",
         "label": "Gene expression matrix",
-        "definition": "The final processed (normalised) data for a set of hybridisations in a microarray experiment.",
+        "definition": "The final processed (normalized) data for a set of hybridizations in a microarray experiment.",
         "source": "http://edamontology.org/data_3112",
         "categorical": true,
         "parent_ids": [
@@ -3485,9 +3485,9 @@
         ]
     },
     {
-        "id": "input-data-microarray-hybridisation-data",
-        "label": "Microarray hybridisation data",
-        "definition": "Data concerning the hybridisations measured during a microarray experiment.",
+        "id": "input-data-microarray-hybridization-data",
+        "label": "Microarray hybridization data",
+        "definition": "Data concerning the hybridizations measured during a microarray experiment.",
         "source": "http://edamontology.org/data_3117",
         "categorical": true,
         "parent_ids": [
@@ -3869,7 +3869,7 @@
     {
         "id": "input-data-geographic-location",
         "label": "Geographic location",
-        "definition": "A report about localisation of the isolaton of biological material e.g. country or coordinates.",
+        "definition": "A report about localization of the isolaton of biological material e.g. country or coordinates.",
         "source": "http://edamontology.org/data_3720",
         "categorical": true,
         "parent_ids": [
@@ -3959,7 +3959,7 @@
     {
         "id": "input-data-ordination-plot",
         "label": "Ordination plot",
-        "definition": "A plot in which community data (e.g. species abundance data) is summarised. Similar species and samples are plotted close together, and dissimilar species and samples are plotted placed far apart.",
+        "definition": "A plot in which community data (e.g. species abundance data) is summarized. Similar species and samples are plotted close together, and dissimilar species and samples are plotted placed far apart.",
         "source": "http://edamontology.org/data_3743",
         "categorical": true,
         "parent_ids": [
@@ -3988,8 +3988,8 @@
         ]
     },
     {
-        "id": "input-data-localisation-score",
-        "label": "Localisation score",
+        "id": "input-data-localization-score",
+        "label": "Localization score",
         "definition": "Score for localization of one or more post-translational modifications in peptide sequence measured by mass spectrometry.",
         "source": "http://edamontology.org/data_3756",
         "categorical": true,
@@ -4010,7 +4010,7 @@
     {
         "id": "input-data-annotated-text",
         "label": "Annotated text",
-        "definition": "A text (such as a scientific article), annotated with notes, data and metadata, such as recognised entities, concepts, and their relations.",
+        "definition": "A text (such as a scientific article), annotated with notes, data and metadata, such as recognized entities, concepts, and their relations.",
         "source": "http://edamontology.org/data_3779",
         "categorical": true,
         "parent_ids": [
@@ -4151,7 +4151,7 @@
     {
         "id": "input-data-count-matrix",
         "label": "Count matrix",
-        "definition": "A table of unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript, peak).",
+        "definition": "A table of unnormalized values representing summarized read counts per genomic region (e.g. gene, transcript, peak).",
         "source": "http://edamontology.org/data_3917",
         "categorical": true,
         "parent_ids": [
@@ -4202,7 +4202,7 @@
     {
         "id": "input-data-data-management-plan",
         "label": "Data management plan",
-        "definition": "Data management plan is a document describing the data management of a project or an organisation, including acquisition, reuse, structure, processing, storage, documentation, sharing, and preservation of data. This may include budgeting for these operations.",
+        "definition": "Data management plan is a document describing the data management of a project or an organization, including acquisition, reuse, structure, processing, storage, documentation, sharing, and preservation of data. This may include budgeting for these operations.",
         "source": "http://edamontology.org/data_4040",
         "categorical": true,
         "parent_ids": [

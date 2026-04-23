@@ -114,7 +114,7 @@
     {
         "id": "operation-repeat-sequence-analysis",
         "label": "Repeat sequence analysis",
-        "definition": "Find and/or analyse repeat sequences in (typically nucleotide) sequences.",
+        "definition": "Find and/or analyze repeat sequences in (typically nucleotide) sequences.",
         "source": "http://edamontology.org/operation_0237",
         "categorical": true,
         "parent_ids": [
@@ -157,7 +157,7 @@
     {
         "id": "operation-simulation-analysis",
         "label": "Simulation analysis",
-        "definition": "Analyse flexibility and motion in protein structure.",
+        "definition": "Analyze flexibility and motion in protein structure.",
         "source": "http://edamontology.org/operation_0244",
         "categorical": true,
         "parent_ids": [
@@ -189,7 +189,7 @@
     {
         "id": "operation-protein-architecture-analysis",
         "label": "Protein architecture analysis",
-        "definition": "Analyse the architecture (spatial arrangement of secondary structure) of protein structure(s).",
+        "definition": "Analyze the architecture (spatial arrangement of secondary structure) of protein structure(s).",
         "source": "http://edamontology.org/operation_0247",
         "categorical": true,
         "parent_ids": [
@@ -209,7 +209,7 @@
     {
         "id": "operation-protein-geometry-calculation",
         "label": "Protein geometry calculation",
-        "definition": "Calculate, visualise or analyse phi/psi angles of a protein structure.",
+        "definition": "Calculate, visualize or analyze phi/psi angles of a protein structure.",
         "source": "http://edamontology.org/operation_0249",
         "categorical": true,
         "parent_ids": [
@@ -241,7 +241,7 @@
     {
         "id": "operation-sequence-feature-detection",
         "label": "Sequence feature detection",
-        "definition": "Predict, recognise and identify positional features in molecular sequences such as key functional sites or regions.",
+        "definition": "Predict, recognize and identify positional features in molecular sequences such as key functional sites or regions.",
         "source": "http://edamontology.org/operation_0253",
         "categorical": true,
         "parent_ids": [
@@ -263,7 +263,7 @@
     {
         "id": "operation-sequence-alignment-analysis",
         "label": "Sequence alignment analysis",
-        "definition": "Analyse a molecular sequence alignment.",
+        "definition": "Analyze a molecular sequence alignment.",
         "source": "http://edamontology.org/operation_0258",
         "categorical": true,
         "parent_ids": [
@@ -370,7 +370,7 @@
     {
         "id": "operation-transmembrane-protein-analysis",
         "label": "Transmembrane protein analysis",
-        "definition": "Analyse transmembrane protein(s), typically by processing sequence and / or structural data, and write an informative report for example about the protein and its transmembrane domains / regions.",
+        "definition": "Analyze transmembrane protein(s), typically by processing sequence and / or structural data, and write an informative report for example about the protein and its transmembrane domains / regions.",
         "source": "http://edamontology.org/operation_0270",
         "categorical": true,
         "parent_ids": [
@@ -391,7 +391,7 @@
     {
         "id": "operation-protein-interaction-network-analysis",
         "label": "Protein interaction network analysis",
-        "definition": "Analyse a network of protein interactions.",
+        "definition": "Analyze a network of protein interactions.",
         "source": "http://edamontology.org/operation_0276",
         "categorical": true,
         "parent_ids": [
@@ -414,12 +414,12 @@
     {
         "id": "operation-nucleic-acid-folding-analysis",
         "label": "Nucleic acid folding analysis",
-        "definition": "Analyse some aspect of RNA/DNA folding, typically by processing sequence and/or structural data. For example, compute folding energies such as minimum folding energies for DNA or RNA sequences or energy landscape of RNA mutants.",
+        "definition": "Analyze some aspect of RNA/DNA folding, typically by processing sequence and/or structural data. For example, compute folding energies such as minimum folding energies for DNA or RNA sequences or energy landscape of RNA mutants.",
         "source": "http://edamontology.org/operation_0279",
         "categorical": true,
         "parent_ids": [
             "operation-nucleic-acid-structure-prediction",
-            "operation-modelling-and-simulation",
+            "operation-modeling-and-simulation",
             "operation-nucleic-acid-structure-analysis"
         ]
     },
@@ -437,7 +437,7 @@
     {
         "id": "operation-linkage-analysis",
         "label": "Linkage analysis",
-        "definition": "Analyse genetic linkage.",
+        "definition": "Analyze genetic linkage.",
         "source": "http://edamontology.org/operation_0283",
         "categorical": true,
         "parent_ids": [
@@ -469,7 +469,7 @@
     {
         "id": "operation-codon-usage-analysis",
         "label": "Codon usage analysis",
-        "definition": "Analyse codon usage in molecular sequences or process codon usage data (e.g. a codon usage table).",
+        "definition": "Analyze codon usage in molecular sequences or process codon usage data (e.g. a codon usage table).",
         "source": "http://edamontology.org/operation_0286",
         "categorical": true,
         "parent_ids": [
@@ -484,7 +484,7 @@
         "categorical": true,
         "parent_ids": [
             "operation-codon-usage-analysis",
-            "operation-sequence-visualisation"
+            "operation-sequence-visualization"
         ]
     },
     {
@@ -633,7 +633,7 @@
     {
         "id": "operation-text-mining",
         "label": "Text mining",
-        "definition": "Process and analyse text (typically scientific literature) to extract information from it.",
+        "definition": "Process and analyze text (typically scientific literature) to extract information from it.",
         "source": "http://edamontology.org/operation_0306",
         "categorical": true,
         "parent_ids": [
@@ -752,7 +752,7 @@
         "source": "http://edamontology.org/operation_0322",
         "categorical": true,
         "parent_ids": [
-            "operation-optimisation-and-refinement",
+            "operation-optimization-and-refinement",
             "operation-structure-analysis"
         ]
     },
@@ -770,7 +770,7 @@
     {
         "id": "operation-phylogenetic-analysis",
         "label": "Phylogenetic analysis",
-        "definition": "Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.",
+        "definition": "Analyze an existing phylogenetic tree or trees, typically to detect features or make predictions.",
         "source": "http://edamontology.org/operation_0324",
         "categorical": true,
         "parent_ids": [
@@ -850,9 +850,9 @@
         ]
     },
     {
-        "id": "operation-visualisation",
-        "label": "Visualisation",
-        "definition": "Visualise, plot or render (graphically) biomolecular data such as molecular sequences or structures.",
+        "id": "operation-visualization",
+        "label": "Visualization",
+        "definition": "Visualize, plot or render (graphically) biomolecular data such as molecular sequences or structures.",
         "source": "http://edamontology.org/operation_0337",
         "categorical": false,
         "parent_ids": [
@@ -976,9 +976,9 @@
         ]
     },
     {
-        "id": "operation-sequence-mutation-and-randomisation",
-        "label": "Sequence mutation and randomisation",
-        "definition": "Mutate a molecular sequence a specified amount or shuffle it to produce a randomised sequence with the same overall composition.",
+        "id": "operation-sequence-mutation-and-randomization",
+        "label": "Sequence mutation and randomization",
+        "definition": "Mutate a molecular sequence a specified amount or shuffle it to produce a randomized sequence with the same overall composition.",
         "source": "http://edamontology.org/operation_0367",
         "categorical": true,
         "parent_ids": [
@@ -1047,9 +1047,9 @@
         ]
     },
     {
-        "id": "operation-repeat-sequence-organisation-analysis",
-        "label": "Repeat sequence organisation analysis",
-        "definition": "Analyse repeat sequence organisation such as periodicity.",
+        "id": "operation-repeat-sequence-organization-analysis",
+        "label": "Repeat sequence organization analysis",
+        "definition": "Analyze repeat sequence organization such as periodicity.",
         "source": "http://edamontology.org/operation_0380",
         "categorical": true,
         "parent_ids": [
@@ -1090,7 +1090,7 @@
     {
         "id": "operation-protein-nucleic-acid-interaction-analysis",
         "label": "Protein-nucleic acid interaction analysis",
-        "definition": "Analyse the interaction of protein with nucleic acids, e.g. RNA or DNA-binding sites, interfaces etc.",
+        "definition": "Analyze the interaction of protein with nucleic acids, e.g. RNA or DNA-binding sites, interfaces etc.",
         "source": "http://edamontology.org/operation_0389",
         "categorical": true,
         "parent_ids": [
@@ -1194,7 +1194,7 @@
         "source": "http://edamontology.org/operation_0402",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-protein-pka-calculation"
         ]
     },
@@ -1245,7 +1245,7 @@
         "source": "http://edamontology.org/operation_0407",
         "categorical": true,
         "parent_ids": [
-            "operation-sequence-visualisation",
+            "operation-sequence-visualization",
             "operation-protein-hydropathy-calculation"
         ]
     },
@@ -1282,7 +1282,7 @@
     {
         "id": "operation-nucleic-acid-feature-detection",
         "label": "Nucleic acid feature detection",
-        "definition": "Predict, recognise and identify features in nucleotide sequences such as functional sites or regions, typically by scanning for known motifs, patterns and regular expressions.",
+        "definition": "Predict, recognize and identify features in nucleotide sequences such as functional sites or regions, typically by scanning for known motifs, patterns and regular expressions.",
         "source": "http://edamontology.org/operation_0415",
         "categorical": true,
         "parent_ids": [
@@ -1405,7 +1405,7 @@
     {
         "id": "operation-splice-site-prediction",
         "label": "Splice site prediction",
-        "definition": "Identify, predict or analyse splice sites in nucleotide sequences.",
+        "definition": "Identify, predict or analyze splice sites in nucleotide sequences.",
         "source": "http://edamontology.org/operation_0433",
         "categorical": true,
         "parent_ids": [
@@ -1475,7 +1475,7 @@
     {
         "id": "operation-cis-regulatory-element-prediction",
         "label": "cis-regulatory element prediction",
-        "definition": "Identify, predict or analyse cis-regulatory elements in DNA sequences (TATA box, Pribnow box, SOS box, CAAT box, CCAAT box, operator etc.) or in RNA sequences (e.g. riboswitches).",
+        "definition": "Identify, predict or analyze cis-regulatory elements in DNA sequences (TATA box, Pribnow box, SOS box, CAAT box, CCAAT box, operator etc.) or in RNA sequences (e.g. riboswitches).",
         "source": "http://edamontology.org/operation_0441",
         "categorical": true,
         "parent_ids": [
@@ -1536,7 +1536,7 @@
     {
         "id": "operation-sequence-alignment-analysis-conservation",
         "label": "Sequence alignment analysis (conservation)",
-        "definition": "Analyse character conservation in a molecular sequence alignment, for example to derive a consensus sequence.",
+        "definition": "Analyze character conservation in a molecular sequence alignment, for example to derive a consensus sequence.",
         "source": "http://edamontology.org/operation_0448",
         "categorical": true,
         "parent_ids": [
@@ -1546,7 +1546,7 @@
     {
         "id": "operation-sequence-alignment-analysis-site-correlation",
         "label": "Sequence alignment analysis (site correlation)",
-        "definition": "Analyse correlations between sites in a molecular sequence alignment.",
+        "definition": "Analyze correlations between sites in a molecular sequence alignment.",
         "source": "http://edamontology.org/operation_0449",
         "categorical": true,
         "parent_ids": [
@@ -1602,7 +1602,7 @@
         "categorical": true,
         "parent_ids": [
             "operation-nucleic-acid-property-calculation",
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -1759,14 +1759,14 @@
         ]
     },
     {
-        "id": "operation-protein-modelling",
-        "label": "Protein modelling",
+        "id": "operation-protein-modeling",
+        "label": "Protein modeling",
         "definition": "Build a three-dimensional protein model based on known (for example homologs) structures.",
         "source": "http://edamontology.org/operation_0477",
         "categorical": true,
         "parent_ids": [
             "operation-protein-structure-prediction",
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
@@ -1781,39 +1781,39 @@
         ]
     },
     {
-        "id": "operation-backbone-modelling",
-        "label": "Backbone modelling",
+        "id": "operation-backbone-modeling",
+        "label": "Backbone modeling",
         "definition": "Model protein backbone conformation.",
         "source": "http://edamontology.org/operation_0479",
         "categorical": true,
         "parent_ids": [
-            "operation-protein-modelling"
+            "operation-protein-modeling"
         ]
     },
     {
-        "id": "operation-side-chain-modelling",
-        "label": "Side chain modelling",
-        "definition": "Model, analyse or edit amino acid side chain conformation in protein structure, optimize side-chain packing, hydrogen bonding etc.",
+        "id": "operation-side-chain-modeling",
+        "label": "Side chain modeling",
+        "definition": "Model, analyze or edit amino acid side chain conformation in protein structure, optimize side-chain packing, hydrogen bonding etc.",
         "source": "http://edamontology.org/operation_0480",
         "categorical": true,
         "parent_ids": [
-            "operation-protein-modelling"
+            "operation-protein-modeling"
         ]
     },
     {
-        "id": "operation-loop-modelling",
-        "label": "Loop modelling",
+        "id": "operation-loop-modeling",
+        "label": "Loop modeling",
         "definition": "Model loop conformation in protein structures.",
         "source": "http://edamontology.org/operation_0481",
         "categorical": true,
         "parent_ids": [
-            "operation-protein-modelling"
+            "operation-protein-modeling"
         ]
     },
     {
         "id": "operation-protein-ligand-docking",
         "label": "Protein-ligand docking",
-        "definition": "Model protein-ligand (for example protein-peptide) binding using comparative modelling or other techniques.",
+        "definition": "Model protein-ligand (for example protein-peptide) binding using comparative modeling or other techniques.",
         "source": "http://edamontology.org/operation_0482",
         "categorical": true,
         "parent_ids": [
@@ -1823,7 +1823,7 @@
     {
         "id": "operation-rna-inverse-folding",
         "label": "RNA inverse folding",
-        "definition": "Predict or optimise RNA sequences (sequence pools) with likely secondary and tertiary structure for in vitro selection.",
+        "definition": "Predict or optimize RNA sequences (sequence pools) with likely secondary and tertiary structure for in vitro selection.",
         "source": "http://edamontology.org/operation_0483",
         "categorical": true,
         "parent_ids": [
@@ -1889,7 +1889,7 @@
         "categorical": true,
         "parent_ids": [
             "operation-sequence-word-comparison",
-            "operation-sequence-visualisation"
+            "operation-sequence-visualization"
         ]
     },
     {
@@ -2052,7 +2052,7 @@
         "source": "http://edamontology.org/operation_0531",
         "categorical": true,
         "parent_ids": [
-            "operation-expression-data-visualisation",
+            "operation-expression-data-visualization",
             "operation-generation"
         ]
     },
@@ -2190,20 +2190,20 @@
         ]
     },
     {
-        "id": "operation-dna-substitution-modelling",
-        "label": "DNA substitution modelling",
+        "id": "operation-dna-substitution-modeling",
+        "label": "DNA substitution modeling",
         "definition": "Identify a plausible model of DNA substitution that explains a molecular (DNA or protein) sequence alignment.",
         "source": "http://edamontology.org/operation_0550",
         "categorical": true,
         "parent_ids": [
             "operation-codon-usage-analysis",
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
         "id": "operation-phylogenetic-tree-topology-analysis",
         "label": "Phylogenetic tree topology analysis",
-        "definition": "Analyse the shape (topology) of a phylogenetic tree.",
+        "definition": "Analyze the shape (topology) of a phylogenetic tree.",
         "source": "http://edamontology.org/operation_0551",
         "categorical": true,
         "parent_ids": [
@@ -2234,7 +2234,7 @@
     {
         "id": "operation-allele-frequency-distribution-analysis",
         "label": "Allele frequency distribution analysis",
-        "definition": "Analyse a phylogenetic tree to identify allele frequency distribution and change that is subject to evolutionary pressures (natural selection, genetic drift, mutation and gene flow). Identify type of natural selection (such as stabilizing, balancing or disruptive).",
+        "definition": "Analyze a phylogenetic tree to identify allele frequency distribution and change that is subject to evolutionary pressures (natural selection, genetic drift, mutation and gene flow). Identify type of natural selection (such as stabilizing, balancing or disruptive).",
         "source": "http://edamontology.org/operation_0554",
         "categorical": true,
         "parent_ids": [
@@ -2285,7 +2285,7 @@
     {
         "id": "operation-dna-vaccine-design",
         "label": "DNA vaccine design",
-        "definition": "Predict or optimise DNA to elicit (via DNA vaccination) an immunological response.",
+        "definition": "Predict or optimize DNA to elicit (via DNA vaccination) an immunological response.",
         "source": "http://edamontology.org/operation_0560",
         "categorical": true,
         "parent_ids": [
@@ -2293,73 +2293,73 @@
         ]
     },
     {
-        "id": "operation-sequence-visualisation",
-        "label": "Sequence visualisation",
-        "definition": "Visualise, format or render a molecular sequence or sequences such as a sequence alignment, possibly with sequence features or properties shown.",
+        "id": "operation-sequence-visualization",
+        "label": "Sequence visualization",
+        "definition": "Visualize, format or render a molecular sequence or sequences such as a sequence alignment, possibly with sequence features or properties shown.",
         "source": "http://edamontology.org/operation_0564",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-sequence-analysis"
         ]
     },
     {
-        "id": "operation-sequence-cluster-visualisation",
-        "label": "Sequence cluster visualisation",
-        "definition": "Visualise, format or render sequence clusters.",
+        "id": "operation-sequence-cluster-visualization",
+        "label": "Sequence cluster visualization",
+        "definition": "Visualize, format or render sequence clusters.",
         "source": "http://edamontology.org/operation_0566",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
-        "id": "operation-phylogenetic-tree-visualisation",
-        "label": "Phylogenetic tree visualisation",
-        "definition": "Render or visualise a phylogenetic tree.",
+        "id": "operation-phylogenetic-tree-visualization",
+        "label": "Phylogenetic tree visualization",
+        "definition": "Render or visualize a phylogenetic tree.",
         "source": "http://edamontology.org/operation_0567",
         "categorical": true,
         "parent_ids": [
             "operation-phylogenetic-analysis",
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
-        "id": "operation-structure-visualisation",
-        "label": "Structure visualisation",
-        "definition": "Visualise or render molecular 3D structure, for example a high-quality static picture or animation.",
+        "id": "operation-structure-visualization",
+        "label": "Structure visualization",
+        "definition": "Visualize or render molecular 3D structure, for example a high-quality static picture or animation.",
         "source": "http://edamontology.org/operation_0570",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-structure-analysis"
         ]
     },
     {
-        "id": "operation-expression-data-visualisation",
-        "label": "Expression data visualisation",
-        "definition": "Visualise microarray or other expression data.",
+        "id": "operation-expression-data-visualization",
+        "label": "Expression data visualization",
+        "definition": "Visualize microarray or other expression data.",
         "source": "http://edamontology.org/operation_0571",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-expression-analysis"
         ]
     },
     {
         "id": "operation-map-drawing",
         "label": "Map drawing",
-        "definition": "Draw or visualise a DNA map.",
+        "definition": "Draw or visualize a DNA map.",
         "source": "http://edamontology.org/operation_0573",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
         "id": "operation-restriction-map-drawing",
         "label": "Restriction map drawing",
-        "definition": "Draw or visualise restriction maps in DNA sequences.",
+        "definition": "Draw or visualize restriction maps in DNA sequences.",
         "source": "http://edamontology.org/operation_0575",
         "categorical": true,
         "parent_ids": [
@@ -2379,7 +2379,7 @@
     {
         "id": "operation-operon-drawing",
         "label": "Operon drawing",
-        "definition": "Visualise operon structure etc.",
+        "definition": "Visualize operon structure etc.",
         "source": "http://edamontology.org/operation_0579",
         "categorical": true,
         "parent_ids": [
@@ -2411,7 +2411,7 @@
     {
         "id": "operation-gene-regulatory-network-analysis",
         "label": "Gene regulatory network analysis",
-        "definition": "Analyse a known network of gene regulation.",
+        "definition": "Analyze a known network of gene regulation.",
         "source": "http://edamontology.org/operation_1781",
         "categorical": true,
         "parent_ids": [
@@ -2436,7 +2436,7 @@
         "source": "http://edamontology.org/operation_1816",
         "categorical": true,
         "parent_ids": [
-            "operation-structure-visualisation",
+            "operation-structure-visualization",
             "operation-molecular-surface-analysis"
         ]
     },
@@ -2549,7 +2549,7 @@
         "categorical": true,
         "parent_ids": [
             "operation-sequence-alignment-analysis",
-            "operation-optimisation-and-refinement"
+            "operation-optimization-and-refinement"
         ]
     },
     {
@@ -2595,14 +2595,14 @@
         ]
     },
     {
-        "id": "operation-transmembrane-protein-visualisation",
-        "label": "Transmembrane protein visualisation",
-        "definition": "Visualise transmembrane proteins, typically the transmembrane regions within a sequence.",
+        "id": "operation-transmembrane-protein-visualization",
+        "label": "Transmembrane protein visualization",
+        "definition": "Visualize transmembrane proteins, typically the transmembrane regions within a sequence.",
         "source": "http://edamontology.org/operation_2241",
         "categorical": true,
         "parent_ids": [
             "operation-transmembrane-protein-analysis",
-            "operation-structure-visualisation"
+            "operation-structure-visualization"
         ]
     },
     {
@@ -2613,13 +2613,13 @@
         "categorical": true,
         "parent_ids": [
             "operation-sequence-composition-calculation",
-            "operation-sequence-visualisation"
+            "operation-sequence-visualization"
         ]
     },
     {
         "id": "operation-sequence-analysis",
         "label": "Sequence analysis",
-        "definition": "Analyse one or more known molecular sequences.",
+        "definition": "Analyze one or more known molecular sequences.",
         "source": "http://edamontology.org/operation_2403",
         "categorical": true,
         "parent_ids": [
@@ -2629,7 +2629,7 @@
     {
         "id": "operation-sequence-motif-analysis",
         "label": "Sequence motif analysis",
-        "definition": "Analyse molecular sequence motifs.",
+        "definition": "Analyze molecular sequence motifs.",
         "source": "http://edamontology.org/operation_2404",
         "categorical": true,
         "parent_ids": [
@@ -2639,7 +2639,7 @@
     {
         "id": "operation-protein-structure-analysis",
         "label": "Protein structure analysis",
-        "definition": "Analyse protein structural data.",
+        "definition": "Analyze protein structural data.",
         "source": "http://edamontology.org/operation_2406",
         "categorical": true,
         "parent_ids": [
@@ -2659,18 +2659,18 @@
     {
         "id": "operation-protein-folding-analysis",
         "label": "Protein folding analysis",
-        "definition": "Analyse, simulate or predict protein folding, typically by processing sequence and / or structural data. For example, predict sites of nucleation or stabilisation key to protein folding.",
+        "definition": "Analyze, simulate or predict protein folding, typically by processing sequence and / or structural data. For example, predict sites of nucleation or stabilization key to protein folding.",
         "source": "http://edamontology.org/operation_2415",
         "categorical": true,
         "parent_ids": [
             "operation-protein-structure-analysis",
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
         "id": "operation-protein-secondary-structure-analysis",
         "label": "Protein secondary structure analysis",
-        "definition": "Analyse protein secondary structure data.",
+        "definition": "Analyze protein secondary structure data.",
         "source": "http://edamontology.org/operation_2416",
         "categorical": true,
         "parent_ids": [
@@ -2712,7 +2712,7 @@
     {
         "id": "operation-prediction-and-recognition",
         "label": "Prediction and recognition",
-        "definition": "Predict, recognise, detect or identify some properties of a biomolecule.",
+        "definition": "Predict, recognize, detect or identify some properties of a biomolecule.",
         "source": "http://edamontology.org/operation_2423",
         "categorical": false,
         "parent_ids": [
@@ -2730,9 +2730,9 @@
         ]
     },
     {
-        "id": "operation-optimisation-and-refinement",
-        "label": "Optimisation and refinement",
-        "definition": "Refine or optimise some data model.",
+        "id": "operation-optimization-and-refinement",
+        "label": "Optimization and refinement",
+        "definition": "Refine or optimize some data model.",
         "source": "http://edamontology.org/operation_2425",
         "categorical": false,
         "parent_ids": [
@@ -2740,8 +2740,8 @@
         ]
     },
     {
-        "id": "operation-modelling-and-simulation",
-        "label": "Modelling and simulation",
+        "id": "operation-modeling-and-simulation",
+        "label": "Modeling and simulation",
         "definition": "Model or simulate some biological entity or system, typically using mathematical techniques including dynamical systems, statistical models, differential equations, and game theoretic models.",
         "source": "http://edamontology.org/operation_2426",
         "categorical": false,
@@ -2894,14 +2894,14 @@
         "categorical": true,
         "parent_ids": [
             "operation-prediction-and-recognition",
-            "operation-modelling-and-simulation",
+            "operation-modeling-and-simulation",
             "operation-structure-analysis"
         ]
     },
     {
         "id": "operation-nucleic-acid-sequence-analysis",
         "label": "Nucleic acid sequence analysis",
-        "definition": "Analyse a nucleic acid sequence (using methods that are only applicable to nucleic acid sequences).",
+        "definition": "Analyze a nucleic acid sequence (using methods that are only applicable to nucleic acid sequences).",
         "source": "http://edamontology.org/operation_2478",
         "categorical": true,
         "parent_ids": [
@@ -2911,7 +2911,7 @@
     {
         "id": "operation-protein-sequence-analysis",
         "label": "Protein sequence analysis",
-        "definition": "Analyse a protein sequence (using methods that are only applicable to protein sequences).",
+        "definition": "Analyze a protein sequence (using methods that are only applicable to protein sequences).",
         "source": "http://edamontology.org/operation_2479",
         "categorical": true,
         "parent_ids": [
@@ -2921,7 +2921,7 @@
     {
         "id": "operation-structure-analysis",
         "label": "Structure analysis",
-        "definition": "Analyse known molecular tertiary structures.",
+        "definition": "Analyze known molecular tertiary structures.",
         "source": "http://edamontology.org/operation_2480",
         "categorical": true,
         "parent_ids": [
@@ -2931,7 +2931,7 @@
     {
         "id": "operation-nucleic-acid-structure-analysis",
         "label": "Nucleic acid structure analysis",
-        "definition": "Analyse nucleic acid tertiary structural data.",
+        "definition": "Analyze nucleic acid tertiary structural data.",
         "source": "http://edamontology.org/operation_2481",
         "categorical": true,
         "parent_ids": [
@@ -2956,7 +2956,7 @@
         "source": "http://edamontology.org/operation_2485",
         "categorical": true,
         "parent_ids": [
-            "operation-structure-visualisation"
+            "operation-structure-visualization"
         ]
     },
     {
@@ -2966,7 +2966,7 @@
         "source": "http://edamontology.org/operation_2486",
         "categorical": true,
         "parent_ids": [
-            "operation-structure-visualisation"
+            "operation-structure-visualization"
         ]
     },
     {
@@ -2993,9 +2993,9 @@
         ]
     },
     {
-        "id": "operation-subcellular-localisation-prediction",
-        "label": "Subcellular localisation prediction",
-        "definition": "Predict the subcellular localisation of a protein sequence.",
+        "id": "operation-subcellular-localization-prediction",
+        "label": "Subcellular localization prediction",
+        "definition": "Predict the subcellular localization of a protein sequence.",
         "source": "http://edamontology.org/operation_2489",
         "categorical": true,
         "parent_ids": [
@@ -3025,12 +3025,12 @@
     {
         "id": "operation-splicing-analysis",
         "label": "Splicing analysis",
-        "definition": "Predict, analyse, characterize or model splice sites, splicing events and so on, typically by comparing multiple nucleic acid sequences.",
+        "definition": "Predict, analyze, characterize or model splice sites, splicing events and so on, typically by comparing multiple nucleic acid sequences.",
         "source": "http://edamontology.org/operation_2499",
         "categorical": true,
         "parent_ids": [
             "operation-prediction-and-recognition",
-            "operation-modelling-and-simulation",
+            "operation-modeling-and-simulation",
             "operation-gene-prediction"
         ]
     },
@@ -3069,7 +3069,7 @@
     {
         "id": "operation-protein-hydropathy-calculation",
         "label": "Protein hydropathy calculation",
-        "definition": "Analyse the hydrophobic, hydrophilic or charge properties of a protein (from analysis of sequence or structural information).",
+        "definition": "Analyze the hydrophobic, hydrophilic or charge properties of a protein (from analysis of sequence or structural information).",
         "source": "http://edamontology.org/operation_2574",
         "categorical": true,
         "parent_ids": [
@@ -3142,11 +3142,11 @@
     {
         "id": "operation-clustering-profile-plotting",
         "label": "Clustering profile plotting",
-        "definition": "Visualise clustered quantitative data as set of different profiles, where each profile is plotted versus different entities or samples on the X-axis.",
+        "definition": "Visualize clustered quantitative data as set of different profiles, where each profile is plotted versus different entities or samples on the X-axis.",
         "source": "http://edamontology.org/operation_2935",
         "categorical": true,
         "parent_ids": [
-            "operation-expression-data-visualisation"
+            "operation-expression-data-visualization"
         ]
     },
     {
@@ -3156,27 +3156,27 @@
         "source": "http://edamontology.org/operation_2937",
         "categorical": true,
         "parent_ids": [
-            "operation-expression-data-visualisation"
+            "operation-expression-data-visualization"
         ]
     },
     {
-        "id": "operation-dendrogram-visualisation",
-        "label": "Dendrogram visualisation",
-        "definition": "Visualise clustered expression data using a tree diagram.",
+        "id": "operation-dendrogram-visualization",
+        "label": "Dendrogram visualization",
+        "definition": "Visualize clustered expression data using a tree diagram.",
         "source": "http://edamontology.org/operation_2938",
         "categorical": true,
         "parent_ids": [
-            "operation-expression-data-visualisation"
+            "operation-expression-data-visualization"
         ]
     },
     {
-        "id": "operation-principal-component-visualisation",
-        "label": "Principal component visualisation",
+        "id": "operation-principal-component-visualization",
+        "label": "Principal component visualization",
         "definition": "Visualize the results of a principal component analysis (orthogonal data transformation). For example, visualization of the principal components (essential subspace) coming from a Principal Component Analysis (PCA) on the trajectory atomistic coordinates of a molecular structure.",
         "source": "http://edamontology.org/operation_2939",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -3186,17 +3186,17 @@
         "source": "http://edamontology.org/operation_2940",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
-        "id": "operation-treemap-visualisation",
-        "label": "Treemap visualisation",
-        "definition": "Visualise gene expression data after hierarchical clustering for representing hierarchical relationships.",
+        "id": "operation-treemap-visualization",
+        "label": "Treemap visualization",
+        "definition": "Visualize gene expression data after hierarchical clustering for representing hierarchical relationships.",
         "source": "http://edamontology.org/operation_2942",
         "categorical": true,
         "parent_ids": [
-            "operation-expression-data-visualisation"
+            "operation-expression-data-visualization"
         ]
     },
     {
@@ -3206,7 +3206,7 @@
         "source": "http://edamontology.org/operation_2943",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -3232,7 +3232,7 @@
     {
         "id": "operation-protein-protein-interaction-analysis",
         "label": "Protein-protein interaction analysis",
-        "definition": "Analyse the interactions of proteins with other proteins.",
+        "definition": "Analyze the interactions of proteins with other proteins.",
         "source": "http://edamontology.org/operation_2949",
         "categorical": true,
         "parent_ids": [
@@ -3344,7 +3344,7 @@
     {
         "id": "operation-protein-feature-detection",
         "label": "Protein feature detection",
-        "definition": "Predict, recognise and identify positional features in proteins from analysing protein sequences or structures.",
+        "definition": "Predict, recognize and identify positional features in proteins from analyzing protein sequences or structures.",
         "source": "http://edamontology.org/operation_3092",
         "categorical": true,
         "parent_ids": [
@@ -3407,9 +3407,9 @@
         ]
     },
     {
-        "id": "operation-localised-reassembly",
-        "label": "Localised reassembly",
-        "definition": "Reconstruction of a sequence assembly in a localised area.",
+        "id": "operation-localized-reassembly",
+        "label": "Localized reassembly",
+        "definition": "Reconstruction of a sequence assembly in a localized area.",
         "source": "http://edamontology.org/operation_3183",
         "categorical": true,
         "parent_ids": [
@@ -3417,13 +3417,13 @@
         ]
     },
     {
-        "id": "operation-sequence-assembly-visualisation",
-        "label": "Sequence assembly visualisation",
-        "definition": "Render and visualise a DNA sequence assembly.",
+        "id": "operation-sequence-assembly-visualization",
+        "label": "Sequence assembly visualization",
+        "definition": "Render and visualize a DNA sequence assembly.",
         "source": "http://edamontology.org/operation_3184",
         "categorical": true,
         "parent_ids": [
-            "operation-sequence-visualisation"
+            "operation-sequence-visualization"
         ]
     },
     {
@@ -3491,7 +3491,7 @@
     {
         "id": "operation-genotyping",
         "label": "Genotyping",
-        "definition": "Analyse DNA sequence data to identify differences between the genetic composition (genotype) of an individual compared to other individual's or a reference sequence.",
+        "definition": "Analyze DNA sequence data to identify differences between the genetic composition (genotype) of an individual compared to other individual's or a reference sequence.",
         "source": "http://edamontology.org/operation_3196",
         "categorical": true,
         "parent_ids": [
@@ -3501,7 +3501,7 @@
     {
         "id": "operation-genetic-variation-analysis",
         "label": "Genetic variation analysis",
-        "definition": "Analyse a genetic variation, for example to annotate its location, alleles, classification, and effects on individual transcripts predicted for a gene model.",
+        "definition": "Analyze a genetic variation, for example to annotate its location, alleles, classification, and effects on individual transcripts predicted for a gene model.",
         "source": "http://edamontology.org/operation_3197",
         "categorical": true,
         "parent_ids": [
@@ -3532,7 +3532,7 @@
     {
         "id": "operation-dna-barcoding",
         "label": "DNA barcoding",
-        "definition": "Analyse DNA sequences in order to identify a DNA 'barcode'; marker genes or any short fragment(s) of DNA that are useful to diagnose the taxa of biological organisms.",
+        "definition": "Analyze DNA sequences in order to identify a DNA 'barcode'; marker genes or any short fragment(s) of DNA that are useful to diagnose the taxa of biological organisms.",
         "source": "http://edamontology.org/operation_3200",
         "categorical": true,
         "parent_ids": [
@@ -3540,19 +3540,19 @@
         ]
     },
     {
-        "id": "operation-chromatogram-visualisation",
-        "label": "Chromatogram visualisation",
-        "definition": "Visualise, format or render an image of a Chromatogram.",
+        "id": "operation-chromatogram-visualization",
+        "label": "Chromatogram visualization",
+        "definition": "Visualize, format or render an image of a Chromatogram.",
         "source": "http://edamontology.org/operation_3203",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
         "id": "operation-methylation-analysis",
         "label": "Methylation analysis",
-        "definition": "Analyse cytosine methylation states in nucleic acid sequences.",
+        "definition": "Analyze cytosine methylation states in nucleic acid sequences.",
         "source": "http://edamontology.org/operation_3204",
         "categorical": true,
         "parent_ids": [
@@ -3573,7 +3573,7 @@
     {
         "id": "operation-gene-methylation-analysis",
         "label": "Gene methylation analysis",
-        "definition": "Analysing the DNA methylation of specific genes or regions of interest.",
+        "definition": "Analyzing the DNA methylation of specific genes or regions of interest.",
         "source": "http://edamontology.org/operation_3207",
         "categorical": true,
         "parent_ids": [
@@ -3581,13 +3581,13 @@
         ]
     },
     {
-        "id": "operation-genome-visualisation",
-        "label": "Genome visualisation",
-        "definition": "Visualise, format or render a nucleic acid sequence that is part of (and in context of) a complete genome sequence.",
+        "id": "operation-genome-visualization",
+        "label": "Genome visualization",
+        "definition": "Visualize, format or render a nucleic acid sequence that is part of (and in context of) a complete genome sequence.",
         "source": "http://edamontology.org/operation_3208",
         "categorical": true,
         "parent_ids": [
-            "operation-sequence-visualisation",
+            "operation-sequence-visualization",
             "operation-genome-analysis"
         ]
     },
@@ -3616,7 +3616,7 @@
     {
         "id": "operation-spectral-analysis",
         "label": "Spectral analysis",
-        "definition": "Analyse one or more spectra from mass spectrometry (or other) experiments.",
+        "definition": "Analyze one or more spectra from mass spectrometry (or other) experiments.",
         "source": "http://edamontology.org/operation_3214",
         "categorical": true,
         "parent_ids": [
@@ -3718,8 +3718,8 @@
         ]
     },
     {
-        "id": "operation-variant-prioritisation",
-        "label": "Variant prioritisation",
+        "id": "operation-variant-prioritization",
+        "label": "Variant prioritization",
         "definition": "Identify biologically interesting variants by prioritizing individual variants, for example, homozygous variants absent in control genomes.",
         "source": "http://edamontology.org/operation_3226",
         "categorical": true,
@@ -3751,7 +3751,7 @@
     {
         "id": "operation-exome-assembly",
         "label": "Exome assembly",
-        "definition": "Analyse sequencing data from experiments aiming to selectively sequence the coding regions of the genome.",
+        "definition": "Analyze sequencing data from experiments aiming to selectively sequence the coding regions of the genome.",
         "source": "http://edamontology.org/operation_3229",
         "categorical": true,
         "parent_ids": [
@@ -3761,7 +3761,7 @@
     {
         "id": "operation-read-depth-analysis",
         "label": "Read depth analysis",
-        "definition": "Analyse mapping density (read depth) of (typically) short reads from sequencing platforms, for example, to detect deletions and duplications.",
+        "definition": "Analyze mapping density (read depth) of (typically) short reads from sequencing platforms, for example, to detect deletions and duplications.",
         "source": "http://edamontology.org/operation_3230",
         "categorical": true,
         "parent_ids": [
@@ -3781,7 +3781,7 @@
     {
         "id": "operation-copy-number-estimation",
         "label": "Copy number estimation",
-        "definition": "Estimate the number of copies of loci of particular gene(s) in DNA sequences typically from gene-expression profiling technology based on microarray hybridisation-based experiments. For example, estimate copy number (or marker dosage) of a dominant marker in samples from polyploid plant cells or tissues, or chromosomal gains and losses in tumors.",
+        "definition": "Estimate the number of copies of loci of particular gene(s) in DNA sequences typically from gene-expression profiling technology based on microarray hybridization-based experiments. For example, estimate copy number (or marker dosage) of a dominant marker in samples from polyploid plant cells or tissues, or chromosomal gains and losses in tumors.",
         "source": "http://edamontology.org/operation_3233",
         "categorical": true,
         "parent_ids": [
@@ -3842,7 +3842,7 @@
     {
         "id": "operation-named-entity-and-concept-recognition",
         "label": "Named-entity and concept recognition",
-        "definition": "Recognise named entities, ontology concepts, tags, events, and dictionary terms within documents.",
+        "definition": "Recognize named entities, ontology concepts, tags, events, and dictionary terms within documents.",
         "source": "http://edamontology.org/operation_3280",
         "categorical": true,
         "parent_ids": [
@@ -3861,8 +3861,8 @@
         ]
     },
     {
-        "id": "operation-anonymisation",
-        "label": "Anonymisation",
+        "id": "operation-anonymization",
+        "label": "Anonymization",
         "definition": "Process data in such a way that makes it hard to trace to the person which the data concerns.",
         "source": "http://edamontology.org/operation_3283",
         "categorical": true,
@@ -3903,7 +3903,7 @@
     {
         "id": "operation-molecular-surface-analysis",
         "label": "Molecular surface analysis",
-        "definition": "Analyse the surface properties of proteins or other macromolecules, including surface accessible pockets, interior inaccessible cavities etc.",
+        "definition": "Analyze the surface properties of proteins or other macromolecules, including surface accessible pockets, interior inaccessible cavities etc.",
         "source": "http://edamontology.org/operation_3351",
         "categorical": true,
         "parent_ids": [
@@ -3981,8 +3981,8 @@
         ]
     },
     {
-        "id": "operation-standardisation-and-normalisation",
-        "label": "Standardisation and normalisation",
+        "id": "operation-standardization-and-normalization",
+        "label": "Standardization and normalization",
         "definition": "Standardize or normalize data by some statistical method.",
         "source": "http://edamontology.org/operation_3435",
         "categorical": true,
@@ -4166,7 +4166,7 @@
     {
         "id": "operation-expression-correlation-analysis",
         "label": "Expression correlation analysis",
-        "definition": "Analyse the correlation patterns among features/molecules across across a variety of experiments, samples etc.",
+        "definition": "Analyze the correlation patterns among features/molecules across across a variety of experiments, samples etc.",
         "source": "http://edamontology.org/operation_3463",
         "categorical": true,
         "parent_ids": [
@@ -4260,7 +4260,7 @@
     {
         "id": "operation-chemical-similarity-enrichment",
         "label": "Chemical similarity enrichment",
-        "definition": "Analyse a dataset with respect to concepts from an ontology of chemical structure, leveraging chemical similarity information.",
+        "definition": "Analyze a dataset with respect to concepts from an ontology of chemical structure, leveraging chemical similarity information.",
         "source": "http://edamontology.org/operation_3502",
         "categorical": true,
         "parent_ids": [
@@ -4274,7 +4274,7 @@
         "source": "http://edamontology.org/operation_3503",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -4288,13 +4288,13 @@
         ]
     },
     {
-        "id": "operation-microscope-image-visualisation",
-        "label": "Microscope image visualisation",
-        "definition": "Visualise images resulting from various types of microscopy.",
+        "id": "operation-microscope-image-visualization",
+        "label": "Microscope image visualization",
+        "definition": "Visualize images resulting from various types of microscopy.",
         "source": "http://edamontology.org/operation_3552",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -4318,13 +4318,13 @@
         ]
     },
     {
-        "id": "operation-ontology-visualisation",
-        "label": "Ontology visualisation",
-        "definition": "Visualise, format or render data from an ontology, typically a tree of terms.",
+        "id": "operation-ontology-visualization",
+        "label": "Ontology visualization",
+        "definition": "Visualize, format or render data from an ontology, typically a tree of terms.",
         "source": "http://edamontology.org/operation_3559",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -4385,7 +4385,7 @@
         "source": "http://edamontology.org/operation_3566",
         "categorical": true,
         "parent_ids": [
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
@@ -4522,7 +4522,7 @@
     {
         "id": "operation-itraq",
         "label": "iTRAQ",
-        "definition": "Quantification analysis using the AB SCIEX iTRAQ isobaric labelling workflow, wherein 2-8 reporter ions are measured in MS2 spectra near 114 m/z.",
+        "definition": "Quantification analysis using the AB SCIEX iTRAQ isobaric labeling workflow, wherein 2-8 reporter ions are measured in MS2 spectra near 114 m/z.",
         "source": "http://edamontology.org/operation_3639",
         "categorical": true,
         "parent_ids": [
@@ -4542,7 +4542,7 @@
     {
         "id": "operation-tmt-tag",
         "label": "TMT-tag",
-        "definition": "Quantification analysis using the Thermo Fisher tandem mass tag labelling workflow.",
+        "definition": "Quantification analysis using the Thermo Fisher tandem mass tag labeling workflow.",
         "source": "http://edamontology.org/operation_3641",
         "categorical": true,
         "parent_ids": [
@@ -4550,8 +4550,8 @@
         ]
     },
     {
-        "id": "operation-stable-isotope-dimethyl-labelling",
-        "label": "Stable isotope dimethyl labelling",
+        "id": "operation-stable-isotope-dimethyl-labeling",
+        "label": "Stable isotope dimethyl labeling",
         "definition": "Quantification analysis using chemical labeling by stable isotope dimethylation.",
         "source": "http://edamontology.org/operation_3642",
         "categorical": true,
@@ -4625,7 +4625,7 @@
     {
         "id": "operation-statistical-inference",
         "label": "Statistical inference",
-        "definition": "Analyse data in order to deduce properties of an underlying distribution or population.",
+        "definition": "Analyze data in order to deduce properties of an underlying distribution or population.",
         "source": "http://edamontology.org/operation_3658",
         "categorical": true,
         "parent_ids": [
@@ -4643,8 +4643,8 @@
         ]
     },
     {
-        "id": "operation-metabolic-network-modelling",
-        "label": "Metabolic network modelling",
+        "id": "operation-metabolic-network-modeling",
+        "label": "Metabolic network modeling",
         "definition": "Model a metabolic network. This can include 1) reconstruction to break down a metabolic pathways into reactions, enzymes, and other relevant information, and compilation of this into a mathematical model and 2) simulations of metabolism based on the model.",
         "source": "http://edamontology.org/operation_3660",
         "categorical": true,
@@ -4684,8 +4684,8 @@
         ]
     },
     {
-        "id": "operation-statistical-modelling",
-        "label": "Statistical modelling",
+        "id": "operation-statistical-modeling",
+        "label": "Statistical modeling",
         "definition": "Construction of a statistical model, or a set of assumptions around some observed data, usually by describing a set of probability distributions which approximate the distribution of data.",
         "source": "http://edamontology.org/operation_3664",
         "categorical": true,
@@ -4746,13 +4746,13 @@
         ]
     },
     {
-        "id": "operation-mass-spectrum-visualisation",
-        "label": "Mass spectrum visualisation",
-        "definition": "Visualise, format or render a mass spectrum.",
+        "id": "operation-mass-spectrum-visualization",
+        "label": "Mass spectrum visualization",
+        "definition": "Visualize, format or render a mass spectrum.",
         "source": "http://edamontology.org/operation_3694",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -4837,13 +4837,13 @@
         ]
     },
     {
-        "id": "operation-multiple-sample-visualisation",
-        "label": "Multiple sample visualisation",
-        "definition": "Visualise, format or render data arising from an analysis of multiple samples from a metagenomics/community experiment.",
+        "id": "operation-multiple-sample-visualization",
+        "label": "Multiple sample visualization",
+        "definition": "Visualize, format or render data arising from an analysis of multiple samples from a metagenomics/community experiment.",
         "source": "http://edamontology.org/operation_3744",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation"
+            "operation-visualization"
         ]
     },
     {
@@ -4857,9 +4857,9 @@
         ]
     },
     {
-        "id": "operation-ptm-localisation",
-        "label": "PTM localisation",
-        "definition": "Site localisation of post-translational modifications in peptide or protein mass spectra.",
+        "id": "operation-ptm-localization",
+        "label": "PTM localization",
+        "definition": "Site localization of post-translational modifications in peptide or protein mass spectra.",
         "source": "http://edamontology.org/operation_3755",
         "categorical": true,
         "parent_ids": [
@@ -4930,7 +4930,7 @@
     {
         "id": "operation-text-annotation",
         "label": "Text annotation",
-        "definition": "Text annotation is the operation of adding notes, data and metadata, recognised entities and concepts, and their relations to a text (such as a scientific article).",
+        "definition": "Text annotation is the operation of adding notes, data and metadata, recognized entities and concepts, and their relations to a text (such as a scientific article).",
         "source": "http://edamontology.org/operation_3778",
         "categorical": true,
         "parent_ids": [
@@ -4958,9 +4958,9 @@
         ]
     },
     {
-        "id": "operation-read-summarisation",
-        "label": "Read summarisation",
-        "definition": "Counting and summarising the number of short sequence reads that map to genomic features.",
+        "id": "operation-read-summarization",
+        "label": "Read summarization",
+        "definition": "Counting and summarizing the number of short sequence reads that map to genomic features.",
         "source": "http://edamontology.org/operation_3793",
         "categorical": true,
         "parent_ids": [
@@ -5085,7 +5085,7 @@
         "source": "http://edamontology.org/operation_3890",
         "categorical": true,
         "parent_ids": [
-            "operation-structure-visualisation"
+            "operation-structure-visualization"
         ]
     },
     {
@@ -5100,19 +5100,19 @@
         ]
     },
     {
-        "id": "operation-forcefield-parameterisation",
-        "label": "Forcefield parameterisation",
+        "id": "operation-forcefield-parameterization",
+        "label": "Forcefield parameterization",
         "definition": "Obtain force field parameters (charge, bonds, dihedrals, etc.) from a molecule, to be used in molecular simulations.",
         "source": "http://edamontology.org/operation_3893",
         "categorical": true,
         "parent_ids": [
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
         "id": "operation-dna-profiling",
         "label": "DNA profiling",
-        "definition": "Analyse DNA sequences in order to determine an individual's DNA characteristics, for example in criminal forensics, parentage testing and so on.",
+        "definition": "Analyze DNA sequences in order to determine an individual's DNA characteristics, for example in criminal forensics, parentage testing and so on.",
         "source": "http://edamontology.org/operation_3894",
         "categorical": true,
         "parent_ids": [
@@ -5122,7 +5122,7 @@
     {
         "id": "operation-active-site-prediction",
         "label": "Active site prediction",
-        "definition": "Predict or detect active sites in proteins; the region of an enzyme which binds a substrate bind and catalyses a reaction.",
+        "definition": "Predict or detect active sites in proteins; the region of an enzyme which binds a substrate bind and catalyzes a reaction.",
         "source": "http://edamontology.org/operation_3896",
         "categorical": true,
         "parent_ids": [
@@ -5152,7 +5152,7 @@
     {
         "id": "operation-protein-protein-docking",
         "label": "Protein-protein docking",
-        "definition": "Model or simulate protein-protein binding using comparative modelling or other techniques.",
+        "definition": "Model or simulate protein-protein binding using comparative modeling or other techniques.",
         "source": "http://edamontology.org/operation_3899",
         "categorical": true,
         "parent_ids": [
@@ -5271,31 +5271,31 @@
         ]
     },
     {
-        "id": "operation-network-visualisation",
-        "label": "Network visualisation",
-        "definition": "Render (visualise) a network - typically a biological network of some sort.",
+        "id": "operation-network-visualization",
+        "label": "Network visualization",
+        "definition": "Render (visualize) a network - typically a biological network of some sort.",
         "source": "http://edamontology.org/operation_3925",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-network-analysis"
         ]
     },
     {
-        "id": "operation-pathway-visualisation",
-        "label": "Pathway visualisation",
-        "definition": "Render (visualise) a biological pathway.",
+        "id": "operation-pathway-visualization",
+        "label": "Pathway visualization",
+        "definition": "Render (visualize) a biological pathway.",
         "source": "http://edamontology.org/operation_3926",
         "categorical": true,
         "parent_ids": [
-            "operation-visualisation",
+            "operation-visualization",
             "operation-pathway-analysis"
         ]
     },
     {
         "id": "operation-network-analysis",
         "label": "Network analysis",
-        "definition": "Generate, process or analyse a biological network.",
+        "definition": "Generate, process or analyze a biological network.",
         "source": "http://edamontology.org/operation_3927",
         "categorical": true,
         "parent_ids": [
@@ -5305,7 +5305,7 @@
     {
         "id": "operation-pathway-analysis",
         "label": "Pathway analysis",
-        "definition": "Generate, process or analyse a biological pathway.",
+        "definition": "Generate, process or analyze a biological pathway.",
         "source": "http://edamontology.org/operation_3928",
         "categorical": true,
         "parent_ids": [
@@ -5385,20 +5385,20 @@
         ]
     },
     {
-        "id": "operation-ecological-modelling",
-        "label": "Ecological modelling",
+        "id": "operation-ecological-modeling",
+        "label": "Ecological modeling",
         "definition": "The development and use of mathematical models and systems analysis for the description of ecological processes, and applications such as the sustainable management of resources.",
         "source": "http://edamontology.org/operation_3946",
         "categorical": true,
         "parent_ids": [
             "operation-codon-usage-analysis",
-            "operation-modelling-and-simulation"
+            "operation-modeling-and-simulation"
         ]
     },
     {
         "id": "operation-phylogenetic-tree-reconciliation",
         "label": "Phylogenetic tree reconciliation",
-        "definition": "Mapping between gene tree nodes and species tree nodes or branches, to analyse and account for possible differences between gene histories and species histories, explaining this in terms of gene-scale events such as duplication, loss, transfer etc.",
+        "definition": "Mapping between gene tree nodes and species tree nodes or branches, to analyze and account for possible differences between gene histories and species histories, explaining this in terms of gene-scale events such as duplication, loss, transfer etc.",
         "source": "http://edamontology.org/operation_3947",
         "categorical": true,
         "parent_ids": [
@@ -5534,8 +5534,8 @@
         "categorical": true,
         "parent_ids": [
             "operation-data-analysis",
-            "operation-statistical-modelling",
-            "operation-modelling-and-simulation"
+            "operation-statistical-modeling",
+            "operation-modeling-and-simulation"
         ]
     },
     {
@@ -5551,7 +5551,7 @@
     {
         "id": "operation-data-management-planning",
         "label": "Data management planning",
-        "definition": "Data management planning is the process of creating and updating a data management plan (DMP) for a project or an organisation.",
+        "definition": "Data management planning is the process of creating and updating a data management plan (DMP) for a project or an organization.",
         "source": "http://edamontology.org/operation_4042",
         "categorical": true,
         "parent_ids": [
@@ -5559,9 +5559,9 @@
         ]
     },
     {
-        "id": "operation-data-digitisation",
-        "label": "Data digitisation",
-        "definition": "Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.",
+        "id": "operation-data-digitization",
+        "label": "Data digitization",
+        "definition": "Data digitization is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.",
         "source": "http://edamontology.org/operation_4043",
         "categorical": true,
         "parent_ids": [
