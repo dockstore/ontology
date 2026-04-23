@@ -1,7 +1,12 @@
+"""Convert the British spellings in EDAM to American spellings.
+This in not a general purpose converter, but rather tailored to the content of EDAM.
+Additionally, the code written to be compact, correct, and easy to understand, at the expense of being computationally inefficient.
+"""
+
 import re
 import sys
 
-# Maps British English roots/forms to American equivalents.
+# Maps British English roots to American equivalents.
 # Keys are the shortest form that captures the spelling difference; all inflections
 # that share the same root share the same substitution rule.
 british_to_american = {
@@ -14,9 +19,6 @@ british_to_american = {
     "catalogued":  "cataloged",
     "catalogue":  "catalog",
     "catalogui":  "catalogi",
-
-    # -re -> -er
-    "centre":     "center",
 
     # -ae- -> -e- (medical/scientific)
     "gynaecolog": "gynecolog",   # gynaecology, gynaecological
@@ -126,8 +128,10 @@ british_to_american = {
     "visualisi":  "visualizi",
 
     # doubled -ll in inflected forms (root is the same in both dialects)
-    "labell":     "label",
-    "modell":     "model",
+    "labelle":    "labele",
+    "labelli":    "labeli",
+    "modelle":    "modele",
+    "modelli":    "modeli",
 
     # units
     "kilometre":  "kilometer",
@@ -144,30 +148,35 @@ british_to_american = {
     # miscellaneous
     "ageing":     "aging",
     "maths":      "math",
-    "artefact":   "artifact"
+    "artefact":   "artifact",
+    "programme":  "program",
 }
 
-def _transfer_case(original, replacement):
-    """Apply the case pattern of `original` to `replacement`, char by char."""
+
+def _copy_case(source, target):
     result = []
-    for i, ch in enumerate(replacement):
-        result.append(ch.upper() if original[min(i, len(original) - 1)].isupper() else ch.lower())
+    for target_index, ch in enumerate(target):
+        source_index = min(target_index, len(source) - 1)
+        if source[source_index].isupper():
+            result.append(ch.upper())
+        else:
+            result.append(ch.lower())
     return ''.join(result)
 
-def _make_replacer(british, american):
-    def replacer(m):
-        word = m.group(0)
-        new_root = _transfer_case(word[:len(british)], american)
-        return new_root + word[len(british):]
-    return replacer
+def _replacer(m):
+    word = m.group(0)
+    word_lower = word.lower();
+    for british, american in british_to_american.items():
+        if word_lower.startswith(british):
+            new_word = american + word[len(british):]
+            return _copy_case(word, new_word)
+    return word
+
 
 def main():
     content = sys.stdin.read()
-    for british, american in british_to_american.items():
-        pattern = r'\b' + re.escape(british) + r'\w*'
-        content = re.sub(pattern, _make_replacer(british, american), content, flags=re.IGNORECASE)
-    sys.stdout.write(content)
-
+    americanized = re.sub(r'\b\w+', _replacer, content)
+    sys.stdout.write(americanized)
 
 if __name__ == "__main__":
     main()
