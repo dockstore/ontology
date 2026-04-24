@@ -29,6 +29,9 @@ def make_only_leaves_recommended_for_annotation(nodes):
         parent_ids.update(node['parent_ids'])
     return [{**node, 'recommended_for_annotation': node['recommended_for_annotation'] and node['id'] not in parent_ids} for node in nodes]
 
+def sort_by_id(nodes):
+    return sorted(nodes, key=lambda node: node['id'])
+
 def get_generated_dir():
     if len(sys.argv) <= 1:
        print(f'Usage: {sys.argv[0]} <generated_dir>', file=sys.stderr)
@@ -37,7 +40,7 @@ def get_generated_dir():
 
 def write_json(nodes, filename):
     with open(filename, 'w') as f:
-        json.dump(nodes, f, indent=4)
+        json.dump(sort_by_id(nodes), f, indent=4)
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
 
 
