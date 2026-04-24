@@ -100,7 +100,7 @@ def main():
             'label':       node['label'],
             'definition':  node['definition'],
             'source':      node['uri'],
-            'categorical': not node['not_recommended_for_annotation'],
+            'recommended_for_annotation': not node['not_recommended_for_annotation'],
             'parent_ids':  [uri_to_id[p] for p in node['parent_uris'] if p in uri_to_id],
         }
         for node in nodes
