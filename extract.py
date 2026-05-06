@@ -29,6 +29,12 @@ def make_only_leaves_recommended_for_annotation(nodes):
         parent_ids.update(node['parent_ids'])
     return [{**node, 'recommended_for_annotation': node['recommended_for_annotation'] and node['id'] not in parent_ids} for node in nodes]
 
+def make_nodes_recommended_for_annotation(nodes, criteria):
+    return [{**node, 'recommended_for_annotation': node['recommended_for_annotation'] or criteria(node)} for node in nodes]
+
+def make_nodes_not_recommended_for_annotation(nodes, criteria):
+    return [{**node, 'recommended_for_annotation': node['recommended_for_annotation'] and not criteria(node)} for node in nodes]
+
 def sort_by_id(nodes):
     return sorted(nodes, key=lambda node: node['id'])
 
@@ -42,6 +48,76 @@ def write_json(nodes, filename):
     with open(filename, 'w') as f:
         json.dump(sort_by_id(nodes), f, indent=4)
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
+
+generic_format_ids = {
+    "format-arff",
+    "format-avi",
+    "format-bgzip",
+    "format-bmp",
+    "format-csv",
+    "format-docx",
+    "format-dsv",
+    "format-eps",
+    "format-gif",
+    "format-gzip-format",
+    "format-html",
+    "format-jpg",
+    "format-json",
+    "format-json-ld",
+    "format-latex",
+    "format-madmp",
+    "format-mat",
+    "format-mhtml",
+    "format-mpeg-4",
+    "format-n-quads",
+    "format-n-triples",
+    "format-notation3",
+    "format-pbm",
+    "format-pcd",
+    "format-pcx",
+    "format-pdf",
+    "format-pgm",
+    "format-pickle",
+    "format-pmml",
+    "format-png",
+    "format-ppm",
+    "format-pptx",
+    "format-ps",
+    "format-psd",
+    "format-rast",
+    "format-rdf-xml",
+    "format-rgb",
+    "format-svg",
+    "format-tar-format",
+    "format-tiff",
+    "format-tsv",
+    "format-turtle",
+    "format-u3d",
+    "format-vega",
+    "format-vega-lite",
+    "format-wmv",
+    "format-xbm",
+    "format-xls",
+    "format-xlsx",
+    "format-xml",
+    "format-xpm",
+    "format-xsd",
+    "format-yaml",
+    "format-zip-format",
+}
+
+non_leaf_concrete_format_ids = {
+    "format-bed6",
+    "format-encode-peak-format",
+    "format-fastq-illumina",
+    "format-fastq-solexa",
+    "format-gff2",
+    "format-gff3",
+    "format-hdf5",
+    "format-mztab-m",
+    "format-smiles",
+    "format-vcf",
+}
 
 
 def main():
@@ -58,9 +134,18 @@ def main():
     write_json(add_prefix_to_ids(data, 'input-'), f'{generated_dir}/input-data.json')
     write_json(add_prefix_to_ids(data, 'output-'), f'{generated_dir}/output-data.json')
 
-    # Change the "format" subontology so that only the leaves are recommended for annotation,
-    # then write versions of it for both inputs and outputs.
-    format = make_only_leaves_recommended_for_annotation(extract_subtree(nodes, 'format'))
+    # Extract the format subontology.
+    format = extract_subtree(nodes, 'format')
+    # In EDAM, generally, concrete formats are represented by leaf (terminal) nodes in the DAG.
+    # Make only leaf nodes recommended-for-annotation.
+    format = make_only_leaves_recommended_for_annotation(format)
+    # There are a few non-leaf nodes that correspond to concrete formats.
+    # Recommend them for annotation.
+    format = make_nodes_recommended_for_annotation(format, lambda node: node['id'] in non_leaf_concrete_format_ids)
+    # We probably don't want to categorize into "generic" formats (such as GZIP, JPG, TAR).
+    # Unrecommend them for annotation.
+    format = make_nodes_not_recommended_for_annotation(format, lambda node: node['id'] in generic_format_ids)
+    # Write versions of the "format" subontology for both inputs and outputs.
     write_json(add_prefix_to_ids(format, 'input-'), f'{generated_dir}/input-format.json')
     write_json(add_prefix_to_ids(format, 'output-'), f'{generated_dir}/output-format.json')
 
