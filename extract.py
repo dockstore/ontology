@@ -23,11 +23,14 @@ def remove_subtree(nodes, root_id):
 def add_prefix_to_ids(nodes, prefix):
     return [{**node, 'id': prefix + node['id'], 'parent_ids': [prefix + p for p in node['parent_ids']]} for node in nodes]
 
-def make_only_leaves_categorical(nodes):
+def make_only_leaves_recommended_for_annotation(nodes):
     parent_ids = set()
     for node in nodes:
         parent_ids.update(node['parent_ids'])
-    return [{**node, 'categorical': node['categorical'] and node['id'] not in parent_ids} for node in nodes]
+    return [{**node, 'recommended_for_annotation': node['recommended_for_annotation'] and node['id'] not in parent_ids} for node in nodes]
+
+def sort_by_id(nodes):
+    return sorted(nodes, key=lambda node: node['id'])
 
 def get_generated_dir():
     if len(sys.argv) <= 1:
@@ -37,7 +40,7 @@ def get_generated_dir():
 
 def write_json(nodes, filename):
     with open(filename, 'w') as f:
-        json.dump(nodes, f, indent=4)
+        json.dump(sort_by_id(nodes), f, indent=4)
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
 
 
@@ -55,9 +58,9 @@ def main():
     write_json(add_prefix_to_ids(data, 'input-'), f'{generated_dir}/input-data.json')
     write_json(add_prefix_to_ids(data, 'output-'), f'{generated_dir}/output-data.json')
 
-    # Change the "format" subontology so that only the leaves are categorical,
+    # Change the "format" subontology so that only the leaves are recommended for annotation,
     # then write versions of it for both inputs and outputs.
-    format = make_only_leaves_categorical(extract_subtree(nodes, 'format'))
+    format = make_only_leaves_recommended_for_annotation(extract_subtree(nodes, 'format'))
     write_json(add_prefix_to_ids(format, 'input-'), f'{generated_dir}/input-format.json')
     write_json(add_prefix_to_ids(format, 'output-'), f'{generated_dir}/output-format.json')
 

@@ -4,10 +4,10 @@ This repo manages the ontologies that Dockstore uses to automatically categorize
 
 ## Overview
 
-Currently, we generate six ontologies with the following names and purposes:
+Currently, we generate six ontologies with the following names, intended to classify an entry as follows:
 
 * "operation": Operations that an entry performs (ex: "sequence quality control").
-* "topic": Domains or fields of study (ex: "oncology").
+* "topic": Domains or fields of study that relate to the entry (ex: "oncology").
 * "input-data": Types of input data that an entry supports (ex: "sequence").
 * "output-data": Types of output data that an entry generates (ex: "sequence statistics").
 * "input-format": Input file formats that the entry supports (ex: "fastq").
@@ -20,7 +20,7 @@ To convert the EDAM ontology to our six ontologies, we apply the following steps
 1. Download a recent tagged version of the EDAM OWL file (XML).
 1. Convert the EDAM file to a simplified JSON representation (see below).  We use this simplified format in subsequent steps.
 2. Map British spellings to American spellings.
-3. Produce each of the target ontologies by extracting the appropriate hierarchy from the simplified-and-Americanized EDAM representation, then modifying ac necessary.
+3. Produce each of the target ontologies by extracting the appropriate hierarchy from the simplified-and-Americanized EDAM representation, then modifying as necessary.
 
 We represent processed EDAM and each target ontology in a simplified JSON format, as a list of objects, each of which represents an ontology DAG node.  Each node object has the following properties:
 
