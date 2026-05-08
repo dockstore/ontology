@@ -2915,7 +2915,7 @@
         "label": "maDMP",
         "definition": "A standard for DMPs developed by the Research Data Alliance",
         "source": "http://edamontology.org/format_4041",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-json"
         ]
@@ -3083,7 +3083,7 @@
         "label": "MAT",
         "definition": "Binary format used by MATLAB files to store workspace variables.",
         "source": "http://edamontology.org/format_3626",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-matrix-format"
         ]
@@ -4497,7 +4497,7 @@
         "label": "PMML",
         "definition": "PMML uses XML to represent mining models. The structure of the models is described by an XML Schema.",
         "source": "http://edamontology.org/format_3726",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-xml"
         ]
@@ -6248,7 +6248,7 @@
         "label": "U3D",
         "definition": "U3D (Universal 3D) is a compressed file format and data structure for 3D computer graphics. It contains 3D model information such as triangle meshes, lighting, shading, motion data, lines and points with color and structure.",
         "source": "http://edamontology.org/format_3994",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-binary-format",
             "output-format-image-format"
@@ -6434,7 +6434,7 @@
         "label": "Vega",
         "definition": "Vega is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.",
         "source": "http://edamontology.org/format_3969",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-json",
             "output-format-image-format"
@@ -6445,7 +6445,7 @@
         "label": "Vega-lite",
         "definition": "Vega-Lite is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.",
         "source": "http://edamontology.org/format_3970",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "output-format-json",
             "output-format-image-format"
