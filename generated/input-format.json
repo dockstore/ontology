@@ -1024,7 +1024,7 @@
         "label": "completely unambiguous pure dna",
         "definition": "Alphabet for a DNA sequence (characters ACGT only) without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2569",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-dna",
             "input-format-completely-unambiguous-pure"
@@ -1035,7 +1035,7 @@
         "label": "completely unambiguous pure nucleotide",
         "definition": "Alphabet for a nucleotide sequence (characters ACGTU only) without unknown positions, ambiguity or non-sequence characters .",
         "source": "http://edamontology.org/format_2568",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-nucleotide",
             "input-format-completely-unambiguous-pure"
@@ -1046,7 +1046,7 @@
         "label": "completely unambiguous pure protein",
         "definition": "Alphabet for any protein sequence without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2607",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-protein",
             "input-format-completely-unambiguous-pure"
@@ -1057,7 +1057,7 @@
         "label": "completely unambiguous pure rna sequence",
         "definition": "Alphabet for an RNA sequence (characters ACGU only) without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2570",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-rna",
             "input-format-completely-unambiguous-pure"
@@ -1068,7 +1068,7 @@
         "label": "Configuration file format",
         "definition": "A configuration file used by various programs to store settings that are specific to their respective software.",
         "source": "http://edamontology.org/format_4005",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -4465,7 +4465,7 @@
         "label": "plain text format (unformatted)",
         "definition": "Plain text sequence format (essentially unformatted).",
         "source": "http://edamontology.org/format_1964",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -4865,7 +4865,7 @@
         "label": "pure dna",
         "definition": "Alphabet for a DNA sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1215",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-pure-nucleotide",
             "input-format-dna"
@@ -4887,7 +4887,7 @@
         "label": "pure protein",
         "definition": "Alphabet for any protein sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1219",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-protein",
             "input-format-pure"
@@ -4898,7 +4898,7 @@
         "label": "pure rna",
         "definition": "Alphabet for an RNA sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1217",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-pure-nucleotide",
             "input-format-rna"
@@ -6270,7 +6270,7 @@
         "label": "unambiguous pure dna",
         "definition": "Alphabet for a DNA sequence (characters ACGT only) with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1214",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-dna"
@@ -6281,7 +6281,7 @@
         "label": "unambiguous pure nucleotide",
         "definition": "Alphabet for a nucleotide sequence (characters ACGTU only) with possible unknown positions but without ambiguity or non-sequence characters .",
         "source": "http://edamontology.org/format_1211",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-nucleotide"
@@ -6292,7 +6292,7 @@
         "label": "unambiguous pure protein",
         "definition": "Alphabet for any protein sequence with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1218",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-protein"
@@ -6303,7 +6303,7 @@
         "label": "unambiguous pure rna sequence",
         "definition": "Alphabet for an RNA sequence (characters ACGU only) with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1216",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-rna"

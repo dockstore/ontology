@@ -54,6 +54,7 @@ generic_format_ids = {
     "format-avi",
     "format-bgzip",
     "format-bmp",
+    "format-configuration-file-format",
     "format-csv",
     "format-docx",
     "format-dsv",
@@ -78,6 +79,7 @@ generic_format_ids = {
     "format-pdf",
     "format-pgm",
     "format-pickle",
+    "format-plain-text-format-unformatted",
     "format-pmml",
     "format-png",
     "format-ppm",
@@ -145,6 +147,10 @@ def main():
     # We probably don't want to categorize into "generic" formats (such as GZIP, JPG, TAR).
     # Unrecommend them for annotation.
     format = make_nodes_not_recommended_for_annotation(format, lambda node: node['id'] in generic_format_ids)
+    # Children of 'format-pure' don't appear to be concrete formats.
+    # Unrecommend them for annotation.
+    pure_subtree_ids = [node['id'] for node in extract_subtree(format, 'format-pure')]
+    format = make_nodes_not_recommended_for_annotation(format, lambda node: node['id'] in pure_subtree_ids)
     # Write versions of the "format" subontology for both inputs and outputs.
     write_json(add_prefix_to_ids(format, 'input-'), f'{generated_dir}/input-format.json')
     write_json(add_prefix_to_ids(format, 'output-'), f'{generated_dir}/output-format.json')
