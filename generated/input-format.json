@@ -1145,7 +1145,7 @@
         "label": "CSV",
         "definition": "Tabular data represented as comma-separated values in a text file.",
         "source": "http://edamontology.org/format_3752",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-dsv"
         ]
@@ -3527,7 +3527,7 @@
         "label": "N-Quads",
         "definition": "N-Quads is a line-based, plain text format for encoding an RDF dataset. It includes information about the graph each triple belongs to.",
         "source": "http://edamontology.org/format_3956",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-rdf-format"
@@ -3538,7 +3538,7 @@
         "label": "N-Triples",
         "definition": "A plain text serialization format for RDF (Resource Description Framework) graphs, and a subset of the Turtle (Terse RDF Triple Language) format.",
         "source": "http://edamontology.org/format_3256",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-rdf-format"
@@ -3755,7 +3755,7 @@
         "label": "Notation3",
         "definition": "A shorthand non-XML serialization of Resource Description Framework model, designed with human-readability in mind.",
         "source": "http://edamontology.org/format_3257",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-rdf-format"
@@ -5135,7 +5135,7 @@
         "label": "RDF/XML",
         "definition": "Resource Description Framework (RDF) XML format.",
         "source": "http://edamontology.org/format_3261",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml",
             "input-format-rdf-format"
@@ -6237,7 +6237,7 @@
         "label": "Turtle",
         "definition": "The Terse RDF Triple Language (Turtle) is a human-friendly serialization format for RDF (Resource Description Framework) graphs.",
         "source": "http://edamontology.org/format_3255",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-rdf-format"

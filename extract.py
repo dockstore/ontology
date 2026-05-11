@@ -50,22 +50,14 @@ def write_json(nodes, filename):
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
 
 generic_format_ids = {
-    "format-csv",
-    "format-dsv",
     "format-gzip-format",
     "format-html",
     "format-json",
     "format-json-ld",
     "format-mhtml",
-    "format-n-quads",
-    "format-n-triples",
-    "format-notation3",
     "format-pickle",
     "format-plain-text-format-unformatted",
-    "format-rdf-xml",
     "format-tar-format",
-    "format-tsv",
-    "format-turtle",
     "format-xml",
     "format-yaml",
     "format-zip-format",
