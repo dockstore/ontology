@@ -1068,7 +1068,7 @@
         "label": "Configuration file format",
         "definition": "A configuration file used by various programs to store settings that are specific to their respective software.",
         "source": "http://edamontology.org/format_4005",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-textual-format"
         ]
