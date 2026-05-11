@@ -269,7 +269,7 @@
         "label": "arff",
         "definition": "ARFF (Attribute-Relation File Format) is an ASCII text file format that describes a list of instances sharing a set of attributes.",
         "source": "http://edamontology.org/format_3581",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -300,7 +300,7 @@
         "label": "AVI",
         "definition": "Audio Video Interleaved (AVI) format is a multimedia container format for AVI files, that allows synchronous audio-with-video playback.",
         "source": "http://edamontology.org/format_3990",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -462,7 +462,7 @@
         "label": "bgzip",
         "definition": "Blocked GNU Zip format.",
         "source": "http://edamontology.org/format_3615",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -716,7 +716,7 @@
         "label": "BMP",
         "definition": "Standard bitmap storage format in the Microsoft Windows environment.",
         "source": "http://edamontology.org/format_3592",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -1068,7 +1068,7 @@
         "label": "Configuration file format",
         "definition": "A configuration file used by various programs to store settings that are specific to their respective software.",
         "source": "http://edamontology.org/format_4005",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -1411,7 +1411,7 @@
         "label": "docx",
         "definition": "Microsoft Word format.",
         "source": "http://edamontology.org/format_3506",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml",
             "input-format-document-format"
@@ -1678,7 +1678,7 @@
         "label": "EPS",
         "definition": "Encapsulated PostScript format.",
         "source": "http://edamontology.org/format_3466",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-ps"
         ]
@@ -2178,7 +2178,7 @@
         "label": "GIF",
         "definition": "Graphics Interchange Format.",
         "source": "http://edamontology.org/format_3467",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format"
         ]
@@ -2763,7 +2763,7 @@
         "label": "JPG",
         "definition": "Joint Picture Group file format for lossy graphics file.",
         "source": "http://edamontology.org/format_3579",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -2840,7 +2840,7 @@
         "label": "latex",
         "definition": "format for the LaTeX document preparation system.",
         "source": "http://edamontology.org/format_3817",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-document-format"
@@ -3364,7 +3364,7 @@
         "label": "MPEG-4",
         "definition": "A digital multimedia container format most commonly used to store video and audio.",
         "source": "http://edamontology.org/format_3997",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -3960,7 +3960,7 @@
         "label": "pbm",
         "definition": "The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters.",
         "source": "http://edamontology.org/format_3601",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -3982,7 +3982,7 @@
         "label": "pcd",
         "definition": "Photo CD format, which is the highest resolution format for images on a CD.",
         "source": "http://edamontology.org/format_3594",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -4004,7 +4004,7 @@
         "label": "pcx",
         "definition": "PCX is an image file format that uses a simple form of run-length encoding. It is lossless.",
         "source": "http://edamontology.org/format_3595",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -4106,7 +4106,7 @@
         "label": "PDF",
         "definition": "Portable Document Format.",
         "source": "http://edamontology.org/format_3508",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-document-format"
@@ -4180,7 +4180,7 @@
         "label": "pgm",
         "definition": "The PGM format is a lowest common denominator grayscale file format.",
         "source": "http://edamontology.org/format_3602",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -4507,7 +4507,7 @@
         "label": "PNG",
         "definition": "PNG is a file format for image compression.",
         "source": "http://edamontology.org/format_3603",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -4528,7 +4528,7 @@
         "label": "ppm",
         "definition": "The PPM format is a lowest common denominator color image file format.",
         "source": "http://edamontology.org/format_3596",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -4539,7 +4539,7 @@
         "label": "pptx",
         "definition": "Microsoft Powerpoint format.",
         "source": "http://edamontology.org/format_3838",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml",
             "input-format-image-format"
@@ -4732,7 +4732,7 @@
         "label": "psd",
         "definition": "PSD (Photoshop Document) is a proprietary file that allows the user to work with the images' individual layers even after the file has been saved.",
         "source": "http://edamontology.org/format_3597",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -5050,7 +5050,7 @@
         "label": "rast",
         "definition": "Sun Raster is a raster graphics file format used on SunOS by Sun Microsystems.",
         "source": "http://edamontology.org/format_3605",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -5210,7 +5210,7 @@
         "label": "rgb",
         "definition": "RGB file format is the native raster graphics file format for Silicon Graphics workstations.",
         "source": "http://edamontology.org/format_3600",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -5969,7 +5969,7 @@
         "label": "SVG",
         "definition": "Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation.",
         "source": "http://edamontology.org/format_3604",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml",
             "input-format-image-format"
@@ -6086,7 +6086,7 @@
         "label": "TIFF",
         "definition": "A versatile bitmap format.",
         "source": "http://edamontology.org/format_3591",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -6522,7 +6522,7 @@
         "label": "WMV",
         "definition": "The proprietary native video format of various Microsoft programs such as Windows Media Player.",
         "source": "http://edamontology.org/format_3986",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -6554,7 +6554,7 @@
         "label": "xbm",
         "definition": "X BitMap is a plain text binary image format used by the X Window System used for storing cursor and icon bitmaps used in the X GUI.",
         "source": "http://edamontology.org/format_3598",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -6575,7 +6575,7 @@
         "label": "xls",
         "definition": "Microsoft Excel spreadsheet format.",
         "source": "http://edamontology.org/format_3468",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml",
             "input-format-document-format"
@@ -6618,7 +6618,7 @@
         "label": "xpm",
         "definition": "X PixMap (XPM) is an image file format used by the X Window System, it is intended primarily for creating icon pixmaps, and supports transparent pixels.",
         "source": "http://edamontology.org/format_3599",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-image-format"
@@ -6639,7 +6639,7 @@
         "label": "xsd",
         "definition": "XML format for XML Schema.",
         "source": "http://edamontology.org/format_3804",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-xml"
         ]
