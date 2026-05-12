@@ -421,7 +421,7 @@
         "label": "bed6",
         "definition": "BED file format where each feature is described by chromosome, start, end, name, score, and strand.",
         "source": "http://edamontology.org/format_3585",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-bedstrict"
         ]
@@ -1024,7 +1024,7 @@
         "label": "completely unambiguous pure dna",
         "definition": "Alphabet for a DNA sequence (characters ACGT only) without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2569",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-dna",
             "input-format-completely-unambiguous-pure"
@@ -1035,7 +1035,7 @@
         "label": "completely unambiguous pure nucleotide",
         "definition": "Alphabet for a nucleotide sequence (characters ACGTU only) without unknown positions, ambiguity or non-sequence characters .",
         "source": "http://edamontology.org/format_2568",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-nucleotide",
             "input-format-completely-unambiguous-pure"
@@ -1046,7 +1046,7 @@
         "label": "completely unambiguous pure protein",
         "definition": "Alphabet for any protein sequence without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2607",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-protein",
             "input-format-completely-unambiguous-pure"
@@ -1057,7 +1057,7 @@
         "label": "completely unambiguous pure rna sequence",
         "definition": "Alphabet for an RNA sequence (characters ACGU only) without unknown positions, ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_2570",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-rna",
             "input-format-completely-unambiguous-pure"
@@ -1068,7 +1068,7 @@
         "label": "Configuration file format",
         "definition": "A configuration file used by various programs to store settings that are specific to their respective software.",
         "source": "http://edamontology.org/format_4005",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -1647,7 +1647,7 @@
         "label": "ENCODE peak format",
         "definition": "Human ENCODE peak format.",
         "source": "http://edamontology.org/format_3612",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-bed6"
         ]
@@ -1806,7 +1806,7 @@
         "label": "FASTQ-illumina",
         "definition": "FASTQ Illumina 1.3 short read format.",
         "source": "http://edamontology.org/format_1931",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-fastq-like-format-text"
         ]
@@ -1847,7 +1847,7 @@
         "label": "FASTQ-solexa",
         "definition": "FASTQ Solexa/Illumina 1.0 short read format.",
         "source": "http://edamontology.org/format_1933",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-fastq-like-format-text"
         ]
@@ -2136,7 +2136,7 @@
         "label": "GFF2",
         "definition": "General Feature Format (GFF) of sequence features.",
         "source": "http://edamontology.org/format_1974",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-gff"
         ]
@@ -2157,7 +2157,7 @@
         "label": "GFF3",
         "definition": "Generic Feature Format version 3 (GFF3) of sequence features.",
         "source": "http://edamontology.org/format_1975",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-gff"
         ]
@@ -2331,7 +2331,7 @@
         "label": "GZIP format",
         "definition": "GNU zip compressed file format common to Unix-based operating systems.",
         "source": "http://edamontology.org/format_3989",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-binary-format"
         ]
@@ -2352,7 +2352,7 @@
         "label": "HDF5",
         "definition": "HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF).",
         "source": "http://edamontology.org/format_3590",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-binary-format",
             "input-format-trajectory-format-binary"
@@ -3289,7 +3289,7 @@
         "label": "MHTML",
         "definition": "MIME HTML format for Web pages, which can include external resources, including images, Flash animations and so on.",
         "source": "http://edamontology.org/format_3556",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-html"
         ]
@@ -3506,7 +3506,7 @@
         "label": "mzTab-M",
         "definition": "mzTab-M is a light-weight, tab-delimited format for mass spectrometry-based chemical profiling data, including metabolomics.",
         "source": "http://edamontology.org/format_4058",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-mass-spectrometry-data-format"
@@ -4434,7 +4434,7 @@
         "label": "pickle",
         "definition": "Format used by Python pickle module for serializing and de-serializing a Python object structure.",
         "source": "http://edamontology.org/format_4002",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-binary-format"
         ]
@@ -4465,7 +4465,7 @@
         "label": "plain text format (unformatted)",
         "definition": "Plain text sequence format (essentially unformatted).",
         "source": "http://edamontology.org/format_1964",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-textual-format"
         ]
@@ -4865,7 +4865,7 @@
         "label": "pure dna",
         "definition": "Alphabet for a DNA sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1215",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-pure-nucleotide",
             "input-format-dna"
@@ -4887,7 +4887,7 @@
         "label": "pure protein",
         "definition": "Alphabet for any protein sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1219",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-protein",
             "input-format-pure"
@@ -4898,7 +4898,7 @@
         "label": "pure rna",
         "definition": "Alphabet for an RNA sequence with possible ambiguity and unknown positions but without non-sequence characters.",
         "source": "http://edamontology.org/format_1217",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-pure-nucleotide",
             "input-format-rna"
@@ -5754,7 +5754,7 @@
         "label": "SMILES",
         "definition": "Chemical structure specified in Simplified Molecular Input Line Entry System (SMILES) line notation.",
         "source": "http://edamontology.org/format_1196",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-chemical-formula-format",
             "input-format-textual-format"
@@ -6002,7 +6002,7 @@
         "label": "TAR format",
         "definition": "TAR archive file format generated by the Unix-based utility tar.",
         "source": "http://edamontology.org/format_3981",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-binary-format"
         ]
@@ -6270,7 +6270,7 @@
         "label": "unambiguous pure dna",
         "definition": "Alphabet for a DNA sequence (characters ACGT only) with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1214",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-dna"
@@ -6281,7 +6281,7 @@
         "label": "unambiguous pure nucleotide",
         "definition": "Alphabet for a nucleotide sequence (characters ACGTU only) with possible unknown positions but without ambiguity or non-sequence characters .",
         "source": "http://edamontology.org/format_1211",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-nucleotide"
@@ -6292,7 +6292,7 @@
         "label": "unambiguous pure protein",
         "definition": "Alphabet for any protein sequence with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1218",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-protein"
@@ -6303,7 +6303,7 @@
         "label": "unambiguous pure rna sequence",
         "definition": "Alphabet for an RNA sequence (characters ACGU only) with possible unknown positions but without ambiguity or non-sequence characters.",
         "source": "http://edamontology.org/format_1216",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-unambiguous-pure",
             "input-format-rna"
@@ -6413,7 +6413,7 @@
         "label": "VCF",
         "definition": "Variant Call Format (VCF) is tabular format for storing genomic sequence variations.",
         "source": "http://edamontology.org/format_3016",
-        "recommended_for_annotation": false,
+        "recommended_for_annotation": true,
         "parent_ids": [
             "input-format-textual-format",
             "input-format-sequence-variation-annotation-format"
@@ -6694,7 +6694,7 @@
         "label": "ZIP format",
         "definition": "ZIP is an archive file format that supports lossless data compression.",
         "source": "http://edamontology.org/format_3987",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "input-format-binary-format"
         ]
