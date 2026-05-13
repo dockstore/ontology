@@ -165,7 +165,7 @@
         "label": "Bioinformatics",
         "definition": "The archival, curation, processing and analysis of complex biological data.",
         "source": "http://edamontology.org/topic_0091",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-informatics"
         ]
@@ -175,7 +175,7 @@
         "label": "Biology",
         "definition": "The study of life and living organisms, including their morphology, biochemistry, physiology, development, evolution, and so on.",
         "source": "http://edamontology.org/topic_3070",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-biosciences"
         ]
@@ -236,7 +236,7 @@
         "label": "Biosciences",
         "definition": "Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.",
         "source": "http://edamontology.org/topic_4019",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic"
         ]
@@ -452,7 +452,7 @@
         "label": "Computational biology",
         "definition": "The development and application of theory, analytical methods, mathematical models and computational simulation of biological systems.",
         "source": "http://edamontology.org/topic_3307",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-biosciences"
         ]
@@ -1119,7 +1119,7 @@
         "label": "Genetics",
         "definition": "The study of genes, genetic variation and heredity in living organisms.",
         "source": "http://edamontology.org/topic_3053",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-biology"
         ]
@@ -1149,7 +1149,7 @@
         "label": "Genomics",
         "definition": "Whole genomes of one or more organisms, or genomes in general, such as meta-information on genomes, genome projects, gene names etc.",
         "source": "http://edamontology.org/topic_0622",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-omics"
         ]
@@ -1342,7 +1342,7 @@
         "label": "Informatics",
         "definition": "The study and practice of information processing and use of computer information systems.",
         "source": "http://edamontology.org/topic_0605",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic"
         ]
@@ -1443,7 +1443,7 @@
         "label": "Mathematics",
         "definition": "The study of numbers (quantity) and other topics including structure, space, and change.",
         "source": "http://edamontology.org/topic_3315",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic"
         ]
@@ -1909,7 +1909,7 @@
         "label": "Omics",
         "definition": "The collective characterization and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms.",
         "source": "http://edamontology.org/topic_3391",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-biosciences"
         ]
@@ -2927,7 +2927,7 @@
         "label": "Workflows",
         "definition": "Biological or biomedical analytical workflows or pipelines.",
         "source": "http://edamontology.org/topic_0769",
-        "recommended_for_annotation": true,
+        "recommended_for_annotation": false,
         "parent_ids": [
             "topic-data-management"
         ]
