@@ -49,6 +49,19 @@ def write_json(nodes, filename):
         json.dump(sort_by_id(nodes), f, indent=4)
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
 
+generic_topic_ids = {
+    "topic-bioinformatics",
+    "topic-biology",
+    "topic-biosciences",
+    "topic-computational-biology",
+    "topic-genetics",
+    "topic-genomics",
+    "topic-informatics",
+    "topic-mathematics",
+    "topic-omics",
+    "topic-workflows"
+}
+
 generic_format_ids = {
     "format-configuration-file-format",
     "format-gzip-format",
@@ -82,9 +95,15 @@ def main():
     generated_dir = get_generated_dir()
     nodes = json.load(sys.stdin)
 
-    # Use the "operation" and "topic" subontologies verbatim.
+    # Use the "operation" subontology verbatim.
     write_json(extract_subtree(nodes, 'operation'), f'{generated_dir}/operation.json')
-    write_json(extract_subtree(nodes, 'topic'), f'{generated_dir}/topic.json')
+
+    # Extract the topic subontology.
+    topic = extract_subtree(nodes, 'topic')
+    # Unrecommend-for-annotation some nodes that represent very broad categories.
+    topic = make_nodes_not_recommended_for_annotation(topic, lambda node: node['id'] in generic_topic_ids)
+    # Write the "topic" subontology.
+    write_json(topic, f'{generated_dir}/topic.json')
 
     # Remove the "identifier" sub-branch of the "data" subontology,
     # then write versions of it for both inputs and outputs.
