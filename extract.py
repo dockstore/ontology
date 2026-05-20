@@ -38,6 +38,16 @@ def make_nodes_not_recommended_for_annotation(nodes, criteria):
 def sort_by_id(nodes):
     return sorted(nodes, key=lambda node: node['id'])
 
+def load_json(path):
+    with open(path) as f:
+        return json.load(f)
+
+def add_nodes(nodes_a, nodes_b):
+    combined = nodes_a + nodes_b
+    if dups := {n['id'] for n in nodes_a} & {n['id'] for n in nodes_b}:
+        raise ValueError(f"Duplicate node IDs: {dups}")
+    return combined
+
 def get_generated_dir():
     if len(sys.argv) <= 1:
        print(f'Usage: {sys.argv[0]} <generated_dir>', file=sys.stderr)
@@ -91,17 +101,22 @@ non_leaf_concrete_format_ids = {
 }
 
 def fix_operation(operation):
-    # Use the "operation" subontology verbatim.
+    # Add the AI-generated operation subontology nodes.
+    operation = add_nodes(operation, load_json('additions/ai/operation.json'))
     return operation
 
 def fix_topic(topic):
     # Unrecommend-for-annotation some nodes that represent very broad categories.
     topic = make_nodes_not_recommended_for_annotation(topic, lambda node: node['id'] in generic_topic_ids)
+    # Add the AI-generated topic subontology nodes.
+    topic = add_nodes(topic, load_json('additions/ai/topic.json'))
     return topic
 
 def fix_data(data):
     # Remove the "identifier" sub-branch of the "data" subontology.
     data = remove_subtree(data, 'data-identifier')
+    # Add the AI-generated data subontology nodes.
+    data = add_nodes(data, load_json('additions/ai/data.json'))
     return data
 
 def fix_format(format):
@@ -118,6 +133,8 @@ def fix_format(format):
     # Unrecommend them for annotation.
     pure_subtree_ids = [node['id'] for node in extract_subtree(format, 'format-pure')]
     format = make_nodes_not_recommended_for_annotation(format, lambda node: node['id'] in pure_subtree_ids)
+    # Add the AI-generated format subontology nodes.
+    format = add_nodes(format, load_json('additions/ai/format.json'))
     return format
 
 
