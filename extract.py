@@ -90,29 +90,21 @@ non_leaf_concrete_format_ids = {
     "format-vcf",
 }
 
-
-def main():
-    generated_dir = get_generated_dir()
-    nodes = json.load(sys.stdin)
-
+def fix_operation(operation):
     # Use the "operation" subontology verbatim.
-    write_json(extract_subtree(nodes, 'operation'), f'{generated_dir}/operation.json')
+    return operation
 
-    # Extract the topic subontology.
-    topic = extract_subtree(nodes, 'topic')
+def fix_topic(topic):
     # Unrecommend-for-annotation some nodes that represent very broad categories.
     topic = make_nodes_not_recommended_for_annotation(topic, lambda node: node['id'] in generic_topic_ids)
-    # Write the "topic" subontology.
-    write_json(topic, f'{generated_dir}/topic.json')
+    return topic
 
-    # Remove the "identifier" sub-branch of the "data" subontology,
-    # then write versions of it for both inputs and outputs.
-    data = remove_subtree(extract_subtree(nodes, 'data'), 'data-identifier')
-    write_json(add_prefix_to_ids(data, 'input-'), f'{generated_dir}/input-data.json')
-    write_json(add_prefix_to_ids(data, 'output-'), f'{generated_dir}/output-data.json')
+def fix_data(data):
+    # Remove the "identifier" sub-branch of the "data" subontology.
+    data = remove_subtree(data, 'data-identifier')
+    return data
 
-    # Extract the format subontology.
-    format = extract_subtree(nodes, 'format')
+def fix_format(format):
     # In EDAM, generally, concrete formats are represented by leaf (terminal) nodes in the DAG.
     # Make only leaf nodes recommended-for-annotation.
     format = make_only_leaves_recommended_for_annotation(format)
@@ -126,7 +118,28 @@ def main():
     # Unrecommend them for annotation.
     pure_subtree_ids = [node['id'] for node in extract_subtree(format, 'format-pure')]
     format = make_nodes_not_recommended_for_annotation(format, lambda node: node['id'] in pure_subtree_ids)
-    # Write versions of the "format" subontology for both inputs and outputs.
+    return format
+
+
+def main():
+    generated_dir = get_generated_dir()
+    nodes = json.load(sys.stdin)
+
+    # Extract, fix, and write the operation subontology.
+    operation = fix_operation(extract_subtree(nodes, 'operation'))
+    write_json(operation, f'{generated_dir}/operation.json')
+
+    # Extract, fix,and write the topic subontology.
+    topic = fix_topic(extract_subtree(nodes, 'topic'))
+    write_json(topic, f'{generated_dir}/topic.json')
+
+    # Extract and fix the data subontology, then write versions of it for both inputs and outputs.
+    data = fix_data(extract_subtree(nodes, 'data'))
+    write_json(add_prefix_to_ids(data, 'input-'), f'{generated_dir}/input-data.json')
+    write_json(add_prefix_to_ids(data, 'output-'), f'{generated_dir}/output-data.json')
+
+    # Extract and fix the format subontology, then write versions of it for both inputs and outputs.
+    format = fix_format(extract_subtree(nodes, 'format'))
     write_json(add_prefix_to_ids(format, 'input-'), f'{generated_dir}/input-format.json')
     write_json(add_prefix_to_ids(format, 'output-'), f'{generated_dir}/output-format.json')
 
