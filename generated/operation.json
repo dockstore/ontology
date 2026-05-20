@@ -40,10 +40,10 @@
         ]
     },
     {
-        "id": "operation-ab-compartment-analysis",
+        "id": "operation-a-b-compartment-analysis",
         "label": "A/B compartment analysis",
         "definition": "Classify megabase-scale genomic regions into transcriptionally active (A) or inactive (B) compartments based on the principal eigenvector of a chromatin contact matrix from Hi-C or Micro-C data.",
-        "source": "https://dockstore.org/operation_custom_9001",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -105,7 +105,7 @@
         "id": "operation-admixture-analysis",
         "label": "Admixture analysis",
         "definition": "Quantify the proportion of ancestry from distinct source populations in admixed individuals using genome-wide variant data.",
-        "source": "https://dockstore.org/operation_custom_9002",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -147,7 +147,7 @@
         "id": "operation-alpha-diversity-analysis",
         "label": "Alpha diversity analysis",
         "definition": "Quantify species richness and evenness within a single microbial community sample using metrics such as Shannon entropy, observed species count, or Faith's phylogenetic diversity.",
-        "source": "https://dockstore.org/operation_custom_9003",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -168,7 +168,7 @@
         "id": "operation-ambient-rna-correction",
         "label": "Ambient RNA correction",
         "definition": "Estimate and remove background RNA contamination arising from lysed cells that contaminates droplet-based single-cell libraries, using methods such as SoupX or DecontX.",
-        "source": "https://dockstore.org/operation_custom_9004",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -179,7 +179,7 @@
         "id": "operation-amplicon-sequence-analysis",
         "label": "Amplicon sequence analysis",
         "definition": "End-to-end processing of marker-gene amplicon sequencing data (16S rRNA, 18S rRNA, ITS), including primer trimming, quality filtering, denoising, and taxonomic assignment.",
-        "source": "https://dockstore.org/operation_custom_9005",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -283,7 +283,7 @@
         "id": "operation-batch-effect-correction",
         "label": "Batch effect correction",
         "definition": "Remove unwanted technical variation attributable to experimental batch, platform, reagent lot, or processing date from molecular data while preserving biological signal.",
-        "source": "https://dockstore.org/operation_custom_9006",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-standardization-and-normalization"
@@ -293,7 +293,7 @@
         "id": "operation-beta-diversity-analysis",
         "label": "Beta diversity analysis",
         "definition": "Compare the microbial community composition between samples using ecological distance or dissimilarity metrics such as UniFrac, Bray-Curtis, or Jaccard distance.",
-        "source": "https://dockstore.org/operation_custom_9007",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -326,7 +326,7 @@
         "id": "operation-biological-sequence-embedding",
         "label": "Biological sequence embedding",
         "definition": "Generate dense continuous vector representations of biological sequences using a trained language model or encoder such as ESM-2, ProtTrans, Nucleotide Transformer, or DNABERT.",
-        "source": "https://dockstore.org/operation_custom_9008",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
@@ -379,7 +379,7 @@
         "id": "operation-cell-barcode-correction",
         "label": "Cell barcode correction",
         "definition": "Identify and correct sequencing errors in cell barcodes from droplet-based single-cell sequencing experiments to accurately assign reads to their cell of origin.",
-        "source": "https://dockstore.org/operation_custom_9009",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -390,7 +390,7 @@
         "id": "operation-cell-cell-communication-analysis",
         "label": "Cell-cell communication analysis",
         "definition": "Infer intercellular signaling interactions by identifying co-expression of ligand-receptor gene pairs across cell populations from single-cell or spatial transcriptomic data.",
-        "source": "https://dockstore.org/operation_custom_9010",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -403,7 +403,7 @@
         "id": "operation-cell-clustering",
         "label": "Cell clustering",
         "definition": "Group individual cells into discrete clusters based on similarity of their molecular profiles, typically using graph-based community detection algorithms applied to a k-nearest neighbor graph of cell embeddings.",
-        "source": "https://dockstore.org/operation_custom_9011",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -424,7 +424,7 @@
         "id": "operation-cell-type-annotation",
         "label": "Cell type annotation",
         "definition": "Assign biological cell type identities to cells or cell clusters using marker gene expression patterns, reference transcriptome atlases, or automated label-transfer classifiers.",
-        "source": "https://dockstore.org/operation_custom_9012",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -436,7 +436,7 @@
         "id": "operation-cell-type-deconvolution",
         "label": "Cell type deconvolution",
         "definition": "Estimate the proportional composition of distinct cell types within bulk tissue samples by reference to a single-cell or cell-type-specific expression signature dataset.",
-        "source": "https://dockstore.org/operation_custom_9013",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -478,7 +478,7 @@
         "id": "operation-chromatin-accessibility-analysis",
         "label": "Chromatin accessibility analysis",
         "definition": "Quantify open chromatin regions genome-wide from ATAC-seq or DNase-seq data, including read alignment, peak calling, nucleosome positioning, and per-locus accessibility scoring.",
-        "source": "https://dockstore.org/operation_custom_9014",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -489,7 +489,7 @@
         "id": "operation-chromatin-conformation-analysis",
         "label": "Chromatin conformation analysis",
         "definition": "Process and analyze data from chromosome conformation capture experiments (Hi-C, Micro-C, 4C, ChIA-PET) to characterize the spatial organization of the genome in the nucleus.",
-        "source": "https://dockstore.org/operation_custom_9015",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -500,7 +500,7 @@
         "id": "operation-chromatin-loop-calling",
         "label": "Chromatin loop calling",
         "definition": "Detect focal point-to-point long-range chromatin interactions (loops) between pairs of genomic loci from Hi-C or ChIA-PET contact maps.",
-        "source": "https://dockstore.org/operation_custom_9016",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -511,7 +511,7 @@
         "id": "operation-chromatin-organization-analysis",
         "label": "Chromatin organization analysis",
         "definition": "Analysis of the three-dimensional organization of chromatin in the nucleus, including higher-order genome folding, chromatin accessibility, and long-range regulatory interactions.",
-        "source": "https://dockstore.org/operation_custom_9017",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-genome-analysis",
@@ -695,7 +695,7 @@
         "id": "operation-contact-matrix-normalization",
         "label": "Contact matrix normalization",
         "definition": "Correct systematic biases in chromatin contact matrices from Hi-C experiments including distance-dependent decay, GC content bias, and mappability, using methods such as ICE, KR, or VC normalization.",
-        "source": "https://dockstore.org/operation_custom_9018",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -756,7 +756,7 @@
         "id": "operation-crispr-off-target-prediction",
         "label": "CRISPR off-target prediction",
         "definition": "Computationally identify and score genomic loci susceptible to unintended nuclease cleavage based on sequence similarity to a CRISPR guide RNA, to inform guide design or experimental validation priorities.",
-        "source": "https://dockstore.org/operation_custom_9019",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-genome-editing-analysis",
@@ -767,7 +767,7 @@
         "id": "operation-crispr-screen-analysis",
         "label": "CRISPR screen analysis",
         "definition": "Identify genes that affect a phenotype or cellular fitness by measuring changes in guide RNA abundance across time points or conditions in a pooled CRISPR knockout or activation library screen.",
-        "source": "https://dockstore.org/operation_custom_9020",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-genome-editing-analysis",
@@ -972,7 +972,7 @@
         "id": "operation-demographic-modeling",
         "label": "Demographic modeling",
         "definition": "Infer historical population size changes, divergence times, and migration rates from site frequency spectra or other population genetic summary statistics.",
-        "source": "https://dockstore.org/operation_custom_9021",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -1085,7 +1085,7 @@
         "id": "operation-direct-rna-base-modification-detection",
         "label": "Direct RNA base modification detection",
         "definition": "Call RNA base modifications (m6A, pseudouridine, inosine) directly from nanopore ionic current signal without chemical conversion, using signal-level models trained on characteristic disruption patterns.",
-        "source": "https://dockstore.org/operation_custom_9022",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-nucleic-acid-feature-detection"
@@ -1287,10 +1287,10 @@
         ]
     },
     {
-        "id": "operation-doublet-detection",
+        "id": "operation-doublet-multiplet-detection",
         "label": "Doublet/multiplet detection",
         "definition": "Identify cell barcodes in single-cell sequencing data that represent the co-encapsulation and co-sequencing of two or more cells rather than a single cell.",
-        "source": "https://dockstore.org/operation_custom_9023",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -1544,7 +1544,7 @@
         "id": "operation-full-length-isoform-analysis",
         "label": "Full-length isoform analysis",
         "definition": "Characterize complete transcript isoforms, including alternative splicing events and novel transcripts, from full-length long-read cDNA or direct RNA sequencing data.",
-        "source": "https://dockstore.org/operation_custom_9024",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-rna-seq-analysis",
@@ -1566,7 +1566,7 @@
         "id": "operation-functional-genomics-analysis",
         "label": "Functional genomics analysis",
         "definition": "Large-scale analysis of the functional consequences of genomic elements or variants, encompassing CRISPR screens, massively parallel reporter assays, saturation genome editing, and related systematic perturbation experiments.",
-        "source": "https://dockstore.org/operation_custom_9025",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-genome-analysis",
@@ -1577,7 +1577,7 @@
         "id": "operation-functional-metagenomic-prediction",
         "label": "Functional metagenomic prediction",
         "definition": "Infer the functional gene content and metabolic pathway potential of a microbial community from its taxonomic composition or from direct annotation of metagenomic sequences.",
-        "source": "https://dockstore.org/operation_custom_9026",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -1619,7 +1619,7 @@
         "id": "operation-gene-fusion-detection",
         "label": "Gene fusion detection",
         "definition": "Identify chimeric transcripts arising from chromosomal rearrangements, read-through transcription, or trans-splicing from RNA-seq data, or gene-fusing structural variants from whole-genome sequencing.",
-        "source": "https://dockstore.org/operation_custom_9027",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-structural-variation-detection",
@@ -1791,7 +1791,7 @@
         "id": "operation-genome-editing-analysis",
         "label": "Genome editing analysis",
         "definition": "Design and computational analysis of experiments that use programmable nucleases (CRISPR-Cas, TALENs, zinc finger nucleases) to introduce targeted modifications to genomic DNA.",
-        "source": "https://dockstore.org/operation_custom_9028",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis",
@@ -1802,7 +1802,7 @@
         "id": "operation-genome-editing-outcome-analysis",
         "label": "Genome editing outcome analysis",
         "definition": "Quantify the spectrum of insertion, deletion, and precise editing outcomes at a CRISPR target locus from amplicon sequencing data, including indel frequency, allele enumeration, and repair template incorporation rate.",
-        "source": "https://dockstore.org/operation_custom_9029",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-genome-editing-analysis",
@@ -1847,7 +1847,7 @@
         "id": "operation-genome-wide-association-analysis",
         "label": "Genome-wide association analysis",
         "definition": "Test statistical associations between genetic variants across the genome and a phenotypic trait in large cohorts to identify loci that influence the trait.",
-        "source": "https://dockstore.org/operation_custom_9030",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -1889,7 +1889,7 @@
         "id": "operation-guide-rna-design",
         "label": "Guide RNA design",
         "definition": "Design and score candidate guide RNA sequences (sgRNA or crRNA) for CRISPR-based genome editing, optimizing for on-target activity efficacy and specificity against off-target genomic loci.",
-        "source": "https://dockstore.org/operation_custom_9031",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-genome-editing-analysis",
@@ -1910,7 +1910,7 @@
         "id": "operation-haplotype-resolved-assembly",
         "label": "Haplotype-resolved assembly",
         "definition": "Produce a phased genome assembly in which each haplotype of a diploid or polyploid organism is represented as a separate contiguous sequence, using long reads, Hi-C scaffolding, or parental trio information.",
-        "source": "https://dockstore.org/operation_custom_9032",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-genome-assembly"
@@ -1961,7 +1961,7 @@
         "id": "operation-hyperparameter-optimization",
         "label": "Hyperparameter optimization",
         "definition": "Systematically search the configuration space of a machine learning model to identify hyperparameter settings that maximize held-out predictive performance, using strategies such as grid search, random search, or Bayesian optimization.",
-        "source": "https://dockstore.org/operation_custom_9033",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
@@ -2213,7 +2213,7 @@
         "id": "operation-long-read-assembly-polishing",
         "label": "Long-read assembly polishing",
         "definition": "Iteratively correct systematic sequence errors in a draft genome or transcriptome assembly using additional sequencing reads, reducing indel and substitution error rates in the final assembly.",
-        "source": "https://dockstore.org/operation_custom_9034",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-optimization-and-refinement",
@@ -2234,7 +2234,7 @@
         "id": "operation-machine-learning",
         "label": "Machine learning",
         "definition": "Computational methods that train, evaluate, or apply statistical models learned from data, encompassing classical machine learning algorithms and deep learning approaches applied to biological data.",
-        "source": "https://dockstore.org/operation_custom_9035",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis",
@@ -2245,24 +2245,12 @@
         "id": "operation-machine-learning-model-training",
         "label": "Machine learning model training",
         "definition": "Fit a machine learning or deep learning model to a labeled or unlabeled training dataset by minimizing a loss function, yielding a parameterized model applicable to new data.",
-        "source": "https://dockstore.org/operation_custom_9036",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
             "operation-modeling-and-simulation",
             "operation-optimization-and-refinement"
-        ]
-    },
-    {
-        "id": "operation-mag-analysis",
-        "label": "Metagenome-assembled genome (MAG) analysis",
-        "definition": "Recover, assess quality (completeness and contamination), and taxonomically classify genome bins assembled from shotgun metagenomic sequencing data.",
-        "source": "https://dockstore.org/operation_custom_9037",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "operation-microbiome-analysis",
-            "operation-genome-analysis",
-            "operation-taxonomic-classification"
         ]
     },
     {
@@ -2358,6 +2346,18 @@
         ]
     },
     {
+        "id": "operation-metagenome-assembled-genome-mag-analysis",
+        "label": "Metagenome-assembled genome (MAG) analysis",
+        "definition": "Recover, assess quality (completeness and contamination), and taxonomically classify genome bins assembled from shotgun metagenomic sequencing data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-genome-analysis",
+            "operation-taxonomic-classification"
+        ]
+    },
+    {
         "id": "operation-metal-binding-site-prediction",
         "label": "Metal-binding site prediction",
         "definition": "Predict or detect metal ion-binding sites in proteins.",
@@ -2413,7 +2413,7 @@
         "id": "operation-microbial-differential-abundance-analysis",
         "label": "Microbial differential abundance analysis",
         "definition": "Identify microbial taxa that are significantly differentially abundant between experimental conditions using statistical models that account for the compositional nature of relative abundance data.",
-        "source": "https://dockstore.org/operation_custom_9038",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -2424,7 +2424,7 @@
         "id": "operation-microbiome-analysis",
         "label": "Microbiome analysis",
         "definition": "Analysis of microbial community composition and function from metagenomic or marker-gene amplicon sequencing data.",
-        "source": "https://dockstore.org/operation_custom_9039",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis",
@@ -2462,10 +2462,10 @@
         ]
     },
     {
-        "id": "operation-model-cross-validation",
+        "id": "operation-model-cross-validation-and-evaluation",
         "label": "Model cross-validation and evaluation",
         "definition": "Assess the predictive performance of a machine learning model on held-out data using k-fold, leave-one-out, or other cross-validation procedures, reporting metrics appropriate to the task such as AUC, F1, precision-recall, or RMSE.",
-        "source": "https://dockstore.org/operation_custom_9040",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
@@ -2572,7 +2572,7 @@
         "id": "operation-multi-omics-analysis",
         "label": "Multi-omics analysis",
         "definition": "Integrated analysis of two or more distinct molecular measurement modalities (omics layers) from the same biological samples to identify coordinated patterns of variation across data types.",
-        "source": "https://dockstore.org/operation_custom_9041",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis"
@@ -2582,7 +2582,7 @@
         "id": "operation-multi-omics-data-integration",
         "label": "Multi-omics data integration",
         "definition": "Combine and jointly analyze heterogeneous molecular datasets from two or more omics layers measured in the same samples using latent variable, network, or matrix factorization approaches.",
-        "source": "https://dockstore.org/operation_custom_9042",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-multi-omics-analysis",
@@ -2594,7 +2594,7 @@
         "id": "operation-multi-omics-factor-analysis",
         "label": "Multi-omics factor analysis",
         "definition": "Decompose multi-omics datasets into shared and dataset-specific latent factors capturing coordinated sources of biological variation across omics layers, using methods such as MOFA+ or JIVE.",
-        "source": "https://dockstore.org/operation_custom_9043",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-multi-omics-analysis",
@@ -2697,7 +2697,7 @@
         "id": "operation-neural-network-inference",
         "label": "Neural network inference",
         "definition": "Apply a trained neural network model to new input data to generate predictions, classifications, or embeddings without updating the model parameters.",
-        "source": "https://dockstore.org/operation_custom_9044",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
@@ -2967,7 +2967,7 @@
         "id": "operation-otu-asv-generation",
         "label": "OTU/ASV generation",
         "definition": "Cluster amplicon sequencing reads into operational taxonomic units (OTUs) or denoise them into exact amplicon sequence variants (ASVs) to represent distinct microbial taxa.",
-        "source": "https://dockstore.org/operation_custom_9045",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-microbiome-analysis",
@@ -3368,7 +3368,7 @@
         "id": "operation-polygenic-score-calculation",
         "label": "Polygenic score calculation",
         "definition": "Aggregate the per-allele effects of many genetic variants distributed across the genome into a single score predicting an individual's genetic predisposition to a quantitative or disease trait.",
-        "source": "https://dockstore.org/operation_custom_9046",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -3380,7 +3380,7 @@
         "id": "operation-population-differentiation-calculation",
         "label": "Population differentiation calculation",
         "definition": "Calculate allele frequency-based statistics that quantify genetic differentiation between two or more populations, such as FST, PBS, or related measures.",
-        "source": "https://dockstore.org/operation_custom_9047",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -3392,7 +3392,7 @@
         "id": "operation-population-genetics-analysis",
         "label": "Population genetics analysis",
         "definition": "Statistical analysis of genetic variation across populations of individuals to infer demographic history, population structure, selection pressures, and genotype-phenotype associations.",
-        "source": "https://dockstore.org/operation_custom_9048",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-genetic-variation-analysis",
@@ -3403,7 +3403,7 @@
         "id": "operation-population-structure-analysis",
         "label": "Population structure analysis",
         "definition": "Infer the number of ancestral populations and assign individuals to population clusters from genome-wide variant data, using methods such as STRUCTURE, ADMIXTURE, or principal component analysis.",
-        "source": "https://dockstore.org/operation_custom_9049",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -4677,7 +4677,7 @@
         "id": "operation-rna-velocity-analysis",
         "label": "RNA velocity analysis",
         "definition": "Estimate the future transcriptional state of individual cells by modeling RNA splicing kinetics from the ratio of unspliced to spliced transcript abundances, as a proxy for transcriptional activity.",
-        "source": "https://dockstore.org/operation_custom_9050",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -4688,7 +4688,7 @@
         "id": "operation-runs-of-homozygosity-analysis",
         "label": "Runs of homozygosity analysis",
         "definition": "Detect extended genomic segments of continuous homozygosity (ROH) indicative of inbreeding, autozygosity, or recent positive selection sweeps.",
-        "source": "https://dockstore.org/operation_custom_9051",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -4780,7 +4780,7 @@
         "id": "operation-selective-sweep-analysis",
         "label": "Selective sweep analysis",
         "definition": "Detect genomic signatures of recent positive selection using haplotype-based statistics such as iHS or XP-EHH, nucleotide diversity scans, or allele frequency-based methods such as Tajima's D.",
-        "source": "https://dockstore.org/operation_custom_9052",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-population-genetics-analysis",
@@ -5432,7 +5432,7 @@
         "id": "operation-single-cell-analysis",
         "label": "Single-cell analysis",
         "definition": "Analysis of data derived from single-cell sequencing or profiling experiments, in which molecular measurements are made at the resolution of individual cells.",
-        "source": "https://dockstore.org/operation_custom_9053",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis"
@@ -5442,7 +5442,7 @@
         "id": "operation-single-cell-data-integration",
         "label": "Single-cell data integration",
         "definition": "Harmonize single-cell datasets from different batches, donors, technologies, or modalities into a common embedding that removes technical variation while preserving biological variation.",
-        "source": "https://dockstore.org/operation_custom_9054",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -5453,7 +5453,7 @@
         "id": "operation-single-cell-multiomics-analysis",
         "label": "Single-cell multiomics analysis",
         "definition": "Jointly analyze two or more molecular modalities measured simultaneously in the same individual cells, such as gene expression and chromatin accessibility (ATAC-seq) or surface protein abundance (CITE-seq).",
-        "source": "https://dockstore.org/operation_custom_9055",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -5533,22 +5533,10 @@
         ]
     },
     {
-        "id": "operation-spatial-deconvolution",
-        "label": "Spatial spot/cell deconvolution",
-        "definition": "Estimate the cell type composition of each spatial capture unit (spot or segmented cell) in a spatially resolved transcriptomics experiment using a single-cell reference expression atlas.",
-        "source": "https://dockstore.org/operation_custom_9056",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "operation-spatial-omics-analysis",
-            "operation-cell-type-deconvolution",
-            "operation-quantification"
-        ]
-    },
-    {
         "id": "operation-spatial-domain-identification",
         "label": "Spatial domain identification",
         "definition": "Partition a tissue section from a spatially resolved transcriptomics experiment into spatially coherent regions with distinct molecular signatures, analogous to histological tissue segmentation.",
-        "source": "https://dockstore.org/operation_custom_9057",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-spatial-omics-analysis",
@@ -5560,7 +5548,7 @@
         "id": "operation-spatial-gene-expression-analysis",
         "label": "Spatial gene expression analysis",
         "definition": "Process and analyze spatially resolved transcriptomic data to link gene expression measurements to their physical coordinates within a tissue section.",
-        "source": "https://dockstore.org/operation_custom_9058",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-spatial-omics-analysis",
@@ -5571,7 +5559,7 @@
         "id": "operation-spatial-neighborhood-analysis",
         "label": "Spatial neighborhood analysis",
         "definition": "Characterize the molecular composition and cell type enrichment of the local cellular microenvironment surrounding each spot or cell in a spatially resolved transcriptomic dataset.",
-        "source": "https://dockstore.org/operation_custom_9059",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-spatial-omics-analysis",
@@ -5582,17 +5570,29 @@
         "id": "operation-spatial-omics-analysis",
         "label": "Spatial omics analysis",
         "definition": "Analysis of molecular profiling data that retains the spatial coordinates of measurements within a tissue section or biological specimen, including spatially resolved transcriptomics and proteomics.",
-        "source": "https://dockstore.org/operation_custom_9060",
+        "source": "ai",
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis"
         ]
     },
     {
+        "id": "operation-spatial-spot-cell-deconvolution",
+        "label": "Spatial spot/cell deconvolution",
+        "definition": "Estimate the cell type composition of each spatial capture unit (spot or segmented cell) in a spatially resolved transcriptomics experiment using a single-cell reference expression atlas.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-cell-type-deconvolution",
+            "operation-quantification"
+        ]
+    },
+    {
         "id": "operation-spatially-variable-gene-detection",
         "label": "Spatially variable gene detection",
         "definition": "Identify genes whose expression varies significantly across tissue space in a spatially resolved transcriptomics dataset, beyond variation attributable to chance or differences in cell type composition.",
-        "source": "https://dockstore.org/operation_custom_9061",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-spatial-omics-analysis",
@@ -5902,18 +5902,6 @@
         ]
     },
     {
-        "id": "operation-tad-identification",
-        "label": "Topologically associating domain (TAD) identification",
-        "definition": "Partition the genome into contiguous self-interacting chromatin domains (topologically associating domains, TADs) separated by boundary regions of reduced Hi-C contact frequency.",
-        "source": "https://dockstore.org/operation_custom_9062",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "operation-chromatin-organization-analysis",
-            "operation-genome-analysis",
-            "operation-clustering"
-        ]
-    },
-    {
         "id": "operation-tag-based-peptide-identification",
         "label": "Tag-based peptide identification",
         "definition": "Peptide sequence tags are used as piece of information about a peptide obtained by tandem mass spectrometry.",
@@ -5976,6 +5964,18 @@
         ]
     },
     {
+        "id": "operation-topologically-associating-domain-tad-identification",
+        "label": "Topologically associating domain (TAD) identification",
+        "definition": "Partition the genome into contiguous self-interacting chromatin domains (topologically associating domains, TADs) separated by boundary regions of reduced Hi-C contact frequency.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-genome-analysis",
+            "operation-clustering"
+        ]
+    },
+    {
         "id": "operation-topology-diagram-drawing",
         "label": "Topology diagram drawing",
         "definition": "Render a topology diagram of protein secondary structure.",
@@ -5989,7 +5989,7 @@
         "id": "operation-trajectory-inference",
         "label": "Trajectory inference",
         "definition": "Order cells along a continuous path or branching graph representing a biological process such as differentiation, reprogramming, or the cell cycle, inferring pseudotemporal progression from single-cell expression data.",
-        "source": "https://dockstore.org/operation_custom_9063",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
@@ -6030,7 +6030,7 @@
         "id": "operation-transcription-factor-footprinting",
         "label": "Transcription factor footprinting",
         "definition": "Identify transcription factor occupancy events from characteristic protection patterns within ATAC-seq or DNase-seq chromatin accessibility data.",
-        "source": "https://dockstore.org/operation_custom_9065",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-chromatin-organization-analysis",
@@ -6062,7 +6062,7 @@
         "id": "operation-transfer-learning",
         "label": "Transfer learning",
         "definition": "Adapt a machine learning model pre-trained on large biological datasets to a new prediction task or organism by continued training on a smaller, task-specific dataset.",
-        "source": "https://dockstore.org/operation_custom_9064",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-machine-learning",
@@ -6165,7 +6165,7 @@
         "id": "operation-umi-deduplication",
         "label": "UMI deduplication",
         "definition": "Remove PCR duplicate reads in single-cell sequencing data by collapsing reads with identical cell barcodes and unique molecular identifiers (UMIs) to a single molecule count.",
-        "source": "https://dockstore.org/operation_custom_9066",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "operation-single-cell-analysis",
