@@ -3,7 +3,7 @@
         "id": "topic-spatial-transcriptomics",
         "label": "Spatial transcriptomics",
         "definition": "Transcriptomic profiling that retains the physical coordinates of gene expression measurements within a tissue section, using platforms such as 10x Visium, Slide-seq, seqFISH, or MERFISH to link molecular data to histological context.",
-        "source": "https://dockstore.org/topic_custom_9001",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-transcriptomics",
@@ -14,7 +14,7 @@
         "id": "topic-pangenomics",
         "label": "Pangenomics",
         "definition": "The study of the complete set of genomic sequences across multiple individuals, strains, or populations of a species, typically represented as a pan-genome graph that captures variation not represented in a single linear reference genome.",
-        "source": "https://dockstore.org/topic_custom_9002",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-genomics",
@@ -25,7 +25,7 @@
         "id": "topic-genome-annotation",
         "label": "Genome annotation",
         "definition": "The computational identification and labeling of structural and functional elements in a genome sequence, including protein-coding genes, non-coding RNAs, regulatory regions, and repetitive elements, using tools such as Maker, Braker, Prokka, or Funannotate.",
-        "source": "https://dockstore.org/topic_custom_9003",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-genomics",
@@ -36,7 +36,7 @@
         "id": "topic-single-cell-multiomics",
         "label": "Single-cell multiomics",
         "definition": "Simultaneous or joint measurement of two or more molecular modalities (such as gene expression, chromatin accessibility, surface protein, or DNA methylation) from individual cells, using platforms such as 10x Multiome, CITE-seq, SHARE-seq, or SNARE-seq.",
-        "source": "https://dockstore.org/topic_custom_9004",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-single-cell-sequencing",
@@ -46,8 +46,8 @@
     {
         "id": "topic-deep-learning",
         "label": "Deep learning",
-        "definition": "A subfield of machine learning that uses multi-layer neural network architectures — including convolutional, recurrent, transformer, and graph neural network architectures — to learn hierarchical representations from biological data, with applications including sequence-to-function modeling, histopathology image analysis, protein structure prediction, and genomic variant interpretation.",
-        "source": "https://dockstore.org/topic_custom_9005",
+        "definition": "A subfield of machine learning that uses multi-layer neural network architectures - including convolutional, recurrent, transformer, and graph neural network architectures - to learn hierarchical representations from biological data, with applications including sequence-to-function modeling, histopathology image analysis, protein structure prediction, and genomic variant interpretation.",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-machine-learning"
@@ -57,7 +57,7 @@
         "id": "topic-protein-language-models",
         "label": "Protein language models",
         "definition": "Large-scale transformer-based deep learning models pre-trained on protein sequence databases to learn amino acid co-evolutionary patterns, enabling zero-shot prediction of protein function, stability, mutational effects, and three-dimensional structure via models such as ESM-2, ProtTrans, or ESMFold.",
-        "source": "https://dockstore.org/topic_custom_9006",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-deep-learning",
@@ -69,7 +69,7 @@
         "id": "topic-variant-annotation",
         "label": "Variant annotation",
         "definition": "The computational annotation of genetic variants with predicted functional consequences, population allele frequencies, disease associations, and regulatory context, using tools such as VEP, ANNOVAR, SnpEff, or CADD.",
-        "source": "https://dockstore.org/topic_custom_9007",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-genetic-variation",
@@ -80,7 +80,7 @@
         "id": "topic-variant-effect-prediction",
         "label": "Variant effect prediction",
         "definition": "Computational prediction of the molecular and phenotypic impact of genetic variants, including missense pathogenicity scoring, splicing disruption prediction, and regulatory element disruption, using conservation-based, machine learning, or protein language model approaches such as CADD or AlphaMissense.",
-        "source": "https://dockstore.org/topic_custom_9008",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-variant-annotation",
@@ -91,7 +91,7 @@
         "id": "topic-differential-expression",
         "label": "Differential expression",
         "definition": "Statistical identification of genes or transcripts whose abundance levels differ significantly between biological conditions or cell populations, using methods such as DESeq2, edgeR, limma, or Wilcoxon rank-sum tests applied to bulk or single-cell RNA-seq count data.",
-        "source": "https://dockstore.org/topic_custom_9009",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-transcriptomics",
@@ -101,8 +101,8 @@
     {
         "id": "topic-gene-set-analysis",
         "label": "Gene set analysis",
-        "definition": "Statistical methods that test whether predefined sets of biologically related genes — such as pathways, Gene Ontology terms, or co-expression modules — are enriched for differential activity in a genomic dataset, including overrepresentation analysis, GSEA, and ssGSEA approaches.",
-        "source": "https://dockstore.org/topic_custom_9010",
+        "definition": "Statistical methods that test whether predefined sets of biologically related genes - such as pathways, Gene Ontology terms, or co-expression modules - are enriched for differential activity in a genomic dataset, including overrepresentation analysis, GSEA, and ssGSEA approaches.",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-functional-genomics",
@@ -114,7 +114,7 @@
         "id": "topic-liquid-biopsy",
         "label": "Liquid biopsy",
         "definition": "Non-invasive sampling and molecular analysis of tumor-derived material circulating in blood or other body fluids, including circulating tumor DNA (ctDNA), circulating tumor cells, and extracellular vesicles, for cancer early detection, minimal residual disease monitoring, and treatment response assessment.",
-        "source": "https://dockstore.org/topic_custom_9011",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-oncology",
@@ -125,7 +125,7 @@
         "id": "topic-cell-free-dna",
         "label": "Cell-free DNA",
         "definition": "Analysis of fragmented extracellular DNA circulating in plasma or other body fluids, encompassing sequencing-based applications such as non-invasive prenatal testing, organ transplant rejection monitoring, sepsis pathogen detection, and cancer liquid biopsy.",
-        "source": "https://dockstore.org/topic_custom_9012",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-liquid-biopsy",
@@ -136,7 +136,7 @@
         "id": "topic-immune-repertoire",
         "label": "Immune repertoire",
         "definition": "High-throughput sequencing and analysis of the adaptive immune receptor repertoire, encompassing the diversity of T-cell receptor (TCR) and B-cell receptor (BCR) variable domain sequences generated by V(D)J recombination, using AIRR-seq or bulk/single-cell immune profiling approaches.",
-        "source": "https://dockstore.org/topic_custom_9013",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-immunology",
@@ -148,7 +148,7 @@
         "id": "topic-tumor-microenvironment",
         "label": "Tumor microenvironment",
         "definition": "The complex ecosystem of non-cancerous cells, extracellular matrix components, and signaling molecules - including immune cells, fibroblasts, endothelial cells, and cytokines - that surround and interact with tumor cells, studied by bulk deconvolution, single-cell sequencing, or spatial transcriptomics to understand immunosuppression and treatment response.",
-        "source": "https://dockstore.org/topic_custom_9014",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-oncology",
@@ -160,7 +160,7 @@
         "id": "topic-long-read-transcriptomics",
         "label": "Long-read transcriptomics",
         "definition": "RNA sequencing using long-read platforms (PacBio IsoSeq, Oxford Nanopore direct RNA or cDNA sequencing) to characterize full-length transcript isoforms, novel splice junctions, fusion transcripts, and RNA base modifications without the fragmentation required by short-read approaches.",
-        "source": "https://dockstore.org/topic_custom_9015",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-transcriptomics",
@@ -171,7 +171,7 @@
         "id": "topic-crispr",
         "label": "CRISPR",
         "definition": "Experimental and computational topics related to CRISPR-Cas systems used for genome editing, gene regulation (CRISPRi/CRISPRa), base editing, prime editing, and pooled functional screens, including guide RNA design, off-target prediction, and screen analysis.",
-        "source": "https://dockstore.org/topic_custom_9016",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-genetic-engineering",
@@ -182,7 +182,7 @@
         "id": "topic-microbiome",
         "label": "Microbiome",
         "definition": "The collective genetic content, taxonomic composition, and functional potential of microbial communities associated with a host organism or specific body site, studied via 16S/ITS amplicon sequencing or shotgun metagenomics to understand host-microbe interactions and community dynamics.",
-        "source": "https://dockstore.org/topic_custom_9017",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-metagenomics",
@@ -193,7 +193,7 @@
         "id": "topic-nanopore-sequencing",
         "label": "Nanopore sequencing",
         "definition": "Sequencing technology developed by Oxford Nanopore Technologies that passes DNA or RNA molecules through protein nanopores and detects bases from disruptions in ionic current, producing ultra-long reads and enabling direct sequencing of RNA and detection of base modifications without chemical conversion.",
-        "source": "https://dockstore.org/topic_custom_9018",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-long-read-sequencing"
@@ -203,7 +203,7 @@
         "id": "topic-genome-graph",
         "label": "Genome graph",
         "definition": "Graph-based data structures that encode multiple genome sequences and their variation simultaneously, enabling read alignment, variant calling, and haplotype-aware analysis against a population-level reference that avoids the biases of a single linear reference genome, using tools such as vg, Minigraph-Cactus, or PGGB.",
-        "source": "https://dockstore.org/topic_custom_9019",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-pangenomics",
@@ -214,7 +214,7 @@
         "id": "topic-benchmarking",
         "label": "Benchmarking",
         "definition": "Systematic and rigorous comparison of computational tools or methods on standardized datasets to evaluate accuracy, scalability, and reproducibility, enabling evidence-based selection of tools for bioinformatics workflows.",
-        "source": "https://dockstore.org/topic_custom_9020",
+        "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-bioinformatics",
