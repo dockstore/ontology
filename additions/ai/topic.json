@@ -1,46 +1,35 @@
 [
     {
-        "id": "topic-spatial-transcriptomics",
-        "label": "Spatial transcriptomics",
-        "definition": "Transcriptomic profiling that retains the physical coordinates of gene expression measurements within a tissue section, using platforms such as 10x Visium, Slide-seq, seqFISH, or MERFISH to link molecular data to histological context.",
+        "id": "topic-benchmarking",
+        "label": "Benchmarking",
+        "definition": "Systematic and rigorous comparison of computational tools or methods on standardized datasets to evaluate accuracy, scalability, and reproducibility, enabling evidence-based selection of tools for bioinformatics workflows.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-transcriptomics",
-            "topic-single-cell-sequencing"
+            "topic-bioinformatics",
+            "topic-experimental-design-and-studies"
         ]
     },
     {
-        "id": "topic-pangenomics",
-        "label": "Pangenomics",
-        "definition": "The study of the complete set of genomic sequences across multiple individuals, strains, or populations of a species, typically represented as a pan-genome graph that captures variation not represented in a single linear reference genome.",
+        "id": "topic-cell-free-dna",
+        "label": "Cell-free DNA",
+        "definition": "Analysis of fragmented extracellular DNA circulating in plasma or other body fluids, encompassing sequencing-based applications such as non-invasive prenatal testing, organ transplant rejection monitoring, sepsis pathogen detection, and cancer liquid biopsy.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-genomics",
-            "topic-comparative-genomics"
+            "topic-liquid-biopsy",
+            "topic-genomics"
         ]
     },
     {
-        "id": "topic-genome-annotation",
-        "label": "Genome annotation",
-        "definition": "The computational identification and labeling of structural and functional elements in a genome sequence, including protein-coding genes, non-coding RNAs, regulatory regions, and repetitive elements, using tools such as Maker, Braker, Prokka, or Funannotate.",
+        "id": "topic-crispr",
+        "label": "CRISPR",
+        "definition": "Experimental and computational topics related to CRISPR-Cas systems used for genome editing, gene regulation (CRISPRi/CRISPRa), base editing, prime editing, and pooled functional screens, including guide RNA design, off-target prediction, and screen analysis.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-genomics",
+            "topic-genetic-engineering",
             "topic-functional-genomics"
-        ]
-    },
-    {
-        "id": "topic-single-cell-multiomics",
-        "label": "Single-cell multiomics",
-        "definition": "Simultaneous or joint measurement of two or more molecular modalities (such as gene expression, chromatin accessibility, surface protein, or DNA methylation) from individual cells, using platforms such as 10x Multiome, CITE-seq, SHARE-seq, or SNARE-seq.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-single-cell-sequencing",
-            "topic-multiomics"
         ]
     },
     {
@@ -51,40 +40,6 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-machine-learning"
-        ]
-    },
-    {
-        "id": "topic-protein-language-models",
-        "label": "Protein language models",
-        "definition": "Large-scale transformer-based deep learning models pre-trained on protein sequence databases to learn amino acid co-evolutionary patterns, enabling zero-shot prediction of protein function, stability, mutational effects, and three-dimensional structure via models such as ESM-2, ProtTrans, or ESMFold.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-deep-learning",
-            "topic-proteins",
-            "topic-structure-prediction"
-        ]
-    },
-    {
-        "id": "topic-variant-annotation",
-        "label": "Variant annotation",
-        "definition": "The computational annotation of genetic variants with predicted functional consequences, population allele frequencies, disease associations, and regulatory context, using tools such as VEP, ANNOVAR, SnpEff, or CADD.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-genetic-variation",
-            "topic-sequence-analysis"
-        ]
-    },
-    {
-        "id": "topic-variant-effect-prediction",
-        "label": "Variant effect prediction",
-        "definition": "Computational prediction of the molecular and phenotypic impact of genetic variants, including missense pathogenicity scoring, splicing disruption prediction, and regulatory element disruption, using conservation-based, machine learning, or protein language model approaches such as CADD or AlphaMissense.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-variant-annotation",
-            "topic-deep-learning"
         ]
     },
     {
@@ -111,25 +66,25 @@
         ]
     },
     {
-        "id": "topic-liquid-biopsy",
-        "label": "Liquid biopsy",
-        "definition": "Non-invasive sampling and molecular analysis of tumor-derived material circulating in blood or other body fluids, including circulating tumor DNA (ctDNA), circulating tumor cells, and extracellular vesicles, for cancer early detection, minimal residual disease monitoring, and treatment response assessment.",
+        "id": "topic-genome-annotation",
+        "label": "Genome annotation",
+        "definition": "The computational identification and labeling of structural and functional elements in a genome sequence, including protein-coding genes, non-coding RNAs, regulatory regions, and repetitive elements, using tools such as Maker, Braker, Prokka, or Funannotate.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-oncology",
-            "topic-sequencing"
+            "topic-genomics",
+            "topic-functional-genomics"
         ]
     },
     {
-        "id": "topic-cell-free-dna",
-        "label": "Cell-free DNA",
-        "definition": "Analysis of fragmented extracellular DNA circulating in plasma or other body fluids, encompassing sequencing-based applications such as non-invasive prenatal testing, organ transplant rejection monitoring, sepsis pathogen detection, and cancer liquid biopsy.",
+        "id": "topic-genome-graph",
+        "label": "Genome graph",
+        "definition": "Graph-based data structures that encode multiple genome sequences and their variation simultaneously, enabling read alignment, variant calling, and haplotype-aware analysis against a population-level reference that avoids the biases of a single linear reference genome, using tools such as vg, Minigraph-Cactus, or PGGB.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-liquid-biopsy",
-            "topic-genomics"
+            "topic-pangenomics",
+            "topic-sequence-analysis"
         ]
     },
     {
@@ -145,15 +100,14 @@
         ]
     },
     {
-        "id": "topic-tumor-microenvironment",
-        "label": "Tumor microenvironment",
-        "definition": "The complex ecosystem of non-cancerous cells, extracellular matrix components, and signaling molecules - including immune cells, fibroblasts, endothelial cells, and cytokines - that surround and interact with tumor cells, studied by bulk deconvolution, single-cell sequencing, or spatial transcriptomics to understand immunosuppression and treatment response.",
+        "id": "topic-liquid-biopsy",
+        "label": "Liquid biopsy",
+        "definition": "Non-invasive sampling and molecular analysis of tumor-derived material circulating in blood or other body fluids, including circulating tumor DNA (ctDNA), circulating tumor cells, and extracellular vesicles, for cancer early detection, minimal residual disease monitoring, and treatment response assessment.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-oncology",
-            "topic-cell-biology",
-            "topic-immunology"
+            "topic-sequencing"
         ]
     },
     {
@@ -165,17 +119,6 @@
         "parent_ids": [
             "topic-transcriptomics",
             "topic-long-read-sequencing"
-        ]
-    },
-    {
-        "id": "topic-crispr",
-        "label": "CRISPR",
-        "definition": "Experimental and computational topics related to CRISPR-Cas systems used for genome editing, gene regulation (CRISPRi/CRISPRa), base editing, prime editing, and pooled functional screens, including guide RNA design, off-target prediction, and screen analysis.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-genetic-engineering",
-            "topic-functional-genomics"
         ]
     },
     {
@@ -200,25 +143,82 @@
         ]
     },
     {
-        "id": "topic-genome-graph",
-        "label": "Genome graph",
-        "definition": "Graph-based data structures that encode multiple genome sequences and their variation simultaneously, enabling read alignment, variant calling, and haplotype-aware analysis against a population-level reference that avoids the biases of a single linear reference genome, using tools such as vg, Minigraph-Cactus, or PGGB.",
+        "id": "topic-pangenomics",
+        "label": "Pangenomics",
+        "definition": "The study of the complete set of genomic sequences across multiple individuals, strains, or populations of a species, typically represented as a pan-genome graph that captures variation not represented in a single linear reference genome.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-pangenomics",
+            "topic-genomics",
+            "topic-comparative-genomics"
+        ]
+    },
+    {
+        "id": "topic-protein-language-models",
+        "label": "Protein language models",
+        "definition": "Large-scale transformer-based deep learning models pre-trained on protein sequence databases to learn amino acid co-evolutionary patterns, enabling zero-shot prediction of protein function, stability, mutational effects, and three-dimensional structure via models such as ESM-2, ProtTrans, or ESMFold.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-deep-learning",
+            "topic-proteins",
+            "topic-structure-prediction"
+        ]
+    },
+    {
+        "id": "topic-single-cell-multiomics",
+        "label": "Single-cell multiomics",
+        "definition": "Simultaneous or joint measurement of two or more molecular modalities (such as gene expression, chromatin accessibility, surface protein, or DNA methylation) from individual cells, using platforms such as 10x Multiome, CITE-seq, SHARE-seq, or SNARE-seq.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-single-cell-sequencing",
+            "topic-multiomics"
+        ]
+    },
+    {
+        "id": "topic-spatial-transcriptomics",
+        "label": "Spatial transcriptomics",
+        "definition": "Transcriptomic profiling that retains the physical coordinates of gene expression measurements within a tissue section, using platforms such as 10x Visium, Slide-seq, seqFISH, or MERFISH to link molecular data to histological context.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-transcriptomics",
+            "topic-single-cell-sequencing"
+        ]
+    },
+    {
+        "id": "topic-tumor-microenvironment",
+        "label": "Tumor microenvironment",
+        "definition": "The complex ecosystem of non-cancerous cells, extracellular matrix components, and signaling molecules - including immune cells, fibroblasts, endothelial cells, and cytokines - that surround and interact with tumor cells, studied by bulk deconvolution, single-cell sequencing, or spatial transcriptomics to understand immunosuppression and treatment response.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-oncology",
+            "topic-cell-biology",
+            "topic-immunology"
+        ]
+    },
+    {
+        "id": "topic-variant-annotation",
+        "label": "Variant annotation",
+        "definition": "The computational annotation of genetic variants with predicted functional consequences, population allele frequencies, disease associations, and regulatory context, using tools such as VEP, ANNOVAR, SnpEff, or CADD.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-genetic-variation",
             "topic-sequence-analysis"
         ]
     },
     {
-        "id": "topic-benchmarking",
-        "label": "Benchmarking",
-        "definition": "Systematic and rigorous comparison of computational tools or methods on standardized datasets to evaluate accuracy, scalability, and reproducibility, enabling evidence-based selection of tools for bioinformatics workflows.",
+        "id": "topic-variant-effect-prediction",
+        "label": "Variant effect prediction",
+        "definition": "Computational prediction of the molecular and phenotypic impact of genetic variants, including missense pathogenicity scoring, splicing disruption prediction, and regulatory element disruption, using conservation-based, machine learning, or protein language model approaches such as CADD or AlphaMissense.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
-            "topic-bioinformatics",
-            "topic-experimental-design-and-studies"
+            "topic-variant-annotation",
+            "topic-deep-learning"
         ]
     }
 ]

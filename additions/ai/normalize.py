@@ -59,6 +59,7 @@ def main():
             if 'parent_ids' in node:
                 node['parent_ids'] = [id_remap.get(p, p) for p in node['parent_ids']]
 
+    result.sort(key=lambda n: n['id'])
     print(json.dumps(result, indent=4))
 
 

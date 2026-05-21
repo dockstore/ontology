@@ -624,18 +624,6 @@
         ]
     },
     {
-        "id": "operation-spatial-spot-cell-deconvolution",
-        "label": "Spatial spot/cell deconvolution",
-        "definition": "Estimate the cell type composition of each spatial capture unit (spot or segmented cell) in a spatially resolved transcriptomics experiment using a single-cell reference expression atlas.",
-        "source": "ai",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "operation-spatial-omics-analysis",
-            "operation-cell-type-deconvolution",
-            "operation-quantification"
-        ]
-    },
-    {
         "id": "operation-spatial-domain-identification",
         "label": "Spatial domain identification",
         "definition": "Partition a tissue section from a spatially resolved transcriptomics experiment into spatially coherent regions with distinct molecular signatures, analogous to histological tissue segmentation.",
@@ -677,6 +665,18 @@
         "recommended_for_annotation": false,
         "parent_ids": [
             "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-spot-cell-deconvolution",
+        "label": "Spatial spot/cell deconvolution",
+        "definition": "Estimate the cell type composition of each spatial capture unit (spot or segmented cell) in a spatially resolved transcriptomics experiment using a single-cell reference expression atlas.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-cell-type-deconvolution",
+            "operation-quantification"
         ]
     },
     {
