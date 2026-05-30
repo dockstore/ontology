@@ -76,6 +76,13 @@ def qa(nodes):
         if color[node['id']] == WHITE:
             dfs(node['id'])
 
+    # Check that IDs and labels are 90 characters or less.
+    for node in nodes:
+        if len(node['id']) > 90:
+            raise ValueError(f"Node ID exceeds 90 characters: '{node['id']}'")
+        if len(node['label']) > 90:
+            raise ValueError(f"Node '{node['id']}' label exceeds 90 characters: '{node['label']}'")
+
     # Check that there is exactly one root (node with no parents). Given that all
     # parent IDs are valid and there are no cycles, every node must eventually reach
     # a parentless node via parent links, so one root implies a connected graph.
