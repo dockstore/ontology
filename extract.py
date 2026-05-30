@@ -146,7 +146,7 @@ def main():
     operation = fix_operation(extract_subtree(nodes, 'operation'))
     write_json(operation, f'{generated_dir}/operation.json')
 
-    # Extract, fix,and write the topic subontology.
+    # Extract, fix, and write the topic subontology.
     topic = fix_topic(extract_subtree(nodes, 'topic'))
     write_json(topic, f'{generated_dir}/topic.json')
 
