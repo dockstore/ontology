@@ -13,7 +13,9 @@ EDAM_TAG="1.25-20251112T1620Z-intermediate"
 OWL_URL="https://github.com/edamontology/edamontology/releases/download/${EDAM_TAG}/EDAM.owl"
 OWL_FILE="${WORK_DIR}/EDAM.owl"
 SIMPLIFIED_FILE="${WORK_DIR}/EDAM_simplified.json"
-SIMPLIFIED_AMERICANIZED_FILE="${WORK_DIR}/EDAM_simplified_americanized.json"
+AMERICANIZED_FILE="${WORK_DIR}/EDAM_simplified_americanized.json"
+ADJUSTED_FILE="${WORK_DIR}/EDAM_simplified_americanized_adjusted.json"
+ENHANCED_FILE="${WORK_DIR}/EDAM_simplified_americanized_adjusted_enhanced.json"
 
 # Get a recent tagged release of the EDAM ontology
 echo "Downloading $OWL_FILE from tag ${EDAM_TAG}..."
@@ -25,10 +27,18 @@ python3 simplify.py < ${OWL_FILE} > ${SIMPLIFIED_FILE}
 
 # Convert British spellings to American spellings.
 echo "Americanizing..."
-python3 americanize.py < ${SIMPLIFIED_FILE} > ${SIMPLIFIED_AMERICANIZED_FILE}
+python3 americanize.py < ${SIMPLIFIED_FILE} > ${AMERICANIZED_FILE}
 
-# Create a file for each subontology of interest using the simplified+Americanized EDAM JSON representation.
+# Adjust ontology content and recommended-for-annotation flags.
+echo "Adjusting..."
+python3 adjust.py < ${AMERICANIZED_FILE} > ${ADJUSTED_FILE}
+
+# Add AI-generated nodes.
+echo "Enhancing..."
+python3 enhance.py < ${ADJUSTED_FILE} > ${ENHANCED_FILE}
+
+# Create a file for each subontology of interest using the adjusted, enhanced EDAM JSON representation.
 echo "Extracting..."
-python3 extract.py ${GENERATED_DIR} < ${SIMPLIFIED_AMERICANIZED_FILE}
+python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
 
 echo "Done. Ontology JSON files written to ${GENERATED_DIR}."
