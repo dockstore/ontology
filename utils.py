@@ -61,26 +61,20 @@ def qa(nodes):
             if parent_id not in id_to_node:
                 raise ValueError(f"Node '{node['id']}' references nonexistent parent '{parent_id}'")
 
-    # Check for cycles using iterative DFS.
+    # Check for cycles using recursive DFS.
     WHITE, GRAY, BLACK = 0, 1, 2
     color = {node['id']: WHITE for node in nodes}
-    for start in nodes:
-        if color[start['id']] != WHITE:
-            continue
-        stack = [(start['id'], iter(id_to_node[start['id']]['parent_ids']))]
-        color[start['id']] = GRAY
-        while stack:
-            node_id, parents = stack[-1]
-            try:
-                parent_id = next(parents)
-                if color[parent_id] == GRAY:
-                    raise ValueError(f"Cycle detected: '{node_id}' -> '{parent_id}'")
-                if color[parent_id] == WHITE:
-                    color[parent_id] = GRAY
-                    stack.append((parent_id, iter(id_to_node[parent_id]['parent_ids'])))
-            except StopIteration:
-                color[node_id] = BLACK
-                stack.pop()
+    def dfs(node_id):
+        color[node_id] = GRAY
+        for parent_id in id_to_node[node_id]['parent_ids']:
+            if color[parent_id] == GRAY:
+                raise ValueError(f"Cycle detected: '{node_id}' -> '{parent_id}'")
+            if color[parent_id] == WHITE:
+                dfs(parent_id)
+        color[node_id] = BLACK
+    for node in nodes:
+        if color[node['id']] == WHITE:
+            dfs(node['id'])
 
     # Check that there is exactly one root (node with no parents). Given that all
     # parent IDs are valid and there are no cycles, every node must eventually reach
