@@ -4,9 +4,10 @@
 import json
 import sys
 
-CORRECTIONS = [
-    # (node-id, from-string, to-string)
+# (node-id, from-string, to-string)
+ADJUSTMENTS = [
 
+    # SPELLING AND GRAMMAR CORRECTIONS:
     # data subontology
     ("data-bibliography",                                   "scientic papers",                              "scientific papers"),
     ("data-cultivation-parameter",                          "Experimental determined",                      "Experimentally determined"),
@@ -76,6 +77,10 @@ CORRECTIONS = [
     ("topic-public-health-and-epidemiology",                "the the patterns",                             "the patterns"),
     ("topic-systems-medicine",                              "an integrted whole",                           "an integrated whole"),
     ("topic-translational-medicine",                        "'translating' the output of basic",            "The practice of 'translating' the output of basic"),
+
+    # DEFINITION IMPROVEMENTS
+    ("topic-comparative-genomics",                          "of multiple genomes.",                          "of the genomes of multiple organisms."),
+    ("data-electron-density-map",                           "X-ray crystallography data.",                  "The probability distribution of electrons within a molecule, derived from X-ray crystallography or cryo-EM data."),
 ]
 
 
@@ -83,7 +88,7 @@ def main():
     nodes = json.load(sys.stdin)
 
     corrections_by_id = {}
-    for node_id, from_str, to_str in CORRECTIONS:
+    for node_id, from_str, to_str in ADJUSTMENTS:
         corrections_by_id.setdefault(node_id, []).append((from_str, to_str))
 
     changed = 0

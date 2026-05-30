@@ -930,7 +930,7 @@
     {
         "id": "output-data-electron-density-map",
         "label": "Electron density map",
-        "definition": "X-ray crystallography data.",
+        "definition": "The probability distribution of electrons within a molecule, derived from X-ray crystallography or cryo-EM data.",
         "source": "http://edamontology.org/data_0937",
         "recommended_for_annotation": true,
         "parent_ids": [

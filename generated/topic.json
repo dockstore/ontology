@@ -420,7 +420,7 @@
     {
         "id": "topic-comparative-genomics",
         "label": "Comparative genomics",
-        "definition": "The study (typically comparison) of the sequence, structure or function of multiple genomes.",
+        "definition": "The study (typically comparison) of the sequence, structure or function of the genomes of multiple organisms.",
         "source": "http://edamontology.org/topic_0797",
         "recommended_for_annotation": true,
         "parent_ids": [
