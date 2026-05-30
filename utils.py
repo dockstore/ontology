@@ -82,22 +82,12 @@ def qa(nodes):
                 color[node_id] = BLACK
                 stack.pop()
 
-    # Check that all nodes share a single oldest ancestor.
-    memo = {}
-    def get_roots(node_id):
-        if node_id in memo:
-            return memo[node_id]
-        parents = id_to_node[node_id]['parent_ids']
-        result = frozenset([node_id]) if not parents else frozenset().union(*(get_roots(p) for p in parents))
-        memo[node_id] = result
-        return result
-
-    all_root_sets = {get_roots(node['id']) for node in nodes}
-    if len(all_root_sets) != 1:
-        raise ValueError(f"Nodes have inconsistent oldest ancestors: {all_root_sets}")
-    roots = next(iter(all_root_sets))
+    # Check that there is exactly one root (node with no parents). Given that all
+    # parent IDs are valid and there are no cycles, every node must eventually reach
+    # a parentless node via parent links, so one root implies a connected graph.
+    roots = [node['id'] for node in nodes if not node['parent_ids']]
     if len(roots) != 1:
-        raise ValueError(f"Expected one root ancestor, found {len(roots)}: {sorted(roots)}")
+        raise ValueError(f"Expected one root node, found {len(roots)}: {sorted(roots)}")
 
 
 def write_json(nodes, filename):
