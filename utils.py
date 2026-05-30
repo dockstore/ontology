@@ -45,7 +45,63 @@ def add_nodes(nodes_a, nodes_b):
         raise ValueError(f"Duplicate node IDs: {dups}")
     return nodes_a + nodes_b
 
+def qa(nodes):
+    id_to_node = {node['id']: node for node in nodes}
+
+    # Check duplicate IDs.
+    if len(id_to_node) != len(nodes):
+        seen, dups = set(), set()
+        for node in nodes:
+            (dups if node['id'] in seen else seen).add(node['id'])
+        raise ValueError(f"Duplicate node IDs: {sorted(dups)}")
+
+    # Check all parent IDs reference existing nodes.
+    for node in nodes:
+        for parent_id in node['parent_ids']:
+            if parent_id not in id_to_node:
+                raise ValueError(f"Node '{node['id']}' references nonexistent parent '{parent_id}'")
+
+    # Check for cycles using iterative DFS.
+    WHITE, GRAY, BLACK = 0, 1, 2
+    color = {node['id']: WHITE for node in nodes}
+    for start in nodes:
+        if color[start['id']] != WHITE:
+            continue
+        stack = [(start['id'], iter(id_to_node[start['id']]['parent_ids']))]
+        color[start['id']] = GRAY
+        while stack:
+            node_id, parents = stack[-1]
+            try:
+                parent_id = next(parents)
+                if color[parent_id] == GRAY:
+                    raise ValueError(f"Cycle detected: '{node_id}' -> '{parent_id}'")
+                if color[parent_id] == WHITE:
+                    color[parent_id] = GRAY
+                    stack.append((parent_id, iter(id_to_node[parent_id]['parent_ids'])))
+            except StopIteration:
+                color[node_id] = BLACK
+                stack.pop()
+
+    # Check that all nodes share a single oldest ancestor.
+    memo = {}
+    def get_roots(node_id):
+        if node_id in memo:
+            return memo[node_id]
+        parents = id_to_node[node_id]['parent_ids']
+        result = frozenset([node_id]) if not parents else frozenset().union(*(get_roots(p) for p in parents))
+        memo[node_id] = result
+        return result
+
+    all_root_sets = {get_roots(node['id']) for node in nodes}
+    if len(all_root_sets) != 1:
+        raise ValueError(f"Nodes have inconsistent oldest ancestors: {all_root_sets}")
+    roots = next(iter(all_root_sets))
+    if len(roots) != 1:
+        raise ValueError(f"Expected one root ancestor, found {len(roots)}: {sorted(roots)}")
+
+
 def write_json(nodes, filename):
+    qa(nodes)
     with open(filename, 'w') as f:
         json.dump(sort_by_id(nodes), f, indent=4)
     print(f"Wrote {len(nodes)} nodes to {filename}", file=sys.stderr)
