@@ -166,7 +166,7 @@ def _copy_case(source, target):
 
 def _replacer(m):
     word = m.group(0)
-    word_lower = word.lower();
+    word_lower = word.lower()
     for british, american in british_to_american.items():
         if word_lower.startswith(british):
             new_word = american + word[len(british):]
