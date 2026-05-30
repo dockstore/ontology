@@ -29,7 +29,7 @@ python3 simplify.py < ${OWL_FILE} > ${SIMPLIFIED_FILE}
 echo "Americanizing..."
 python3 americanize.py < ${SIMPLIFIED_FILE} > ${AMERICANIZED_FILE}
 
-# Adjust recommended-for-annotation property, make other similar changes.
+# Adjust recommended-for-annotation property, remove unwanted portions of ontology, etc.
 echo "Adjusting..."
 python3 adjust.py < ${AMERICANIZED_FILE} > ${ADJUSTED_FILE}
 
@@ -37,7 +37,7 @@ python3 adjust.py < ${AMERICANIZED_FILE} > ${ADJUSTED_FILE}
 echo "Enhancing..."
 python3 enhance.py < ${ADJUSTED_FILE} > ${ENHANCED_FILE}
 
-# Create a file for each subontology of interest using the adjusted, enhanced EDAM JSON representation.
+# Create a file for each subontology of interest.
 echo "Extracting..."
 python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
 
