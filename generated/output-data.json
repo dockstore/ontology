@@ -2565,7 +2565,7 @@
     {
         "id": "output-data-protein-geometry-data",
         "label": "Protein geometry data",
-        "definition": "Geometry data for a protein structure, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc.",
+        "definition": "Geometry data for a protein structure, for example bond lengths, bond angles, torsion angles, chiralities, planarities etc.",
         "source": "http://edamontology.org/data_2991",
         "recommended_for_annotation": true,
         "parent_ids": [

@@ -1197,7 +1197,7 @@
     {
         "id": "output-format-cytoscape-input-file-format",
         "label": "Cytoscape input file format",
-        "definition": "Format of the cytoscape input file of gene expression ratios or values are specified over one or more experiments.",
+        "definition": "Format of the cytoscape input file in which gene expression ratios or values are specified over one or more experiments.",
         "source": "http://edamontology.org/format_3477",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2448,7 +2448,7 @@
     {
         "id": "output-format-hmmer-profile-alignment-hmm-versus-sequences",
         "label": "HMMER profile alignment (HMM versus sequences)",
-        "definition": "Format used by the HMMER package for of an alignment of a hidden Markov model against a sequence database.",
+        "definition": "Format used by the HMMER package for an alignment of a hidden Markov model against a sequence database.",
         "source": "http://edamontology.org/format_1422",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2643,7 +2643,7 @@
     {
         "id": "output-format-individual-genetic-data-format",
         "label": "Individual genetic data format",
-        "definition": "Data format for a metadata on an individual and their genetic data.",
+        "definition": "Data format for metadata on an individual and their genetic data.",
         "source": "http://edamontology.org/format_3287",
         "recommended_for_annotation": false,
         "parent_ids": [
@@ -2838,7 +2838,7 @@
     {
         "id": "output-format-latex",
         "label": "latex",
-        "definition": "format for the LaTeX document preparation system.",
+        "definition": "Format for the LaTeX document preparation system.",
         "source": "http://edamontology.org/format_3817",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3764,7 +3764,7 @@
     {
         "id": "output-format-nrrd",
         "label": "nrrd",
-        "definition": "Nearly Raw Rasta Data format designed to support scientific visualization and image processing involving N-dimensional raster data.",
+        "definition": "Nearly Raw Raster Data format designed to support scientific visualization and image processing involving N-dimensional raster data.",
         "source": "http://edamontology.org/format_3551",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -6487,7 +6487,7 @@
     {
         "id": "output-format-wego",
         "label": "WEGO",
-        "definition": "WEGO native format used by the Web Gene Ontology Annotation Plot application.   Tab-delimited format with gene names and others GO IDs (columns) with one annotation record per line.",
+        "definition": "WEGO native format used by the Web Gene Ontology Annotation Plot application.   Tab-delimited format with gene names and other GO IDs (columns) with one annotation record per line.",
         "source": "http://edamontology.org/format_3979",
         "recommended_for_annotation": true,
         "parent_ids": [
