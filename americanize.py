@@ -27,6 +27,7 @@ british_to_american = {
     "paediatric": "pediatric",   # paediatrics
 
     # -yse -> -yze
+    "analyses":   "analyses", # EDAM uses "analyses" as a noun, exclusively (as of this writing)
     "analyse":    "analyze",
     "analysing":  "analyzing",
     "catalyse":   "catalyze",
