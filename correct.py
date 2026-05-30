@@ -32,11 +32,9 @@ CORRECTIONS = [
     ("format-nmredata",                                     "MReData is a text",                            "NMReData is a text"),
     ("format-nmrml",                                        "data. It is accompanies by",                   "data. It is accompanied by"),
     ("format-nrrd",                                         "Raw Rasta Data",                               "Raw Raster Data"),
-    ("format-pepxml",                                       "peptide-level analyzes.",                      "peptide-level analyzes."),
     ("format-probam",                                       ". proBAM is an adaptation",                    "proBAM is an adaptation"),
     ("format-probed",                                       ". proBED is an adaptation",                    "proBED is an adaptation"),
     ("format-python-script",                                "scripts writtenin Python",                     "scripts written in Python"),
-    ("format-snakemake",                                    "scalable data analyzes.",                      "scalable data analyses."),
     ("format-trackdb",                                      "display charateristics.",                      "display characteristics."),
     ("format-wego",                                         "gene names and others GO IDs",                 "gene names and other GO IDs"),
 

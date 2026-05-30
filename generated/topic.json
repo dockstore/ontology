@@ -38,16 +38,6 @@
         ]
     },
     {
-        "id": "topic-anaesthesiology",
-        "label": "Anaesthesiology",
-        "definition": "Anaesthesia and anaesthetics.",
-        "source": "http://edamontology.org/topic_3402",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-medicine"
-        ]
-    },
-    {
         "id": "topic-analytical-chemistry",
         "label": "Analytical chemistry",
         "definition": "The study of the separation, identification, and quantification of the chemical components of natural and artificial materials.",
@@ -65,6 +55,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-biomedical-science"
+        ]
+    },
+    {
+        "id": "topic-anesthesiology",
+        "label": "Anesthesiology",
+        "definition": "Anesthesia and anesthetics.",
+        "source": "http://edamontology.org/topic_3402",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-medicine"
         ]
     },
     {
@@ -1625,7 +1625,7 @@
     {
         "id": "topic-microbial-collection",
         "label": "Microbial collection",
-        "definition": "Collections of microbial cells including bacteria, yeasts and moulds.",
+        "definition": "Collections of microbial cells including bacteria, yeasts and molds.",
         "source": "http://edamontology.org/topic_3339",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1802,7 +1802,7 @@
     {
         "id": "topic-musculoskeletal-medicine",
         "label": "Musculoskeletal medicine",
-        "definition": "The branch of medicine that deals with the prevention, diagnosis, and treatment of disorders of the muscle, bone and connective tissue. It incorporates aspects of orthopaedics, rheumatology, rehabilitation medicine and pain medicine.",
+        "definition": "The branch of medicine that deals with the prevention, diagnosis, and treatment of disorders of the muscle, bone and connective tissue. It incorporates aspects of  orthopedics, rheumatology, rehabilitation medicine and pain medicine.",
         "source": "http://edamontology.org/topic_3416",
         "recommended_for_annotation": true,
         "parent_ids": [
