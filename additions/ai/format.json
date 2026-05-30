@@ -2,7 +2,7 @@
     {
         "id": "format-10x-genomics-hdf5",
         "label": "10x Genomics HDF5",
-        "definition": "HDF5 file format produced by 10x Genomics Cell Ranger (filtered_feature_bc_matrix.h5 or raw_feature_bc_matrix.h5) storing a sparse cell-by-feature count matrix together with barcodes and feature metadata for single-cell RNA-seq, ATAC-seq, or Multiome experiments.",
+        "definition": "HDF5 format produced by 10x Genomics Cell Ranger storing a sparse cell-by-feature count matrix with barcodes and feature metadata for single-cell experiments.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -13,7 +13,7 @@
     {
         "id": "format-anndata-zarr",
         "label": "AnnData Zarr",
-        "definition": "Zarr-based on-disk representation of the AnnData object following the AnnData 0.9+ zarr specification, enabling out-of-core and distributed access to single-cell count matrices and metadata. Used by TileDB-SOMA, CellxGene, and the new anndata API for cloud-native single-cell data stores.",
+        "definition": "Zarr-based on-disk representation of AnnData objects enabling out-of-core and distributed access to single-cell count matrices and metadata.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -24,7 +24,7 @@
     {
         "id": "format-apache-parquet",
         "label": "Apache Parquet",
-        "definition": "Apache Parquet is an open-source columnar storage file format for efficient analytical queries on large tabular datasets, supporting nested data structures, dictionary encoding, and column-level compression. Widely used in bioinformatics cloud pipelines for storing GWAS summary statistics, single-cell metadata, and population-scale phenotype tables.",
+        "definition": "Open-source columnar storage format for efficient analytical queries on large tabular datasets, widely used in bioinformatics cloud pipelines.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -34,7 +34,7 @@
     {
         "id": "format-arrow-ipc",
         "label": "Arrow IPC",
-        "definition": "Apache Arrow Inter-Process Communication (IPC) format, including the Feather v2 on-disk layout, for storing typed tabular data in a columnar memory-mapped layout enabling zero-copy reads. Used in bioinformatics for high-throughput data exchange between Python, R, and Rust-based tools.",
+        "definition": "Apache Arrow Inter-Process Communication (IPC) format for storing columnar tabular data in a memory-mapped layout enabling zero-copy reads, used for high-throughput data exchange between tools.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -44,7 +44,7 @@
     {
         "id": "format-bedpe",
         "label": "BEDPE",
-        "definition": "Paired-end BED format for representing structural variants or chromatin interactions as pairs of genomic intervals, with each record encoding two chromosomal loci (chrom1, start1, end1, chrom2, start2, end2) plus optional name, score, and strand columns. Used by LUMPY, Manta, and bedtools pairtopair.",
+        "definition": "Paired-end BED format representing structural variants or chromatin interactions as pairs of genomic intervals, each encoding two chromosomal loci.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -55,7 +55,7 @@
     {
         "id": "format-bgen",
         "label": "BGEN",
-        "definition": "Binary format for storing imputed or genotyped variants with probabilistic genotype dosages and uncertainty, developed for the UK Biobank and used by tools such as BOLT-LMM, REGENIE, and SAIGE for large-scale association analysis.",
+        "definition": "Binary format for storing imputed or genotyped variants with probabilistic genotype dosages, used for large-scale association analysis.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -66,7 +66,7 @@
     {
         "id": "format-blow5",
         "label": "BLOW5",
-        "definition": "The binary (blocked, compressed) version of SLOW5 for Oxford Nanopore raw signal data, providing random access and smaller file sizes than SLOW5 while retaining the same record semantics. Converted from SLOW5 using slow5tools.",
+        "definition": "Binary (blocked, compressed) version of SLOW5 for Oxford Nanopore raw signal data, providing random access and smaller file sizes.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -77,7 +77,7 @@
     {
         "id": "format-cooler",
         "label": "Cooler",
-        "definition": "HDF5-based format for storing Hi-C and other chromosome conformation capture contact matrices at one or multiple resolutions, used by the Cooler library. Multi-resolution cooler files (.mcool) contain matrices at a geometric series of bin sizes enabling zoom-level access in genome browsers such as HiGlass.",
+        "definition": "HDF5-based format for storing chromosome conformation capture contact matrices at one or multiple resolutions.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -87,7 +87,7 @@
     {
         "id": "format-fast5",
         "label": "FAST5",
-        "definition": "HDF5-based binary format produced by Oxford Nanopore sequencers for storing raw electrical signal (squiggles) and basecalled nucleotide sequences, with associated read metadata. The legacy ONT format, superseded by POD5 for raw signal storage.",
+        "definition": "HDF5-based format produced by Oxford Nanopore sequencers for storing raw electrical signal and basecalled sequences; superseded by POD5.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -98,7 +98,7 @@
     {
         "id": "format-fcs",
         "label": "FCS",
-        "definition": "Flow Cytometry Standard binary format for storing per-event fluorescence intensity measurements across multiple detector channels from flow cytometry or mass cytometry (CyTOF) experiments, as specified by the ISAC FCS standard (versions 2.0, 3.0, 3.1).",
+        "definition": "Flow Cytometry Standard (FCS) binary format for storing per-event fluorescence intensity measurements from flow cytometry or mass cytometry experiments.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -108,7 +108,7 @@
     {
         "id": "format-fragments-file",
         "label": "Fragments file",
-        "definition": "Tab-separated text file (typically BGZF-compressed with Tabix index) produced by 10x Genomics Cell Ranger ATAC or ArchR preprocessing, listing per-cell chromatin accessibility fragments as chromosome, start, end, cell barcode, and read count. Standard input for scATAC-seq peak-calling and per-cell accessibility matrix construction.",
+        "definition": "Tab-separated file listing per-cell chromatin accessibility fragments with chromosome, position, cell barcode, and read count, used for scATAC-seq analysis.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -119,7 +119,7 @@
     {
         "id": "format-gwas-ssf",
         "label": "GWAS-SSF",
-        "definition": "GWAS Summary Statistics Format (SSF) defined by GWAS Catalog and Open GWAS: a standardized tab-separated text format for sharing genome-wide association study summary statistics, including required columns for variant ID, chromosome, position, effect/other alleles, beta/OR, standard error, p-value, and allele frequency.",
+        "definition": "GWAS Summary Statistics Format (SSF): a standardized tab-separated format for sharing GWAS summary statistics, including variant coordinates, effect alleles, effect sizes, and p-values.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -130,7 +130,7 @@
     {
         "id": "format-h5ad",
         "label": "H5AD",
-        "definition": "HDF5-backed file format for the AnnData object (Python anndata library), storing a cell-by-feature matrix together with cell and feature metadata, unstructured annotations, dimensionality reduction embeddings, and neighborhood graphs. The primary on-disk format for Scanpy-based single-cell analysis workflows.",
+        "definition": "HDF5-backed format for AnnData objects, storing a cell-by-feature matrix with metadata, embeddings, and neighborhood graphs for single-cell analysis.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -141,7 +141,7 @@
     {
         "id": "format-hic",
         "label": ".hic",
-        "definition": "Binary format produced by the Juicer pipeline and readable by Juicebox for storing genome-wide chromatin contact matrices from Hi-C experiments at multiple resolutions, including expected interaction counts and normalization vectors.",
+        "definition": "Binary format for storing genome-wide Hi-C chromatin contact matrices at multiple resolutions, with normalization vectors.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -151,7 +151,7 @@
     {
         "id": "format-mex",
         "label": "MEX",
-        "definition": "Market Exchange Format: a three-file bundle (matrix.mtx.gz, barcodes.tsv.gz, features.tsv.gz) produced by 10x Genomics Cell Ranger, STARsolo, Alevin-fry, or kallisto bustools to represent a sparse cell-by-feature count matrix for single-cell sequencing experiments.",
+        "definition": "Market Exchange Format (MEX): a three-file bundle (matrix, barcodes, features) representing a sparse cell-by-feature count matrix for single-cell sequencing experiments.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -162,7 +162,7 @@
     {
         "id": "format-modkit-pileup",
         "label": "Modkit pileup",
-        "definition": "Tab-separated text format produced by ONT Modkit (and compatible with bedMethyl) for reporting per-position base modification frequencies from aligned nanopore reads, storing chromosome, position, strand, modification code (e.g., m, h), valid coverage, fraction modified, and count columns.",
+        "definition": "Tab-separated format for reporting per-position base modification frequencies from aligned nanopore reads.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -173,7 +173,7 @@
     {
         "id": "format-nifti",
         "label": "NIfTI",
-        "definition": "Neuroimaging Informatics Technology Initiative format for storing brain MRI, fMRI, and other volumetric medical image data in a single .nii or dual .hdr/.img file, carrying voxel intensities together with spatial orientation metadata. Supports both uncompressed (.nii) and gzip-compressed (.nii.gz) variants.",
+        "definition": "Neuroimaging Informatics Technology Initiative (NIfTI) format for storing volumetric neuroimaging data such as MRI and fMRI, with voxel intensities and spatial orientation metadata.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -184,7 +184,7 @@
     {
         "id": "format-onnx",
         "label": "ONNX",
-        "definition": "Open Neural Network Exchange format: an open standard for representing machine learning model architectures and trained weights, enabling interoperability between frameworks (PyTorch, TensorFlow, JAX) and deployment runtimes. Used in bioinformatics for distributing protein structure prediction, variant effect, and sequence embedding models.",
+        "definition": "Open Neural Network Exchange (ONNX) format: an open standard for representing machine learning model architectures and trained weights, enabling interoperability between frameworks and deployment runtimes.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -194,7 +194,7 @@
     {
         "id": "format-pairs",
         "label": "Pairs",
-        "definition": "Tab-separated text format defined by the 4D Nucleome (4DN) consortium for recording read-pair alignments from Hi-C and related chromatin conformation capture experiments, storing chromosome, position, and strand for each side of a ligation junction together with pair-type classification.",
+        "definition": "Tab-separated format for recording Hi-C read-pair alignments, storing chromosome, position, strand, and pair-type for each ligation junction.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -205,7 +205,7 @@
     {
         "id": "format-plink-binary",
         "label": "PLINK binary",
-        "definition": "Binary genotype format used by the PLINK 1.9 and PLINK 2 toolsets, comprising three files: .bed (compact binary genotype calls), .bim (variant annotation), and .fam (sample pedigree and phenotype), used for large-scale genome-wide association studies and population genetics.",
+        "definition": "Three-file binary genotype format (.bed/.bim/.fam) used by PLINK for large-scale genome-wide association studies and population genetics.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -216,7 +216,7 @@
     {
         "id": "format-pod5",
         "label": "POD5",
-        "definition": "Oxford Nanopore Technologies' current binary format for raw electrical signal data, replacing FAST5. Uses Apache Arrow IPC internally and supports efficient random access, signal compression, and per-read metadata storage, as written by MinKNOW and consumed by Dorado.",
+        "definition": "Oxford Nanopore's current binary format for raw electrical signal data, replacing FAST5, with efficient random access and signal compression.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -227,7 +227,7 @@
     {
         "id": "format-pytorch-model",
         "label": "PyTorch model",
-        "definition": "PyTorch serialized model format (.pt or .pth) storing model weights via Python pickle or the more portable TorchScript export, used to distribute trained deep learning models for sequence analysis, structure prediction, and single-cell foundation model fine-tuning.",
+        "definition": "PyTorch serialized format (.pt/.pth) for storing trained deep learning model weights, used to distribute models for biological sequence analysis and structure prediction.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -237,7 +237,7 @@
     {
         "id": "format-safetensors",
         "label": "SafeTensors",
-        "definition": "Hugging Face SafeTensors format for storing neural network weight tensors: a simple, safe binary format that does not execute arbitrary code on load, supports memory mapping for zero-copy access, and is the preferred distribution format for large bioinformatics foundation models such as ESM-2, Nucleotide Transformer, and scGPT.",
+        "definition": "Hugging Face SafeTensors safe binary format for storing neural network weight tensors with memory-mapped zero-copy access, preferred for distributing large bioinformatics foundation models.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -247,7 +247,7 @@
     {
         "id": "format-slow5",
         "label": "SLOW5",
-        "definition": "A text-based (ASCII) format for Oxford Nanopore raw signal data that is an interoperability alternative to FAST5/POD5, designed for streaming and pipeline integration. Each record stores signal data and read metadata in a simple tab-delimited layout.",
+        "definition": "Text-based format for Oxford Nanopore raw signal data, designed as a streaming-friendly alternative to FAST5/POD5.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -258,7 +258,7 @@
     {
         "id": "format-spectral-library",
         "label": "Spectral library",
-        "definition": "A reference database of experimentally acquired or predicted MS/MS fragment ion spectra - including precursor m/z, charge, retention time, and peptide sequence - stored in formats such as BLIB (BiblioSpec), DLIB (EncyclopeDIA), or TSV/CSV, used by DIA-MS tools such as Spectronaut, DIA-NN, and OpenSWATH for targeted peptide quantification.",
+        "definition": "Reference database of experimentally acquired or predicted MS/MS fragment ion spectra used by DIA-MS tools for targeted peptide quantification.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -269,7 +269,7 @@
     {
         "id": "format-visium-spatial-format",
         "label": "Visium spatial format",
-        "definition": "10x Genomics Visium output format consisting of a gene expression count matrix (MEX or HDF5) paired with a tissue_positions_list.csv (or parquet) file mapping spot barcodes to pixel and array coordinates, plus a high-resolution tissue image, as produced by Space Ranger for spatial transcriptomics analysis.",
+        "definition": "10x Genomics Visium output combining a gene expression count matrix with spot spatial coordinates and tissue image for spatial transcriptomics analysis.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
