@@ -237,7 +237,7 @@
     {
         "id": "format-safetensors",
         "label": "SafeTensors",
-        "definition": "Hugging Face SafeTensors safe binary format for storing neural network weight tensors with memory-mapped zero-copy access, preferred for distributing large bioinformatics foundation models.",
+        "definition": "Hugging Face SafeTensors binary format for storing neural network weight tensors with memory-mapped zero-copy access, preferred for distributing large bioinformatics foundation models.",
         "source": "ai",
         "recommended_for_annotation": true,
         "parent_ids": [
