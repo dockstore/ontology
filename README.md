@@ -18,9 +18,10 @@ Currently, each of the above ontologies is derived from one of the four main sub
 To convert the EDAM ontology to our six ontologies, we apply the following steps:
 
 1. Download a recent tagged version of the EDAM OWL file (XML).
-1. Convert the EDAM file to a simplified JSON representation (see below).  We use this simplified format in subsequent steps.
-2. Map British spellings to American spellings.
-3. Produce each of the target ontologies by extracting the appropriate hierarchy from the simplified-and-Americanized EDAM representation, then modifying as necessary.
+2. Convert the EDAM file to a simplified JSON representation (see below).  We use this simplified format in subsequent steps.
+3. Map British spellings to American spellings.
+4. Correct misspellings and improve definitions.
+5. Produce each of the target ontologies by extracting the appropriate hierarchy from the simplified-and-processed EDAM representation, then adjusting further, as necessary.
 
 We represent processed EDAM and each target ontology in a simplified JSON format, as a list of objects, each of which represents an ontology DAG node.  Each node object has the following properties:
 

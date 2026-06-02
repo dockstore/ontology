@@ -14,6 +14,7 @@ OWL_URL="https://github.com/edamontology/edamontology/releases/download/${EDAM_T
 OWL_FILE="${WORK_DIR}/EDAM.owl"
 SIMPLIFIED_FILE="${WORK_DIR}/EDAM_simplified.json"
 AMERICANIZED_FILE="${WORK_DIR}/EDAM_americanized.json"
+CORRECTED_FILE="${WORK_DIR}/EDAM_corrected.json"
 ADJUSTED_FILE="${WORK_DIR}/EDAM_adjusted.json"
 ENHANCED_FILE="${WORK_DIR}/EDAM_enhanced.json"
 
@@ -25,9 +26,13 @@ curl -fsSL -o "${OWL_FILE}" "${OWL_URL}"
 echo "Simplifying..."
 python3 simplify.py < ${OWL_FILE} > ${SIMPLIFIED_FILE}
 
+# Apply definition corrections (spelling and grammar fixes).
+echo "Correcting..."
+python3 correct.py < ${SIMPLIFIED_FILE} > ${CORRECTED_FILE}
+
 # Convert British spellings to American spellings.
 echo "Americanizing..."
-python3 americanize.py < ${SIMPLIFIED_FILE} > ${AMERICANIZED_FILE}
+python3 americanize.py < ${CORRECTED_FILE} > ${AMERICANIZED_FILE}
 
 # Adjust recommended-for-annotation property, remove unwanted portions of ontology, etc.
 echo "Adjusting..."

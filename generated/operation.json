@@ -83,7 +83,7 @@
     {
         "id": "operation-active-site-prediction",
         "label": "Active site prediction",
-        "definition": "Predict or detect active sites in proteins; the region of an enzyme which binds a substrate bind and catalyzes a reaction.",
+        "definition": "Predict or detect active sites in proteins; the region of an enzyme which binds a substrate and catalyzes a reaction.",
         "source": "http://edamontology.org/operation_3896",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -368,7 +368,7 @@
     {
         "id": "operation-calculation",
         "label": "Calculation",
-        "definition": "Mathematical determination of the value of something, typically a properly of a molecule.",
+        "definition": "Mathematical determination of the value of something, typically a property of a molecule.",
         "source": "http://edamontology.org/operation_3438",
         "recommended_for_annotation": false,
         "parent_ids": [
@@ -1403,7 +1403,7 @@
     {
         "id": "operation-expression-correlation-analysis",
         "label": "Expression correlation analysis",
-        "definition": "Analyze the correlation patterns among features/molecules across across a variety of experiments, samples etc.",
+        "definition": "Analyze the correlation patterns among features/molecules across a variety of experiments, samples etc.",
         "source": "http://edamontology.org/operation_3463",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1478,7 +1478,7 @@
     {
         "id": "operation-fold-recognition",
         "label": "Fold recognition",
-        "definition": "Recognize (predict and identify) known protein structural domains or folds in protein sequence(s) which (typically) are not accompanied by any significant sequence similarity to know structures.",
+        "definition": "Recognize (predict and identify) known protein structural domains or folds in protein sequence(s) which (typically) are not accompanied by any significant sequence similarity to known structures.",
         "source": "http://edamontology.org/operation_0303",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1598,7 +1598,7 @@
     {
         "id": "operation-gene-expression-qtl-analysis",
         "label": "Gene expression QTL analysis",
-        "definition": "Combine classical quantitative trait loci (QTL) analysis with gene expression profiling, for example, to describe describe cis- and trans-controlling elements for the expression of phenotype associated genes.",
+        "definition": "Combine classical quantitative trait loci (QTL) analysis with gene expression profiling, for example, to describe cis- and trans-controlling elements for the expression of phenotype associated genes.",
         "source": "http://edamontology.org/operation_3232",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1608,7 +1608,7 @@
     {
         "id": "operation-gene-functional-annotation",
         "label": "Gene functional annotation",
-        "definition": "Annotate one or more sequences with functional information, such as cellular processes or metaobolic pathways, by reference to a controlled vocabulary - invariably the Gene Ontology (GO).",
+        "definition": "Annotate one or more sequences with functional information, such as cellular processes or metabolic pathways, by reference to a controlled vocabulary - invariably the Gene Ontology (GO).",
         "source": "http://edamontology.org/operation_3672",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1736,7 +1736,7 @@
     {
         "id": "operation-genome-alignment",
         "label": "Genome alignment",
-        "definition": "Align two or more (tpyically huge) molecular sequences that represent genomes.",
+        "definition": "Align two or more (typically huge) molecular sequences that represent genomes.",
         "source": "http://edamontology.org/operation_3182",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2444,7 +2444,7 @@
     {
         "id": "operation-mirna-expression-analysis",
         "label": "miRNA expression analysis",
-        "definition": "The analysis of microRNAs (miRNAs) : short, highly conserved small noncoding RNA molecules that are naturally occurring plant and animal genomes.",
+        "definition": "The analysis of microRNAs (miRNAs) : short, highly conserved small noncoding RNA molecules that are naturally occurring in plant and animal genomes.",
         "source": "http://edamontology.org/operation_3792",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3233,7 +3233,7 @@
     {
         "id": "operation-phylogenetic-reconstruction",
         "label": "Phylogenetic reconstruction",
-        "definition": "Reconstructing the inner node labels of a phylogenetic tree from its leafes.",
+        "definition": "Reconstructing the inner node labels of a phylogenetic tree from its leaves.",
         "source": "http://edamontology.org/operation_3478",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3485,7 +3485,7 @@
     {
         "id": "operation-probabilistic-data-generation",
         "label": "Probabilistic data generation",
-        "definition": "Generate some data from a chosen probibalistic model, possibly to evaluate algorithms.",
+        "definition": "Generate some data from a chosen probabilistic model, possibly to evaluate algorithms.",
         "source": "http://edamontology.org/operation_3480",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3726,7 +3726,7 @@
     {
         "id": "operation-protein-geometry-validation",
         "label": "Protein geometry validation",
-        "definition": "Validate protein geometry, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc. An example is validation of a Ramachandran plot of a protein structure.",
+        "definition": "Validate protein geometry, for example bond lengths, bond angles, torsion angles, chiralities, planarities etc. An example is validation of a Ramachandran plot of a protein structure.",
         "source": "http://edamontology.org/operation_1844",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -4625,7 +4625,7 @@
     {
         "id": "operation-rna-seq-quantification",
         "label": "RNA-Seq quantification",
-        "definition": "Quantification of data arising from RNA-Seq high-throughput sequencing, typically the quantification of transcript abundances durnig transcriptome analysis in a gene expression study.",
+        "definition": "Quantification of data arising from RNA-Seq high-throughput sequencing, typically the quantification of transcript abundances during transcriptome analysis in a gene expression study.",
         "source": "http://edamontology.org/operation_3800",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -4738,7 +4738,7 @@
     {
         "id": "operation-scaffolding",
         "label": "Scaffolding",
-        "definition": "Link together a non-contiguous series of genomic sequences into a scaffold, consisting of sequences separated by gaps of known length. The sequences that are linked are typically typically contigs; contiguous sequences corresponding to read overlaps.",
+        "definition": "Link together a non-contiguous series of genomic sequences into a scaffold, consisting of sequences separated by gaps of known length. The sequences that are linked are typically contigs; contiguous sequences corresponding to read overlaps.",
         "source": "http://edamontology.org/operation_3216",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -5925,7 +5925,7 @@
     {
         "id": "operation-taxonomic-classification",
         "label": "Taxonomic classification",
-        "definition": "Classifiication (typically of molecular sequences) by assignment to some taxonomic hierarchy.",
+        "definition": "Classification (typically of molecular sequences) by assignment to some taxonomic hierarchy.",
         "source": "http://edamontology.org/operation_3460",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -6207,7 +6207,7 @@
     {
         "id": "operation-variant-effect-prediction",
         "label": "Variant effect prediction",
-        "definition": "Predict the effect of point mutation on a protein structure, in terms of strucural effects and protein folding, stability and function.",
+        "definition": "Predict the effect of point mutation on a protein structure, in terms of structural effects and protein folding, stability and function.",
         "source": "http://edamontology.org/operation_0331",
         "recommended_for_annotation": true,
         "parent_ids": [

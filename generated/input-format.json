@@ -1282,7 +1282,7 @@
     {
         "id": "input-format-cytoscape-input-file-format",
         "label": "Cytoscape input file format",
-        "definition": "Format of the cytoscape input file of gene expression ratios or values are specified over one or more experiments.",
+        "definition": "Format of the cytoscape input file in which gene expression ratios or values are specified over one or more experiments.",
         "source": "http://edamontology.org/format_3477",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2597,7 +2597,7 @@
     {
         "id": "input-format-hmmer-profile-alignment-hmm-versus-sequences",
         "label": "HMMER profile alignment (HMM versus sequences)",
-        "definition": "Format used by the HMMER package for of an alignment of a hidden Markov model against a sequence database.",
+        "definition": "Format used by the HMMER package for an alignment of a hidden Markov model against a sequence database.",
         "source": "http://edamontology.org/format_1422",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2792,7 +2792,7 @@
     {
         "id": "input-format-individual-genetic-data-format",
         "label": "Individual genetic data format",
-        "definition": "Data format for a metadata on an individual and their genetic data.",
+        "definition": "Data format for metadata on an individual and their genetic data.",
         "source": "http://edamontology.org/format_3287",
         "recommended_for_annotation": false,
         "parent_ids": [
@@ -2987,7 +2987,7 @@
     {
         "id": "input-format-latex",
         "label": "latex",
-        "definition": "format for the LaTeX document preparation system.",
+        "definition": "Format for the LaTeX document preparation system.",
         "source": "http://edamontology.org/format_3817",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3220,7 +3220,7 @@
     {
         "id": "input-format-mass-spectrometry-data-format",
         "label": "Mass spectrometry data format",
-        "definition": "Format for mass pectra and derived data, include peptide sequences etc.",
+        "definition": "Format for mass spectra and derived data, including peptide sequences etc.",
         "source": "http://edamontology.org/format_3245",
         "recommended_for_annotation": false,
         "parent_ids": [
@@ -3457,7 +3457,7 @@
     {
         "id": "input-format-microarray-experiment-data-format",
         "label": "Microarray experiment data format",
-        "definition": "Format for information about a microarray experimental per se (not the data generated from that experiment).",
+        "definition": "Format for information about a microarray experiment per se (not the data generated from that experiment).",
         "source": "http://edamontology.org/format_2056",
         "recommended_for_annotation": false,
         "parent_ids": [
@@ -3913,7 +3913,7 @@
     {
         "id": "input-format-nmredata",
         "label": "NMReDATA",
-        "definition": "MReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or \"NMReDATA\") includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc.",
+        "definition": "NMReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or \"NMReDATA\") includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc.",
         "source": "http://edamontology.org/format_3906",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3924,7 +3924,7 @@
     {
         "id": "input-format-nmrml",
         "label": "nmrML",
-        "definition": "nmrML is an MSI supported XML-based open access format for metabolomics NMR raw and processed spectral data. It is accompanies by an nmrCV (controlled vocabulary) to allow ontology-based annotations.",
+        "definition": "nmrML is an MSI supported XML-based open access format for metabolomics NMR raw and processed spectral data. It is accompanied by an nmrCV (controlled vocabulary) to allow ontology-based annotations.",
         "source": "http://edamontology.org/format_3825",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3946,7 +3946,7 @@
     {
         "id": "input-format-nrrd",
         "label": "nrrd",
-        "definition": "Nearly Raw Rasta Data format designed to support scientific visualization and image processing involving N-dimensional raster data.",
+        "definition": "Nearly Raw Raster Data format designed to support scientific visualization and image processing involving N-dimensional raster data.",
         "source": "http://edamontology.org/format_3551",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -4349,7 +4349,7 @@
     {
         "id": "input-format-pepxml",
         "label": "pepXML",
-        "definition": "Open data format for the storage, exchange, and processing of peptide sequence assignments of MS/MS scans, intended to provide a common data output format for many different MS/MS search engines and subsequent peptide-level analyzes.",
+        "definition": "Open data format for the storage, exchange, and processing of peptide sequence assignments of MS/MS scans, intended to provide a common data output format for many different MS/MS search engines and subsequent peptide-level analyses.",
         "source": "http://edamontology.org/format_3655",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -4807,7 +4807,7 @@
     {
         "id": "input-format-probam",
         "label": "proBAM",
-        "definition": ". proBAM is an adaptation of BAM (format_2572), which was extended to meet specific requirements entailed by proteomics data.",
+        "definition": "proBAM is an adaptation of BAM (format_2572), which was extended to meet specific requirements entailed by proteomics data.",
         "source": "http://edamontology.org/format_3826",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -4819,7 +4819,7 @@
     {
         "id": "input-format-probed",
         "label": "proBED",
-        "definition": ". proBED is an adaptation of BED (format_3003), which was extended to meet specific requirements entailed by proteomics data.",
+        "definition": "proBED is an adaptation of BED (format_3003), which was extended to meet specific requirements entailed by proteomics data.",
         "source": "http://edamontology.org/format_3827",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -5132,7 +5132,7 @@
     {
         "id": "input-format-python-script",
         "label": "Python script",
-        "definition": "Format for scripts writtenin Python - a widely used high-level programming language for general-purpose programming.",
+        "definition": "Format for scripts written in Python - a widely used high-level programming language for general-purpose programming.",
         "source": "http://edamontology.org/format_3996",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -6030,7 +6030,7 @@
     {
         "id": "input-format-snakemake",
         "label": "Snakemake",
-        "definition": "The Snakemake workflow management system is a tool to create reproducible and scalable data analyzes.",
+        "definition": "The Snakemake workflow management system is a tool to create reproducible and scalable data analyses.",
         "source": "http://edamontology.org/format_4049",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -6383,7 +6383,7 @@
     {
         "id": "input-format-trackdb",
         "label": "TrackDB",
-        "definition": "A declaration file format for UCSC browsers track dataset display charateristics.",
+        "definition": "A declaration file format for UCSC browsers track dataset display characteristics.",
         "source": "http://edamontology.org/format_3991",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -6764,7 +6764,7 @@
     {
         "id": "input-format-wego",
         "label": "WEGO",
-        "definition": "WEGO native format used by the Web Gene Ontology Annotation Plot application.   Tab-delimited format with gene names and others GO IDs (columns) with one annotation record per line.",
+        "definition": "WEGO native format used by the Web Gene Ontology Annotation Plot application.   Tab-delimited format with gene names and other GO IDs (columns) with one annotation record per line.",
         "source": "http://edamontology.org/format_3979",
         "recommended_for_annotation": true,
         "parent_ids": [
