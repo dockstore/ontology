@@ -11,13 +11,14 @@ import sys
 # Keys are the shortest form that captures the spelling difference; all inflections
 # that share the same root share the same substitution rule.
 british_to_american = {
-    # -our -> -or
+    # -ou -> -o
     "behaviour":  "behavior",
     "colour":     "color",
     "tumour":     "tumor",
+    "mould":      "mold",
 
     # -ogue -> -og
-    "catalogued":  "cataloged",
+    "catalogued": "cataloged",
     "catalogue":  "catalog",
     "catalogui":  "catalogi",
 
@@ -25,8 +26,12 @@ british_to_american = {
     "gynaecolog": "gynecolog",   # gynaecology, gynaecological
     "haematolog": "hematolog",   # haematology, haematological
     "paediatric": "pediatric",   # paediatrics
+    "anaesthe":   "anesthe",      # anaesthetics
+    "orthopaed": " orthoped",     # orthopaedics
+
 
     # -yse -> -yze
+    "analyses":   "analyses", # EDAM uses "analyses" as a noun, exclusively (as of this writing)
     "analyse":    "analyze",
     "analysing":  "analyzing",
     "catalyse":   "catalyze",

@@ -318,7 +318,7 @@
     {
         "id": "input-data-bibliography",
         "label": "Bibliography",
-        "definition": "A list of publications such as scientic papers or books.",
+        "definition": "A list of publications such as scientific papers or books.",
         "source": "http://edamontology.org/data_3505",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -620,7 +620,7 @@
     {
         "id": "input-data-cultivation-parameter",
         "label": "Cultivation parameter",
-        "definition": "Experimental determined parameter for the cultivation of an organism.",
+        "definition": "Experimentally determined parameter for the cultivation of an organism.",
         "source": "http://edamontology.org/data_3724",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -930,7 +930,7 @@
     {
         "id": "input-data-electron-density-map",
         "label": "Electron density map",
-        "definition": "X-ray crystallography data.",
+        "definition": "The probability distribution of electrons within a molecule, derived from X-ray crystallography or cryo-EM data.",
         "source": "http://edamontology.org/data_0937",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1021,7 +1021,7 @@
     {
         "id": "input-data-fate-map",
         "label": "Fate map",
-        "definition": "A fate map is a plan of early stage of an embryo such as a blastula, showing areas that are significance to development.",
+        "definition": "A fate map is a plan of early stage of an embryo such as a blastula, showing areas that are significant to development.",
         "source": "http://edamontology.org/data_1713",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1272,7 +1272,7 @@
     {
         "id": "input-data-geographic-location",
         "label": "Geographic location",
-        "definition": "A report about localization of the isolaton of biological material e.g. country or coordinates.",
+        "definition": "A report about localization of the isolation of biological material e.g. country or coordinates.",
         "source": "http://edamontology.org/data_3720",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1323,7 +1323,7 @@
     {
         "id": "input-data-helical-net",
         "label": "Helical net",
-        "definition": "An image of peptide sequence sequence in a simple 3,4,3,4 repeating pattern that emulates at a simple level the arrangement of residues around an alpha helix.",
+        "definition": "An image of peptide sequence in a simple 3,4,3,4 repeating pattern that emulates at a simple level the arrangement of residues around an alpha helix.",
         "source": "http://edamontology.org/data_2163",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1333,7 +1333,7 @@
     {
         "id": "input-data-helical-wheel",
         "label": "Helical wheel",
-        "definition": "An image of peptide sequence sequence looking down the axis of the helix for highlighting amphipathicity and other properties.",
+        "definition": "An image of peptide sequence looking down the axis of the helix for highlighting amphipathicity and other properties.",
         "source": "http://edamontology.org/data_2162",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2160,7 +2160,7 @@
     {
         "id": "input-data-peptide-immunogenicity-data",
         "label": "Peptide immunogenicity data",
-        "definition": "An report on allergenicity / immunogenicity of peptides and proteins.",
+        "definition": "A report on allergenicity / immunogenicity of peptides and proteins.",
         "source": "http://edamontology.org/data_1534",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2391,7 +2391,7 @@
     {
         "id": "input-data-position-specific-scoring-matrix",
         "label": "Position-specific scoring matrix",
-        "definition": "A simple matrix of numbers, where each value (or column of values) is derived derived from analysis of the corresponding position in a sequence alignment.",
+        "definition": "A simple matrix of numbers, where each value (or column of values) is derived from analysis of the corresponding position in a sequence alignment.",
         "source": "http://edamontology.org/data_2854",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2565,7 +2565,7 @@
     {
         "id": "input-data-protein-geometry-data",
         "label": "Protein geometry data",
-        "definition": "Geometry data for a protein structure, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc.",
+        "definition": "Geometry data for a protein structure, for example bond lengths, bond angles, torsion angles, chiralities, planarities etc.",
         "source": "http://edamontology.org/data_2991",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2656,7 +2656,7 @@
     {
         "id": "input-data-protein-isoelectric-point",
         "label": "Protein isoelectric point",
-        "definition": "The isoelectric point of one proteins.",
+        "definition": "The isoelectric point of one protein.",
         "source": "http://edamontology.org/data_1528",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2950,7 +2950,7 @@
     {
         "id": "input-data-protocol",
         "label": "Protocol",
-        "definition": "A human-readable collection of information about about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis.",
+        "definition": "A human-readable collection of information about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis.",
         "source": "http://edamontology.org/data_2531",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3811,7 +3811,7 @@
     {
         "id": "input-data-sequence-variations",
         "label": "Sequence variations",
-        "definition": "Data on gene sequence variations resulting large-scale genotyping and DNA sequencing projects.",
+        "definition": "Data on gene sequence variations resulting from large-scale genotyping and DNA sequencing projects.",
         "source": "http://edamontology.org/data_3498",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -3821,7 +3821,7 @@
     {
         "id": "input-data-sequence-version",
         "label": "Sequence version",
-        "definition": "Information on an molecular sequence version.",
+        "definition": "Information on a molecular sequence version.",
         "source": "http://edamontology.org/data_1771",
         "recommended_for_annotation": true,
         "parent_ids": [

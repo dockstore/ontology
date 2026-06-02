@@ -38,16 +38,6 @@
         ]
     },
     {
-        "id": "topic-anaesthesiology",
-        "label": "Anaesthesiology",
-        "definition": "Anaesthesia and anaesthetics.",
-        "source": "http://edamontology.org/topic_3402",
-        "recommended_for_annotation": true,
-        "parent_ids": [
-            "topic-medicine"
-        ]
-    },
-    {
         "id": "topic-analytical-chemistry",
         "label": "Analytical chemistry",
         "definition": "The study of the separation, identification, and quantification of the chemical components of natural and artificial materials.",
@@ -65,6 +55,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "topic-biomedical-science"
+        ]
+    },
+    {
+        "id": "topic-anesthesiology",
+        "label": "Anesthesiology",
+        "definition": "Anesthesia and anesthetics.",
+        "source": "http://edamontology.org/topic_3402",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "topic-medicine"
         ]
     },
     {
@@ -122,7 +122,7 @@
     {
         "id": "topic-biochemistry",
         "label": "Biochemistry",
-        "definition": "Chemical substances and physico-chemical processes and that occur within living organisms.",
+        "definition": "Chemical substances and physico-chemical processes that occur within living organisms.",
         "source": "http://edamontology.org/topic_3292",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -183,7 +183,7 @@
     {
         "id": "topic-biomarkers",
         "label": "Biomarkers",
-        "definition": "Objective indicators of biological state often used to assess health, and determinate treatment.",
+        "definition": "Objective indicators of biological state often used to assess health, and determine treatment.",
         "source": "http://edamontology.org/topic_3360",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -223,7 +223,7 @@
     {
         "id": "topic-biophysics",
         "label": "Biophysics",
-        "definition": "The use of physics to study biological system.",
+        "definition": "The use of physics to study biological systems.",
         "source": "http://edamontology.org/topic_3306",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -358,7 +358,7 @@
     {
         "id": "topic-chip-exo",
         "label": "ChIP-exo",
-        "definition": "Chromatin immunoprecipitation-based exeperiment similar to ChIP-seq, with an additional experimental step using an exonuclease to increase the resolution of protein binding site identification.",
+        "definition": "Chromatin immunoprecipitation-based experiment similar to ChIP-seq, with an additional experimental step using an exonuclease to increase the resolution of protein binding site identification.",
         "source": "http://edamontology.org/topic_4051",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -368,7 +368,7 @@
     {
         "id": "topic-chip-on-chip",
         "label": "ChIP-on-chip",
-        "definition": "Experimental techniques that combine chromatin immunoprecipitation ('ChIP') with microarray ('chip'). ChIP-on-chip is used for high-throughput study protein-DNA interactions.",
+        "definition": "Experimental techniques that combine chromatin immunoprecipitation ('ChIP') with microarray ('chip'). ChIP-on-chip is used for high-throughput study of protein-DNA interactions.",
         "source": "http://edamontology.org/topic_3179",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -420,7 +420,7 @@
     {
         "id": "topic-comparative-genomics",
         "label": "Comparative genomics",
-        "definition": "The study (typically comparison) of the sequence, structure or function of multiple genomes.",
+        "definition": "The study (typically comparison) of the sequence, structure or function of the genomes of multiple organisms.",
         "source": "http://edamontology.org/topic_0797",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -491,7 +491,7 @@
     {
         "id": "topic-critical-care-medicine",
         "label": "Critical care medicine",
-        "definition": "The multidisciplinary that cares for patients with acute, life-threatening illness or injury.",
+        "definition": "The multidisciplinary field that cares for patients with acute, life-threatening illness or injury.",
         "source": "http://edamontology.org/topic_3403",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -541,7 +541,7 @@
     {
         "id": "topic-data-acquisition",
         "label": "Data acquisition",
-        "definition": "The acquisition of data, typically measurements of physical systems using any type of sampling system, or by another other means.",
+        "definition": "The acquisition of data, typically measurements of physical systems using any type of sampling system, or by any other means.",
         "source": "http://edamontology.org/topic_3077",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -611,7 +611,7 @@
     {
         "id": "topic-data-mining",
         "label": "Data mining",
-        "definition": "The discovery of patterns in large data sets and the extraction and trasnsformation of those patterns into a useful format.",
+        "definition": "The discovery of patterns in large data sets and the extraction and transformation of those patterns into a useful format.",
         "source": "http://edamontology.org/topic_3473",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -764,7 +764,7 @@
     {
         "id": "topic-drug-development",
         "label": "Drug development",
-        "definition": "The process of bringing a new drug to market once a lead compounds has been identified through drug discovery.",
+        "definition": "The process of bringing a new drug to market once a lead compound has been identified through drug discovery.",
         "source": "http://edamontology.org/topic_3373",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -879,7 +879,7 @@
     {
         "id": "topic-environmental-sciences",
         "label": "Environmental sciences",
-        "definition": "Study of the environment, the interactions between its physical, chemical, and biological components and it's effect on life. Also how humans impact upon the environment, and how we can manage and utilize natural resources.",
+        "definition": "Study of the environment, the interactions between its physical, chemical, and biological components and its effect on life. Also how humans impact upon the environment, and how we can manage and utilize natural resources.",
         "source": "http://edamontology.org/topic_3855",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1043,7 +1043,7 @@
     {
         "id": "topic-gene-and-protein-families",
         "label": "Gene and protein families",
-        "definition": "Particular gene(s), gene family or other gene group or system and their encoded proteins.Primarily the classification of proteins (from sequence or structural data) into clusters, groups, families etc., curation of a particular protein or protein family, or any other proteins that have been classified as members of a common group.",
+        "definition": "Particular gene(s), gene family or other gene group or system and their encoded proteins. Primarily the classification of proteins (from sequence or structural data) into clusters, groups, families etc., curation of a particular protein or protein family, or any other proteins that have been classified as members of a common group.",
         "source": "http://edamontology.org/topic_0623",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1278,7 +1278,7 @@
     {
         "id": "topic-immunoinformatics",
         "label": "Immunoinformatics",
-        "definition": "Immunoinformatics is the field of computational biology that deals with the study of immunoloogical questions. Immunoinformatics is at the interface between immunology and computer science. It takes advantage of computational, statistical, mathematical approaches and enhances the understanding of immunological knowledge.",
+        "definition": "Immunoinformatics is the field of computational biology that deals with the study of immunological questions. Immunoinformatics is at the interface between immunology and computer science. It takes advantage of computational, statistical, mathematical approaches and enhances the understanding of immunological knowledge.",
         "source": "http://edamontology.org/topic_3948",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1553,7 +1553,7 @@
     {
         "id": "topic-metabolomics",
         "label": "Metabolomics",
-        "definition": "The systematic study of metabolites, the chemical processes they are involved, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.",
+        "definition": "The systematic study of metabolites, the chemical processes they are involved in, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.",
         "source": "http://edamontology.org/topic_3172",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1625,7 +1625,7 @@
     {
         "id": "topic-microbial-collection",
         "label": "Microbial collection",
-        "definition": "Collections of microbial cells including bacteria, yeasts and moulds.",
+        "definition": "Collections of microbial cells including bacteria, yeasts and molds.",
         "source": "http://edamontology.org/topic_3339",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1656,7 +1656,7 @@
     {
         "id": "topic-microfluidics",
         "label": "Microfluidics",
-        "definition": "Interdisplinary study of behavior, precise control, and manipulation of low (microliter) volume fluids in constrained space.",
+        "definition": "Interdisciplinary study of behavior, precise control, and manipulation of low (microliter) volume fluids in constrained space.",
         "source": "http://edamontology.org/topic_4030",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1802,7 +1802,7 @@
     {
         "id": "topic-musculoskeletal-medicine",
         "label": "Musculoskeletal medicine",
-        "definition": "The branch of medicine that deals with the prevention, diagnosis, and treatment of disorders of the muscle, bone and connective tissue. It incorporates aspects of orthopaedics, rheumatology, rehabilitation medicine and pain medicine.",
+        "definition": "The branch of medicine that deals with the prevention, diagnosis, and treatment of disorders of the muscle, bone and connective tissue. It incorporates aspects of  orthopedics, rheumatology, rehabilitation medicine and pain medicine.",
         "source": "http://edamontology.org/topic_3416",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1854,7 +1854,7 @@
     {
         "id": "topic-nmr",
         "label": "NMR",
-        "definition": "An analytical technique that exploits the magenetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules.",
+        "definition": "An analytical technique that exploits the magnetic properties of certain atomic nuclei to provide information on the structure, dynamics, reaction state and chemical environment of molecules.",
         "source": "http://edamontology.org/topic_0593",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -1947,7 +1947,7 @@
     {
         "id": "topic-ophthalmology",
         "label": "Ophthalmology",
-        "definition": "The branch of medicine that deals with disorders of the eye, including eyelid, optic nerve/visual pathways and occular muscles.",
+        "definition": "The branch of medicine that deals with disorders of the eye, including eyelid, optic nerve/visual pathways and ocular muscles.",
         "source": "http://edamontology.org/topic_3417",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2017,7 +2017,7 @@
     {
         "id": "topic-personalized-medicine",
         "label": "Personalized medicine",
-        "definition": "An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.",
+        "definition": "An approach to medicine whereby decisions and practices are tailored to the individual patient based on their predicted response or risk of disease.",
         "source": "http://edamontology.org/topic_3577",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2377,7 +2377,7 @@
     {
         "id": "topic-public-health-and-epidemiology",
         "label": "Public health and epidemiology",
-        "definition": "Topic concerning the the patterns, cause, and effect of disease within populations.",
+        "definition": "Topic concerning the patterns, cause, and effect of disease within populations.",
         "source": "http://edamontology.org/topic_3305",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2771,7 +2771,7 @@
     {
         "id": "topic-systems-medicine",
         "label": "Systems medicine",
-        "definition": "An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrted whole, incorporating biochemical, physiological, and environmental interactions that sustain life.",
+        "definition": "An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrated whole, incorporating biochemical, physiological, and environmental interactions that sustain life.",
         "source": "http://edamontology.org/topic_3396",
         "recommended_for_annotation": true,
         "parent_ids": [
@@ -2835,7 +2835,7 @@
     {
         "id": "topic-translational-medicine",
         "label": "Translational medicine",
-        "definition": "'translating' the output of basic and biomedical research into better diagnostic tools, medicines, medical procedures, policies and advice.",
+        "definition": "The practice of 'translating' the output of basic and biomedical research into better diagnostic tools, medicines, medical procedures, policies and advice.",
         "source": "http://edamontology.org/topic_3342",
         "recommended_for_annotation": true,
         "parent_ids": [
