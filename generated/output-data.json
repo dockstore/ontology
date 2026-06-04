@@ -78,6 +78,16 @@
         ]
     },
     {
+        "id": "output-data-allele-frequency-spectrum",
+        "label": "Allele frequency spectrum",
+        "definition": "Distribution of allele frequencies across segregating sites in population samples, used for demographic inference, neutrality tests, and population genetics simulation.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
         "id": "output-data-alpha-diversity-data",
         "label": "Alpha diversity data",
         "definition": "The mean species diversity in sites or habitats at a local scale.",
@@ -274,6 +284,18 @@
         ]
     },
     {
+        "id": "output-data-base-modification-data",
+        "label": "Base modification data",
+        "definition": "Per-site scores or calls for DNA or RNA base modifications (5mC, 5hmC, m6A, pseudouridine) derived from nanopore sequencing or chemical conversion methods.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-experimental-measurement",
+            "output-data-annotation-track"
+        ]
+    },
+    {
         "id": "output-data-base-pairing-probability-matrix-dotplot",
         "label": "Base pairing probability matrix dotplot",
         "definition": "Dotplot of RNA base pairing probability matrix.",
@@ -306,6 +328,17 @@
         ]
     },
     {
+        "id": "output-data-basecalled-sequence-data",
+        "label": "Basecalled sequence data",
+        "definition": "Nucleotide sequence reads produced by basecalling raw signal data from nanopore or PacBio sequencers, including per-base quality scores and optionally modification probability arrays.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-nucleic-acid-sequence-record",
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
         "id": "output-data-beta-diversity-data",
         "label": "Beta diversity data",
         "definition": "The ratio between regional and local species diversity.",
@@ -334,6 +367,18 @@
         "parent_ids": [
             "output-data",
             "output-data-ecological-data"
+        ]
+    },
+    {
+        "id": "output-data-biological-embedding",
+        "label": "Biological embedding",
+        "definition": "Dense vector representation of a biological sequence, structure, cell, or molecule learned by a neural language model, used for function prediction, similarity search, or generative modeling.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-machine-learning-data",
+            "output-data-mathematical-model",
+            "output-data-matrix"
         ]
     },
     {
@@ -427,6 +472,38 @@
         ]
     },
     {
+        "id": "output-data-cell-barcode-and-umi-data",
+        "label": "Cell barcode and UMI data",
+        "definition": "Per-read tags comprising a cell barcode identifying the cell of origin and a UMI marking the captured molecule, used in single-cell sequencing workflows prior to count-matrix generation.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequencing-reads"
+        ]
+    },
+    {
+        "id": "output-data-cell-barcode-annotation",
+        "label": "Cell barcode annotation",
+        "definition": "Per-cell metadata table linking cell barcodes to cluster identifiers, cell type labels, QC metrics, and doublet status.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sample-annotation",
+            "output-data-single-cell-omics-data"
+        ]
+    },
+    {
+        "id": "output-data-cell-embedding",
+        "label": "Cell embedding",
+        "definition": "Low-dimensional coordinate representation of individual cells from dimensionality reduction of single-cell omics data, used for visualization and clustering.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-matrix",
+            "output-data-single-cell-omics-data"
+        ]
+    },
+    {
         "id": "output-data-cell-line-report",
         "label": "Cell line report",
         "definition": "A human-readable collection of information about a particular strain of organism cell line including plants, virus, fungi and bacteria. The data typically includes strain number, organism type, growth conditions, source and so on.",
@@ -447,6 +524,17 @@
         ]
     },
     {
+        "id": "output-data-cell-trajectory",
+        "label": "Cell trajectory",
+        "definition": "Ordered arrangement of cells along a developmental continuum, represented as pseudotime values or a branching lineage graph derived from single-cell omics data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-expression-data",
+            "output-data-single-cell-omics-data"
+        ]
+    },
+    {
         "id": "output-data-chemical-formula",
         "label": "Chemical formula",
         "definition": "A specification of a chemical structure.",
@@ -464,6 +552,64 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-structure-image"
+        ]
+    },
+    {
+        "id": "output-data-chip-seq-data",
+        "label": "ChIP-seq data",
+        "definition": "Sequencing reads from chromatin immunoprecipitation experiments, used to map genome-wide protein-DNA binding sites, histone modifications, or transcription factor occupancy.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-sequencing-reads"
+        ]
+    },
+    {
+        "id": "output-data-chip-seq-peak-data",
+        "label": "ChIP-seq peak data",
+        "definition": "Genomic intervals significantly enriched for ChIP-seq or CUT&RUN signal relative to background, annotated with coordinates, fold enrichment, and statistical scores.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-annotation-track",
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
+        "id": "output-data-chromatin-accessibility-profile",
+        "label": "Chromatin accessibility profile",
+        "definition": "Genome-wide measurement of open chromatin regions from ATAC-seq or DNase-seq, representing accessible regulatory elements in a cell population or individual cell.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-experimental-measurement",
+            "output-data-annotation-track"
+        ]
+    },
+    {
+        "id": "output-data-chromatin-contact-matrix",
+        "label": "Chromatin contact matrix",
+        "definition": "Pairwise genome-wide interaction frequencies between genomic loci from chromosome conformation capture experiments, stored as a binned symmetric matrix and used to detect TADs, loops, and compartments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-experimental-measurement",
+            "output-data-matrix"
+        ]
+    },
+    {
+        "id": "output-data-chromatin-domain-data",
+        "label": "Chromatin domain data",
+        "definition": "Genomic coordinates of TADs, loop anchors, compartment boundaries, and insulator elements inferred from chromatin contact matrices.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-annotation-track"
         ]
     },
     {
@@ -608,6 +754,16 @@
         ]
     },
     {
+        "id": "output-data-copy-number-variation-data",
+        "label": "Copy number variation data",
+        "definition": "Genome-segmented profile of DNA copy number states, annotating intervals with estimated copy number and log2 ratio derived from read depth or allele frequency analysis.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
         "id": "output-data-count-matrix",
         "label": "Count matrix",
         "definition": "A table of unnormalized values representing summarized read counts per genomic region (e.g. gene, transcript, peak).",
@@ -615,6 +771,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-matrix"
+        ]
+    },
+    {
+        "id": "output-data-crispr-screen-read-counts",
+        "label": "CRISPR screen read counts",
+        "definition": "Guide-RNA-by-sample count matrix from a pooled CRISPR screen recording reads per guide RNA per sample or time point.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-count-matrix"
         ]
     },
     {
@@ -728,6 +894,17 @@
         ]
     },
     {
+        "id": "output-data-deep-mutational-scanning-data",
+        "label": "Deep mutational scanning data",
+        "definition": "Fitness or functional scores for thousands of amino acid or nucleotide variants derived from a pooled mutagenesis and selection experiment.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations",
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
         "id": "output-data-deletion-map",
         "label": "Deletion map",
         "definition": "A cytogenetic map showing chromosome banding patterns in mutant cell lines relative to the wild type.",
@@ -735,6 +912,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-cytogenetic-map"
+        ]
+    },
+    {
+        "id": "output-data-dia-ms-spectral-library",
+        "label": "DIA-MS spectral library",
+        "definition": "Reference library of fragment ion spectra, precursor masses, and retention times used by DIA-MS tools to identify and quantify peptides.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-spectrum",
+            "output-data-mass-spectrometry-data"
         ]
     },
     {
@@ -818,6 +1006,18 @@
         ]
     },
     {
+        "id": "output-data-dna-methylation-data",
+        "label": "DNA methylation data",
+        "definition": "Base-resolution cytosine methylation measurements recording methylation fraction and coverage at each genomic position, from bisulfite sequencing or nanopore modification calling.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-epigenomics-data",
+            "output-data-experimental-measurement",
+            "output-data-annotation-track"
+        ]
+    },
+    {
         "id": "output-data-dna-sequence",
         "label": "DNA sequence",
         "definition": "A DNA sequence.",
@@ -898,6 +1098,17 @@
         ]
     },
     {
+        "id": "output-data-drug-sensitivity-data",
+        "label": "Drug sensitivity data",
+        "definition": "Dose-response curves and sensitivity metrics (AUC, IC\u2085\u2080) from pharmacological perturbation experiments, used for pharmacogenomics modeling and drug repurposing.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-drug-report",
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
         "id": "output-data-drug-structure",
         "label": "Drug structure",
         "definition": "3D coordinate and associated data for the (3D) structure of a drug.",
@@ -905,6 +1116,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-small-molecule-structure"
+        ]
+    },
+    {
+        "id": "output-data-drug-target-interaction-data",
+        "label": "Drug-target interaction data",
+        "definition": "Quantitative binding affinity measurements between small molecules and molecular targets, used for virtual screening and drug-target interaction prediction.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-drug-report",
+            "output-data-experimental-measurement"
         ]
     },
     {
@@ -989,6 +1211,16 @@
         ]
     },
     {
+        "id": "output-data-epigenomics-data",
+        "label": "Epigenomics data",
+        "definition": "Genome-wide measurements of epigenetic marks or chromatin states, including protein-DNA binding, histone modifications, chromatin accessibility, DNA methylation, and three-dimensional genome organization.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
         "id": "output-data-evidence",
         "label": "Evidence",
         "definition": "Typically a human-readable summary of body of facts or information indicating why a statement is true or valid. This may include a computational prediction, laboratory experiment, literature reference etc.",
@@ -1059,6 +1291,26 @@
         ]
     },
     {
+        "id": "output-data-flow-cytometry-data",
+        "label": "Flow cytometry data",
+        "definition": "Per-event fluorescence intensity measurements across multiple channels from flow cytometry or FACS experiments, used for cell population identification.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
+        "id": "output-data-fluorescence-microscopy-image",
+        "label": "Fluorescence microscopy image",
+        "definition": "Multichannel fluorescence images of biological structures across spectral channels and z-planes, acquired by widefield, confocal, or super-resolution microscopy.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-raw-image"
+        ]
+    },
+    {
         "id": "output-data-forcefield-parameters",
         "label": "Forcefield parameters",
         "definition": "Force field parameters: charges, masses, radii, bond lengths, bond dihedrals, etc. define the structural molecular system, and are essential for the proper description and simulation of a molecular system.",
@@ -1066,6 +1318,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-simulation"
+        ]
+    },
+    {
+        "id": "output-data-functional-metagenomics-profile",
+        "label": "Functional metagenomics profile",
+        "definition": "Abundance table of functional gene categories annotated from metagenomic reads, quantifying the metabolic and functional potential of a microbial community.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-matrix"
         ]
     },
     {
@@ -1230,6 +1492,16 @@
         ]
     },
     {
+        "id": "output-data-genome-assembly-graph",
+        "label": "Genome assembly graph",
+        "definition": "Graph-based representation of a genome assembly encoding sequence overlaps, contig connectivity, and alternative paths, typically stored in GFA format.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-assembly"
+        ]
+    },
+    {
         "id": "output-data-genome-index",
         "label": "Genome index",
         "definition": "An index of a genome sequence.",
@@ -1260,6 +1532,17 @@
         ]
     },
     {
+        "id": "output-data-genome-variation-graph",
+        "label": "Genome variation graph",
+        "definition": "Graph-based reference encoding population-level sequence variation as a sequence graph, enabling haplotype-aware read alignment and variant genotyping.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-assembly",
+            "output-data-map"
+        ]
+    },
+    {
         "id": "output-data-genotype-phenotype-report",
         "label": "Genotype/phenotype report",
         "definition": "A human-readable collection of information about the set of genes (or allelic forms) present in an individual, organism or cell and associated with a specific physical characteristic, or a report concerning an organisms traits and phenotypes.",
@@ -1287,6 +1570,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-over-representation-data"
+        ]
+    },
+    {
+        "id": "output-data-gwas-summary-statistics",
+        "label": "GWAS summary statistics",
+        "definition": "Per-variant effect sizes, standard errors, p-values, and allele frequencies across genome-wide variants, used for polygenic scores, fine-mapping, and Mendelian randomization.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
         ]
     },
     {
@@ -1361,6 +1654,16 @@
         ]
     },
     {
+        "id": "output-data-high-content-screening-data",
+        "label": "High-content screening data",
+        "definition": "Plate-level fluorescence images from automated cell-based screening, combined with perturbation metadata, used for morphological profiling and phenotypic drug discovery.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-fluorescence-microscopy-image"
+        ]
+    },
+    {
         "id": "output-data-histogram",
         "label": "Histogram",
         "definition": "Visualization of distribution of quantitative data, e.g. expression data, by histograms, violin plots and density plots.",
@@ -1419,6 +1722,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-report"
+        ]
+    },
+    {
+        "id": "output-data-imaging-derived-phenotype",
+        "label": "Imaging-derived phenotype",
+        "definition": "Quantitative features extracted from medical images by radiomics or deep learning, used in imaging-genetics studies and clinical prediction.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-experimental-measurement",
+            "output-data-raw-image"
         ]
     },
     {
@@ -1502,6 +1816,16 @@
         ]
     },
     {
+        "id": "output-data-linkage-disequilibrium-data",
+        "label": "Linkage disequilibrium data",
+        "definition": "Pairwise LD statistics (r\u00b2, D') between genetic variants from population-scale genotypes, used in GWAS fine-mapping, pruning, and polygenic score development.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
         "id": "output-data-lipid-report",
         "label": "Lipid report",
         "definition": "A human-readable collection of information about one or more specific lipid 3D structure(s).",
@@ -1532,6 +1856,37 @@
         ]
     },
     {
+        "id": "output-data-long-read-sequencing-data",
+        "label": "Long-read sequencing data",
+        "definition": "Multi-kilobase sequencing reads from nanopore or PacBio platforms, enabling phasing, full-length isoform reconstruction, and base-modification detection.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequencing-reads"
+        ]
+    },
+    {
+        "id": "output-data-machine-learning-data",
+        "label": "Machine learning data",
+        "definition": "Structured numerical data prepared as input to or produced as output from a machine learning model, encompassing embedding vectors, feature matrices, serialized model weights, and training labels.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "output-data"
+        ]
+    },
+    {
+        "id": "output-data-machine-learning-feature-matrix",
+        "label": "Machine learning feature matrix",
+        "definition": "Sample-by-feature numerical matrix of heterogeneous measurements prepared for supervised or unsupervised machine learning.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-machine-learning-data",
+            "output-data-count-matrix"
+        ]
+    },
+    {
         "id": "output-data-map",
         "label": "Map",
         "definition": "A map of (typically one) DNA sequence annotated with positional or non-positional features.",
@@ -1549,6 +1904,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data"
+        ]
+    },
+    {
+        "id": "output-data-mass-cytometry-data",
+        "label": "Mass cytometry data",
+        "definition": "Per-cell measurements of 30-50 protein markers from CyTOF experiments, providing high-dimensional single-cell protein abundance profiles.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-flow-cytometry-data",
+            "output-data-single-cell-omics-data"
         ]
     },
     {
@@ -1599,6 +1965,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data"
+        ]
+    },
+    {
+        "id": "output-data-metagenome-assembled-genome",
+        "label": "Metagenome-assembled genome",
+        "definition": "Draft genome reconstructed by binning metagenomic contigs, representing a putative single organism from a microbial community.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-assembly"
         ]
     },
     {
@@ -1720,6 +2096,28 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-raw-image"
+        ]
+    },
+    {
+        "id": "output-data-multi-omics-dataset",
+        "label": "Multi-omics dataset",
+        "definition": "Paired measurements from two or more molecular assay types on matched samples or cells, enabling cross-modal integration and holistic analysis of molecular phenotypes.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-expression-data",
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
+        "id": "output-data-multiplex-tissue-image",
+        "label": "Multiplex tissue image",
+        "definition": "Highly multiplexed protein or RNA expression images of tissue sections at single-cell resolution, simultaneously visualizing 20-60 molecular markers.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-fluorescence-microscopy-image",
+            "output-data-single-cell-omics-data"
         ]
     },
     {
@@ -2219,6 +2617,17 @@
         ]
     },
     {
+        "id": "output-data-phased-genotype-data",
+        "label": "Phased genotype data",
+        "definition": "Variant calls with haplotype-resolved allele assignments linking alleles to paternal or maternal chromosomes, enabling haplotype-aware analyses.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations",
+            "output-data-haplotype-map"
+        ]
+    },
+    {
         "id": "output-data-phylogenetic-character-cliques",
         "label": "Phylogenetic character cliques",
         "definition": "One or more cliques of mutually compatible characters that are generated, for example from analysis of discrete character data, and are used to generate a phylogeny.",
@@ -2379,6 +2788,26 @@
         ]
     },
     {
+        "id": "output-data-polygenic-risk-score",
+        "label": "Polygenic risk score",
+        "definition": "Weighted sum of allelic dosages at genome-wide loci quantifying an individual's inherited genetic risk for a complex trait or disease.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-score"
+        ]
+    },
+    {
+        "id": "output-data-population-structure-data",
+        "label": "Population structure data",
+        "definition": "Ancestry proportions, principal components, or admixture fractions inferred from genome-wide variants, used to characterize population structure and correct for stratification.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
         "id": "output-data-position-frequency-matrix",
         "label": "Position frequency matrix",
         "definition": "A profile (typically representing a sequence alignment) that is a simple matrix of nucleotide (or amino acid) counts per position.",
@@ -2407,6 +2836,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-position-specific-scoring-matrix"
+        ]
+    },
+    {
+        "id": "output-data-post-translational-modification-data",
+        "label": "Post-translational modification data",
+        "definition": "Site-level quantification of protein post-translational modifications from enriched LC-MS/MS experiments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-proteomics-quantification-matrix",
+            "output-data-peptide-identification"
         ]
     },
     {
@@ -2906,6 +3346,16 @@
         ]
     },
     {
+        "id": "output-data-protein-structure-prediction",
+        "label": "Protein structure prediction",
+        "definition": "Computationally predicted three-dimensional protein coordinates with per-residue confidence scores and predicted alignment error.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-protein-structure"
+        ]
+    },
+    {
         "id": "output-data-protein-structure-raw-data",
         "label": "Protein structure raw data",
         "definition": "Raw data from experimental methods for determining protein structure.",
@@ -2945,6 +3395,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-sequence-set-protein"
+        ]
+    },
+    {
+        "id": "output-data-proteomics-quantification-matrix",
+        "label": "Proteomics quantification matrix",
+        "definition": "Matrix of protein or peptide abundance values across samples from mass spectrometry-based proteomics.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-matrix",
+            "output-data-mass-spectrometry-data"
         ]
     },
     {
@@ -3267,6 +3728,18 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-nucleic-acid-structure-alignment"
+        ]
+    },
+    {
+        "id": "output-data-rna-velocity-data",
+        "label": "RNA velocity data",
+        "definition": "Paired count matrices of spliced and unspliced transcripts with velocity vectors predicting future gene expression state in each cell.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-expression-data",
+            "output-data-matrix",
+            "output-data-single-cell-omics-data"
         ]
     },
     {
@@ -3829,6 +4302,36 @@
         ]
     },
     {
+        "id": "output-data-sequencing-reads",
+        "label": "Sequencing reads",
+        "definition": "Raw or processed reads produced by a high-throughput DNA or RNA sequencer, carrying per-base sequence and quality scores.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "output-data-sequence-set-nucleic-acid"
+        ]
+    },
+    {
+        "id": "output-data-sgrna-library",
+        "label": "sgRNA library",
+        "definition": "Designed set of guide RNA sequences with genomic target coordinates, used to map reads from pooled CRISPR screens or as input to guide design tools.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-set-nucleic-acid"
+        ]
+    },
+    {
+        "id": "output-data-short-read-sequencing-data",
+        "label": "Short-read sequencing data",
+        "definition": "High-throughput sequencing reads of 50-300 bp from short-read platforms, including paired-end reads from DNA-seq, RNA-seq, and related assays.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequencing-reads"
+        ]
+    },
+    {
         "id": "output-data-simulation",
         "label": "Simulation",
         "definition": "Data coming from molecular simulations, computer \"experiments\" on model molecules. Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic).",
@@ -3836,6 +4339,39 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data"
+        ]
+    },
+    {
+        "id": "output-data-single-cell-atac-seq-data",
+        "label": "Single-cell ATAC-seq data",
+        "definition": "Per-cell chromatin accessibility fragment files and peak-by-cell count matrices from single-cell ATAC-seq experiments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-single-cell-omics-data",
+            "output-data-chromatin-accessibility-profile"
+        ]
+    },
+    {
+        "id": "output-data-single-cell-count-matrix",
+        "label": "Single-cell count matrix",
+        "definition": "Sparse cells-by-features matrix of per-cell feature counts from single-cell sequencing, with associated barcode and feature metadata.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-count-matrix",
+            "output-data-expression-data",
+            "output-data-single-cell-omics-data"
+        ]
+    },
+    {
+        "id": "output-data-single-cell-omics-data",
+        "label": "Single-cell omics data",
+        "definition": "Molecular measurements made at the resolution of individual cells, encompassing single-cell transcriptomics, chromatin accessibility, surface proteomics, and multimodal omics data types.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "output-data-experimental-measurement"
         ]
     },
     {
@@ -3866,6 +4402,28 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-chemical-formula"
+        ]
+    },
+    {
+        "id": "output-data-somatic-variant-data",
+        "label": "Somatic variant data",
+        "definition": "Tumor-specific somatic mutations (SNVs, indels, structural variants, copy number changes) identified by comparing tumor to normal sequencing.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
+        "id": "output-data-spatial-transcriptomics-data",
+        "label": "Spatial transcriptomics data",
+        "definition": "Gene expression count matrix paired with spatial coordinates for each measurement location in a tissue section, linking molecular profiles to histology.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-expression-data",
+            "output-data-experimental-measurement",
+            "output-data-single-cell-omics-data"
         ]
     },
     {
@@ -3939,6 +4497,16 @@
         ]
     },
     {
+        "id": "output-data-structural-variant-data",
+        "label": "Structural variant data",
+        "definition": "Genomic rearrangements larger than ~50 bp, including deletions, duplications, inversions, translocations, and mobile element insertions.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
+        ]
+    },
+    {
         "id": "output-data-structure",
         "label": "Structure",
         "definition": "3D coordinate and associated data for a macromolecular tertiary (3D) structure or part of a structure.",
@@ -4009,6 +4577,26 @@
         ]
     },
     {
+        "id": "output-data-structured-phenotype-data",
+        "label": "Structured phenotype data",
+        "definition": "Machine-readable coded clinical observations, diagnoses, and laboratory values used as input to genotype-phenotype association studies.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
+        "id": "output-data-survival-data",
+        "label": "Survival data",
+        "definition": "Time-to-event data with event indicator and elapsed time, used in survival analysis and Cox regression models.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-experimental-measurement"
+        ]
+    },
+    {
         "id": "output-data-system-metadata",
         "label": "System metadata",
         "definition": "Metadata concerning the software, hardware or other aspects of a computer system.",
@@ -4026,6 +4614,17 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-structure-similarity-score"
+        ]
+    },
+    {
+        "id": "output-data-taxonomic-profile",
+        "label": "Taxonomic profile",
+        "definition": "Quantitative table of microbial taxonomic abundances from amplicon or shotgun metagenomic sequencing, recording relative or absolute abundances across taxonomy ranks.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-taxonomy",
+            "output-data-biodiversity-data"
         ]
     },
     {
@@ -4120,6 +4719,28 @@
         ]
     },
     {
+        "id": "output-data-trained-model",
+        "label": "Trained model",
+        "definition": "Serialized weights and architecture of a trained machine learning model for biological data analysis, stored for inference or transfer learning.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-machine-learning-data",
+            "output-data-mathematical-model"
+        ]
+    },
+    {
+        "id": "output-data-training-labels",
+        "label": "Training labels",
+        "definition": "Class labels or target values paired with a feature matrix or sequence dataset, defining the learning objective for supervised model training.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-machine-learning-data",
+            "output-data-sample-annotation"
+        ]
+    },
+    {
         "id": "output-data-trajectory-data",
         "label": "Trajectory data",
         "definition": "Dynamic information of a structure molecular system coming from a molecular simulation: XYZ 3D coordinates (sometimes with their associated velocities) for every atom along time.",
@@ -4150,6 +4771,16 @@
         ]
     },
     {
+        "id": "output-data-tumor-mutational-burden",
+        "label": "Tumor mutational burden",
+        "definition": "Total somatic mutations per megabase in a tumor sample, used as a biomarker for immunotherapy response.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-score"
+        ]
+    },
+    {
         "id": "output-data-uniprot-keyword",
         "label": "UniProt keyword",
         "definition": "A word or phrase that can appear in the keywords field (KW line) of entries from the UniProt database.",
@@ -4167,6 +4798,16 @@
         "recommended_for_annotation": true,
         "parent_ids": [
             "output-data-resource-metadata"
+        ]
+    },
+    {
+        "id": "output-data-variant-call-data",
+        "label": "Variant call data",
+        "definition": "Structured records of genetic variants (SNVs, indels) at genomic positions, including genotype calls, allele depths, and quality metrics, typically stored in VCF format.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "output-data-sequence-variations"
         ]
     },
     {

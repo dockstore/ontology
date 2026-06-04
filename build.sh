@@ -13,8 +13,10 @@ EDAM_TAG="1.25-20251112T1620Z-intermediate"
 OWL_URL="https://github.com/edamontology/edamontology/releases/download/${EDAM_TAG}/EDAM.owl"
 OWL_FILE="${WORK_DIR}/EDAM.owl"
 SIMPLIFIED_FILE="${WORK_DIR}/EDAM_simplified.json"
-SIMPLIFIED_CORRECTED_FILE="${WORK_DIR}/EDAM_simplified_corrected.json"
-SIMPLIFIED_CORRECTED_AMERICANIZED_FILE="${WORK_DIR}/EDAM_simplified_corrected_americanized.json"
+CORRECTED_FILE="${WORK_DIR}/EDAM_corrected.json"
+AMERICANIZED_FILE="${WORK_DIR}/EDAM_americanized.json"
+ADJUSTED_FILE="${WORK_DIR}/EDAM_adjusted.json"
+ENHANCED_FILE="${WORK_DIR}/EDAM_enhanced.json"
 
 # Get a recent tagged release of the EDAM ontology
 echo "Downloading $OWL_FILE from tag ${EDAM_TAG}..."
@@ -26,14 +28,22 @@ python3 simplify.py < ${OWL_FILE} > ${SIMPLIFIED_FILE}
 
 # Apply definition corrections (spelling and grammar fixes).
 echo "Correcting..."
-python3 correct.py < ${SIMPLIFIED_FILE} > ${SIMPLIFIED_CORRECTED_FILE}
+python3 correct.py < ${SIMPLIFIED_FILE} > ${CORRECTED_FILE}
 
 # Convert British spellings to American spellings.
 echo "Americanizing..."
-python3 americanize.py < ${SIMPLIFIED_CORRECTED_FILE} > ${SIMPLIFIED_CORRECTED_AMERICANIZED_FILE}
+python3 americanize.py < ${CORRECTED_FILE} > ${AMERICANIZED_FILE}
 
-# Create a file for each subontology of interest using the simplified+corrected+Americanized EDAM JSON representation.
+# Adjust recommended-for-annotation property, remove unwanted portions of ontology, etc.
+echo "Adjusting..."
+python3 adjust.py < ${AMERICANIZED_FILE} > ${ADJUSTED_FILE}
+
+# Add AI-suggested nodes.
+echo "Enhancing..."
+python3 enhance.py < ${ADJUSTED_FILE} > ${ENHANCED_FILE}
+
+# Create a file for each subontology of interest.
 echo "Extracting..."
-python3 extract.py ${GENERATED_DIR} < ${SIMPLIFIED_CORRECTED_AMERICANIZED_FILE}
+python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
 
 echo "Done. Ontology JSON files written to ${GENERATED_DIR}."

@@ -1,0 +1,279 @@
+[
+    {
+        "id": "format-10x-genomics-hdf5",
+        "label": "10x Genomics HDF5",
+        "definition": "HDF5 format produced by 10x Genomics Cell Ranger storing a sparse cell-by-feature count matrix with barcodes and feature metadata for single-cell experiments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-hdf5",
+            "format-gene-expression-report-format"
+        ]
+    },
+    {
+        "id": "format-anndata-zarr",
+        "label": "AnnData Zarr",
+        "definition": "Zarr-based on-disk representation of AnnData objects enabling out-of-core and distributed access to single-cell count matrices and metadata.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-zarr",
+            "format-gene-expression-report-format"
+        ]
+    },
+    {
+        "id": "format-apache-parquet",
+        "label": "Apache Parquet",
+        "definition": "Open-source columnar storage format for efficient analytical queries on large tabular datasets, widely used in bioinformatics cloud pipelines.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-arrow-ipc",
+        "label": "Arrow IPC",
+        "definition": "Apache Arrow Inter-Process Communication (IPC) format for storing columnar tabular data in a memory-mapped layout enabling zero-copy reads, used for high-throughput data exchange between tools.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-bedpe",
+        "label": "BEDPE",
+        "definition": "Paired-end BED format representing structural variants or chromatin interactions as pairs of genomic intervals, each encoding two chromosomal loci.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-sequence-annotation-track-format"
+        ]
+    },
+    {
+        "id": "format-bgen",
+        "label": "BGEN",
+        "definition": "Binary format for storing imputed or genotyped variants with probabilistic genotype dosages, used for large-scale association analysis.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format",
+            "format-individual-genetic-data-format"
+        ]
+    },
+    {
+        "id": "format-blow5",
+        "label": "BLOW5",
+        "definition": "Binary (blocked, compressed) version of SLOW5 for Oxford Nanopore raw signal data, providing random access and smaller file sizes.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format",
+            "format-sequence-trace-format"
+        ]
+    },
+    {
+        "id": "format-cooler",
+        "label": "Cooler",
+        "definition": "HDF5-based format for storing chromosome conformation capture contact matrices at one or multiple resolutions.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-hdf5"
+        ]
+    },
+    {
+        "id": "format-fast5",
+        "label": "FAST5",
+        "definition": "HDF5-based format produced by Oxford Nanopore sequencers for storing raw electrical signal and basecalled sequences; superseded by POD5.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-hdf5",
+            "format-sequence-trace-format"
+        ]
+    },
+    {
+        "id": "format-fcs",
+        "label": "FCS",
+        "definition": "Flow Cytometry Standard (FCS) binary format for storing per-event fluorescence intensity measurements from flow cytometry or mass cytometry experiments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-fragments-file",
+        "label": "Fragments file",
+        "definition": "Tab-separated file listing per-cell chromatin accessibility fragments with chromosome, position, cell barcode, and read count, used for scATAC-seq analysis.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-sequence-annotation-track-format"
+        ]
+    },
+    {
+        "id": "format-gwas-ssf",
+        "label": "GWAS-SSF",
+        "definition": "GWAS Summary Statistics Format (SSF): a standardized tab-separated format for sharing GWAS summary statistics, including variant coordinates, effect alleles, effect sizes, and p-values.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-sequence-variation-annotation-format"
+        ]
+    },
+    {
+        "id": "format-h5ad",
+        "label": "H5AD",
+        "definition": "HDF5-backed format for AnnData objects, storing a cell-by-feature matrix with metadata, embeddings, and neighborhood graphs for single-cell analysis.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-hdf5",
+            "format-gene-expression-report-format"
+        ]
+    },
+    {
+        "id": "format-hic",
+        "label": ".hic",
+        "definition": "Binary format for storing genome-wide Hi-C chromatin contact matrices at multiple resolutions, with normalization vectors.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-mex",
+        "label": "MEX",
+        "definition": "Market Exchange Format (MEX): a three-file bundle (matrix, barcodes, features) representing a sparse cell-by-feature count matrix for single-cell sequencing experiments.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-mtx",
+            "format-gene-expression-report-format"
+        ]
+    },
+    {
+        "id": "format-modkit-pileup",
+        "label": "Modkit pileup",
+        "definition": "Tab-separated format for reporting per-position base modification frequencies from aligned nanopore reads.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-sequence-annotation-track-format"
+        ]
+    },
+    {
+        "id": "format-nifti",
+        "label": "NIfTI",
+        "definition": "Neuroimaging Informatics Technology Initiative (NIfTI) format for storing volumetric neuroimaging data such as MRI and fMRI, with voxel intensities and spatial orientation metadata.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format",
+            "format-image-format"
+        ]
+    },
+    {
+        "id": "format-onnx",
+        "label": "ONNX",
+        "definition": "Open Neural Network Exchange (ONNX) format: an open standard for representing machine learning model architectures and trained weights, enabling interoperability between frameworks and deployment runtimes.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-pairs",
+        "label": "Pairs",
+        "definition": "Tab-separated format for recording Hi-C read-pair alignments, storing chromosome, position, strand, and pair-type for each ligation junction.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-alignment-format"
+        ]
+    },
+    {
+        "id": "format-plink-binary",
+        "label": "PLINK binary",
+        "definition": "Three-file binary genotype format (.bed/.bim/.fam) used by PLINK for large-scale genome-wide association studies and population genetics.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format",
+            "format-individual-genetic-data-format"
+        ]
+    },
+    {
+        "id": "format-pod5",
+        "label": "POD5",
+        "definition": "Oxford Nanopore's current binary format for raw electrical signal data, replacing FAST5, with efficient random access and signal compression.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format",
+            "format-sequence-trace-format"
+        ]
+    },
+    {
+        "id": "format-pytorch-model",
+        "label": "PyTorch model",
+        "definition": "PyTorch serialized format (.pt/.pth) for storing trained deep learning model weights, used to distribute models for biological sequence analysis and structure prediction.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-safetensors",
+        "label": "SafeTensors",
+        "definition": "Hugging Face SafeTensors binary format for storing neural network weight tensors with memory-mapped zero-copy access, preferred for distributing large bioinformatics foundation models.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-slow5",
+        "label": "SLOW5",
+        "definition": "Text-based format for Oxford Nanopore raw signal data, designed as a streaming-friendly alternative to FAST5/POD5.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-textual-format",
+            "format-sequence-trace-format"
+        ]
+    },
+    {
+        "id": "format-spectral-library",
+        "label": "Spectral library",
+        "definition": "Reference database of experimentally acquired or predicted MS/MS fragment ion spectra used by DIA-MS tools for targeted peptide quantification.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-mass-spectrometry-data-format",
+            "format-binary-format"
+        ]
+    },
+    {
+        "id": "format-visium-spatial-format",
+        "label": "Visium spatial format",
+        "definition": "10x Genomics Visium output combining a gene expression count matrix with spot spatial coordinates and tissue image for spatial transcriptomics analysis.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "format-gene-expression-report-format"
+        ]
+    }
+]
