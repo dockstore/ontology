@@ -10,6 +10,8 @@ mkdir -p ${WORK_DIR}
 mkdir -p ${GENERATED_DIR}
 rm -f ${GENERATED_DIR}/*
 
+# For reasons not yet understood, the previously-linked EDAM file, which was present in the release assets, disappeared.
+# So, in the future, link to said file via the "raw" link, as below.
 OWL_URL="https://raw.githubusercontent.com/edamontology/edamontology/refs/tags/1.25-20251112T1620Z-intermediate/EDAM_dev.owl"
 OWL_FILE="${WORK_DIR}/EDAM.owl"
 SIMPLIFIED_FILE="${WORK_DIR}/EDAM_simplified.json"
