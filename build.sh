@@ -8,9 +8,9 @@ GENERATED_DIR=${ROOT_DIR}/generated
 cd "${ROOT_DIR}"
 mkdir -p ${WORK_DIR}
 mkdir -p ${GENERATED_DIR}
+rm -f ${GENERATED_DIR}/*
 
-EDAM_TAG="1.25-20251112T1620Z-intermediate"
-OWL_URL="https://github.com/edamontology/edamontology/releases/download/${EDAM_TAG}/EDAM.owl"
+OWL_URL="https://raw.githubusercontent.com/edamontology/edamontology/refs/tags/1.25-20251112T1620Z-intermediate/EDAM_dev.owl"
 OWL_FILE="${WORK_DIR}/EDAM.owl"
 SIMPLIFIED_FILE="${WORK_DIR}/EDAM_simplified.json"
 CORRECTED_FILE="${WORK_DIR}/EDAM_corrected.json"
@@ -19,7 +19,7 @@ ADJUSTED_FILE="${WORK_DIR}/EDAM_adjusted.json"
 ENHANCED_FILE="${WORK_DIR}/EDAM_enhanced.json"
 
 # Get a recent tagged release of the EDAM ontology
-echo "Downloading $OWL_FILE from tag ${EDAM_TAG}..."
+echo "Downloading $OWL_FILE from ${OWL_URL}..."
 curl -fsSL -o "${OWL_FILE}" "${OWL_URL}"
 
 # Convert the EDAM XML file to a simplified JSON representation.
@@ -45,5 +45,9 @@ python3 enhance.py < ${ADJUSTED_FILE} > ${ENHANCED_FILE}
 # Create a file for each subontology of interest.
 echo "Extracting..."
 python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
+
+# Create a Zip archive of the subontology files.
+cd ${GENERATED_DIR}
+zip ontologies.zip *.json
 
 echo "Done. Ontology JSON files written to ${GENERATED_DIR}."
