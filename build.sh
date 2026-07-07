@@ -50,6 +50,6 @@ python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
 
 # Create a Zip archive of the subontology files.
 cd ${GENERATED_DIR}
-zip ontologies.zip *.json
+zip -X ontologies.zip *.json
 
 echo "Done. Ontology JSON files written to ${GENERATED_DIR}."
