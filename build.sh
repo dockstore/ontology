@@ -48,8 +48,4 @@ python3 enhance.py < ${ADJUSTED_FILE} > ${ENHANCED_FILE}
 echo "Extracting..."
 python3 extract.py ${GENERATED_DIR} < ${ENHANCED_FILE}
 
-# Create a Zip archive of the subontology files.
-cd ${GENERATED_DIR}
-zip ontologies.zip *.json
-
 echo "Done. Ontology JSON files written to ${GENERATED_DIR}."
