@@ -1,0 +1,751 @@
+[
+    {
+        "id": "operation-a-b-compartment-analysis",
+        "label": "A/B compartment analysis",
+        "definition": "Classify genomic regions into transcriptionally active (A) or inactive (B) compartments from chromatin contact matrix data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-genome-analysis"
+        ]
+    },
+    {
+        "id": "operation-admixture-analysis",
+        "label": "Admixture analysis",
+        "definition": "Quantify ancestry proportions from distinct source populations in admixed individuals using genome-wide variant data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-alpha-diversity-analysis",
+        "label": "Alpha diversity analysis",
+        "definition": "Quantify species richness and evenness within a single microbial community sample.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-calculation"
+        ]
+    },
+    {
+        "id": "operation-ambient-rna-correction",
+        "label": "Ambient RNA correction",
+        "definition": "Estimate and remove background RNA contamination from lysed cells in droplet-based single-cell libraries.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-sequencing-quality-control"
+        ]
+    },
+    {
+        "id": "operation-amplicon-sequence-analysis",
+        "label": "Amplicon sequence analysis",
+        "definition": "End-to-end processing of marker-gene amplicon sequencing data, including primer trimming, quality filtering, denoising, and taxonomic assignment.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-sequence-read-processing",
+            "operation-taxonomic-classification"
+        ]
+    },
+    {
+        "id": "operation-batch-effect-correction",
+        "label": "Batch effect correction",
+        "definition": "Remove technical variation from molecular data attributable to batch, platform, or processing differences while preserving biological signal.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-standardization-and-normalization"
+        ]
+    },
+    {
+        "id": "operation-beta-diversity-analysis",
+        "label": "Beta diversity analysis",
+        "definition": "Compare microbial community composition between samples using ecological distance or dissimilarity metrics.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-comparison",
+            "operation-calculation"
+        ]
+    },
+    {
+        "id": "operation-biological-sequence-embedding",
+        "label": "Biological sequence embedding",
+        "definition": "Generate dense vector representations of biological sequences using a trained language model or encoder.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-sequence-analysis",
+            "operation-dimensionality-reduction"
+        ]
+    },
+    {
+        "id": "operation-cell-barcode-correction",
+        "label": "Cell barcode correction",
+        "definition": "Identify and correct sequencing errors in cell barcodes to accurately assign reads to their cell of origin.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-sequence-read-processing"
+        ]
+    },
+    {
+        "id": "operation-cell-cell-communication-analysis",
+        "label": "Cell-cell communication analysis",
+        "definition": "Infer intercellular signaling interactions by identifying co-expression of ligand-receptor gene pairs across cell populations from single-cell or spatial transcriptomic data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-spatial-omics-analysis",
+            "operation-network-analysis",
+            "operation-prediction-and-recognition"
+        ]
+    },
+    {
+        "id": "operation-cell-clustering",
+        "label": "Cell clustering",
+        "definition": "Group cells into discrete clusters based on similarity of their molecular profiles.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-clustering"
+        ]
+    },
+    {
+        "id": "operation-cell-type-annotation",
+        "label": "Cell type annotation",
+        "definition": "Assign cell type identities to cells or clusters using marker gene expression, reference atlases, or automated classifiers.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-annotation",
+            "operation-classification"
+        ]
+    },
+    {
+        "id": "operation-cell-type-deconvolution",
+        "label": "Cell type deconvolution",
+        "definition": "Estimate the cell type composition of bulk tissue samples using single-cell or cell-type-specific expression signatures.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-expression-analysis",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-chromatin-accessibility-analysis",
+        "label": "Chromatin accessibility analysis",
+        "definition": "Quantify open chromatin regions genome-wide from ATAC-seq or DNase-seq data, including peak calling and accessibility scoring.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-nucleic-acid-feature-detection"
+        ]
+    },
+    {
+        "id": "operation-chromatin-conformation-analysis",
+        "label": "Chromatin conformation analysis",
+        "definition": "Process and analyze chromosome conformation capture data to characterize the spatial organization of the genome.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-nucleic-acid-sequence-analysis"
+        ]
+    },
+    {
+        "id": "operation-chromatin-loop-calling",
+        "label": "Chromatin loop calling",
+        "definition": "Detect focal long-range chromatin interactions between pairs of genomic loci from contact map data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-nucleic-acid-feature-detection"
+        ]
+    },
+    {
+        "id": "operation-chromatin-organization-analysis",
+        "label": "Chromatin organization analysis",
+        "definition": "Analysis of chromatin three-dimensional organization, including genome folding, accessibility, and long-range regulatory interactions.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-genome-analysis",
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-contact-matrix-normalization",
+        "label": "Contact matrix normalization",
+        "definition": "Correct systematic biases in chromatin contact matrices, including distance-dependent decay, GC content, and mappability.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-standardization-and-normalization"
+        ]
+    },
+    {
+        "id": "operation-crispr-off-target-prediction",
+        "label": "CRISPR off-target prediction",
+        "definition": "Identify and score genomic loci susceptible to unintended cleavage based on sequence similarity to a CRISPR guide RNA.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-genome-editing-analysis",
+            "operation-prediction-and-recognition"
+        ]
+    },
+    {
+        "id": "operation-crispr-screen-analysis",
+        "label": "CRISPR screen analysis",
+        "definition": "Identify genes affecting phenotype or fitness from guide RNA abundance changes in a pooled CRISPR library screen.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-genome-editing-analysis",
+            "operation-functional-genomics-analysis",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-demographic-modeling",
+        "label": "Demographic modeling",
+        "definition": "Infer historical population size changes, divergence times, and migration rates from population genetic summary statistics.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-modeling-and-simulation",
+            "operation-statistical-modeling"
+        ]
+    },
+    {
+        "id": "operation-direct-rna-base-modification-detection",
+        "label": "Direct RNA base modification detection",
+        "definition": "Detect RNA base modifications directly from nanopore ionic current signal without chemical conversion.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-nucleic-acid-feature-detection"
+        ]
+    },
+    {
+        "id": "operation-doublet-multiplet-detection",
+        "label": "Doublet/multiplet detection",
+        "definition": "Identify barcodes representing co-encapsulated multiple cells rather than single cells in single-cell sequencing data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-sequencing-quality-control"
+        ]
+    },
+    {
+        "id": "operation-full-length-isoform-analysis",
+        "label": "Full-length isoform analysis",
+        "definition": "Characterize complete transcript isoforms, including alternative splicing events and novel transcripts, from long-read sequencing data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-rna-seq-analysis",
+            "operation-splicing-analysis",
+            "operation-transcriptome-assembly"
+        ]
+    },
+    {
+        "id": "operation-functional-genomics-analysis",
+        "label": "Functional genomics analysis",
+        "definition": "Large-scale analysis of the functional consequences of genomic elements or variants using systematic perturbation experiments.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-genome-analysis",
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-functional-metagenomic-prediction",
+        "label": "Functional metagenomic prediction",
+        "definition": "Infer the functional gene content and metabolic pathway potential of a microbial community from its taxonomic composition or metagenomic sequences.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-metabolic-pathway-prediction",
+            "operation-prediction-and-recognition"
+        ]
+    },
+    {
+        "id": "operation-gene-fusion-detection",
+        "label": "Gene fusion detection",
+        "definition": "Identify chimeric transcripts from chromosomal rearrangements or trans-splicing in RNA-seq data, or gene-fusing structural variants from genome sequencing.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-structural-variation-detection",
+            "operation-rna-seq-analysis",
+            "operation-genetic-variation-analysis"
+        ]
+    },
+    {
+        "id": "operation-genome-editing-analysis",
+        "label": "Genome editing analysis",
+        "definition": "Design and computational analysis of experiments using programmable nucleases to introduce targeted modifications to genomic DNA.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis",
+            "operation-design"
+        ]
+    },
+    {
+        "id": "operation-genome-editing-outcome-analysis",
+        "label": "Genome editing outcome analysis",
+        "definition": "Quantify insertions, deletions, and precise editing outcomes at a CRISPR target locus from amplicon sequencing data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-genome-editing-analysis",
+            "operation-genetic-variation-analysis",
+            "operation-sequence-read-processing"
+        ]
+    },
+    {
+        "id": "operation-genome-wide-association-analysis",
+        "label": "Genome-wide association analysis",
+        "definition": "Test statistical associations between genetic variants across the genome and a phenotypic trait to identify loci that influence the trait.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-statistical-calculation",
+            "operation-genetic-variation-analysis"
+        ]
+    },
+    {
+        "id": "operation-guide-rna-design",
+        "label": "Guide RNA design",
+        "definition": "Design and score guide RNA sequences for CRISPR genome editing, optimizing for on-target activity and off-target specificity.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-genome-editing-analysis",
+            "operation-design"
+        ]
+    },
+    {
+        "id": "operation-haplotype-resolved-assembly",
+        "label": "Haplotype-resolved assembly",
+        "definition": "Produce a phased genome assembly representing each haplotype as a separate contiguous sequence.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-genome-assembly"
+        ]
+    },
+    {
+        "id": "operation-hyperparameter-optimization",
+        "label": "Hyperparameter optimization",
+        "definition": "Search the configuration space of a machine learning model to identify hyperparameter settings that maximize held-out predictive performance.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-optimization-and-refinement"
+        ]
+    },
+    {
+        "id": "operation-long-read-assembly-polishing",
+        "label": "Long-read assembly polishing",
+        "definition": "Correct systematic sequence errors in a draft assembly using additional sequencing reads.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-optimization-and-refinement",
+            "operation-sequence-assembly"
+        ]
+    },
+    {
+        "id": "operation-machine-learning",
+        "label": "Machine learning",
+        "definition": "Computational methods that train, evaluate, or apply statistical models learned from biological data.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis",
+            "operation-modeling-and-simulation"
+        ]
+    },
+    {
+        "id": "operation-machine-learning-model-training",
+        "label": "Machine learning model training",
+        "definition": "Fit a machine learning model to a training dataset by minimizing a loss function to produce a parameterized model.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-modeling-and-simulation",
+            "operation-optimization-and-refinement"
+        ]
+    },
+    {
+        "id": "operation-metagenome-assembled-genome-mag-analysis",
+        "label": "Metagenome-assembled genome (MAG) analysis",
+        "definition": "Recover, assess quality (completeness and contamination), and taxonomically classify genome bins assembled from shotgun metagenomic data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-genome-analysis",
+            "operation-taxonomic-classification"
+        ]
+    },
+    {
+        "id": "operation-microbial-differential-abundance-analysis",
+        "label": "Microbial differential abundance analysis",
+        "definition": "Identify microbial taxa significantly differentially abundant between conditions using models that account for compositional data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-microbiome-analysis",
+        "label": "Microbiome analysis",
+        "definition": "Analysis of microbial community composition and function from metagenomic or marker-gene amplicon sequencing data.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis",
+            "operation-nucleic-acid-sequence-analysis"
+        ]
+    },
+    {
+        "id": "operation-model-cross-validation-and-evaluation",
+        "label": "Model cross-validation and evaluation",
+        "definition": "Assess machine learning model performance on held-out data using cross-validation procedures.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-validation",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-multi-omics-analysis",
+        "label": "Multi-omics analysis",
+        "definition": "Integrated analysis of two or more omics modalities from the same samples to identify coordinated patterns of variation.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-multi-omics-data-integration",
+        "label": "Multi-omics data integration",
+        "definition": "Combine and jointly analyze datasets from two or more omics layers using latent variable, network, or matrix factorization approaches.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-multi-omics-analysis",
+            "operation-data-analysis",
+            "operation-statistical-modeling"
+        ]
+    },
+    {
+        "id": "operation-multi-omics-factor-analysis",
+        "label": "Multi-omics factor analysis",
+        "definition": "Decompose multi-omics datasets into shared and dataset-specific latent factors capturing coordinated biological variation.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-multi-omics-analysis",
+            "operation-dimensionality-reduction",
+            "operation-statistical-modeling"
+        ]
+    },
+    {
+        "id": "operation-neural-network-inference",
+        "label": "Neural network inference",
+        "definition": "Apply a trained neural network to new input data to generate predictions, classifications, or embeddings without updating model parameters.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-prediction-and-recognition"
+        ]
+    },
+    {
+        "id": "operation-otu-asv-generation",
+        "label": "OTU/ASV generation",
+        "definition": "Cluster amplicon sequencing reads into operational taxonomic units (OTUs) or denoise them into exact amplicon sequence variants (ASVs) to represent distinct microbial taxa.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-microbiome-analysis",
+            "operation-sequence-clustering",
+            "operation-taxonomic-classification"
+        ]
+    },
+    {
+        "id": "operation-polygenic-score-calculation",
+        "label": "Polygenic score calculation",
+        "definition": "Aggregate per-allele effects of genome-wide variants into a score predicting an individual's genetic predisposition to a trait.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-calculation",
+            "operation-prediction-and-recognition"
+        ]
+    },
+    {
+        "id": "operation-population-differentiation-calculation",
+        "label": "Population differentiation calculation",
+        "definition": "Calculate allele frequency-based statistics that quantify genetic differentiation between populations, such as FST or PBS.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-calculation",
+            "operation-genetic-variation-analysis"
+        ]
+    },
+    {
+        "id": "operation-population-genetics-analysis",
+        "label": "Population genetics analysis",
+        "definition": "Statistical analysis of genetic variation across populations to infer demographic history, population structure, selection pressures, and genotype-phenotype associations.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-genetic-variation-analysis",
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-population-structure-analysis",
+        "label": "Population structure analysis",
+        "definition": "Infer ancestral population structure and assign individuals to clusters from genome-wide variant data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-classification",
+            "operation-clustering"
+        ]
+    },
+    {
+        "id": "operation-rna-velocity-analysis",
+        "label": "RNA velocity analysis",
+        "definition": "Estimate the future transcriptional state of cells by modeling RNA splicing kinetics from unspliced-to-spliced transcript ratios.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-expression-analysis"
+        ]
+    },
+    {
+        "id": "operation-runs-of-homozygosity-analysis",
+        "label": "Runs of homozygosity analysis",
+        "definition": "Detect extended genomic segments of continuous homozygosity indicative of inbreeding, autozygosity, or positive selection sweeps.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-genetic-variation-analysis"
+        ]
+    },
+    {
+        "id": "operation-selective-sweep-analysis",
+        "label": "Selective sweep analysis",
+        "definition": "Detect genomic signatures of recent positive selection using haplotype-based statistics or allele frequency methods.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-population-genetics-analysis",
+            "operation-selection-detection",
+            "operation-genetic-variation-analysis"
+        ]
+    },
+    {
+        "id": "operation-single-cell-analysis",
+        "label": "Single-cell analysis",
+        "definition": "Analysis of molecular measurements made at the resolution of individual cells.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-single-cell-data-integration",
+        "label": "Single-cell data integration",
+        "definition": "Harmonize single-cell datasets from different batches or technologies into a common embedding preserving biological variation.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-standardization-and-normalization"
+        ]
+    },
+    {
+        "id": "operation-single-cell-multiomics-analysis",
+        "label": "Single-cell multiomics analysis",
+        "definition": "Jointly analyze two or more molecular modalities measured simultaneously in the same individual cells.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-multi-omics-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-domain-identification",
+        "label": "Spatial domain identification",
+        "definition": "Partition a tissue section into spatially coherent regions with distinct molecular signatures.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-clustering",
+            "operation-image-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-gene-expression-analysis",
+        "label": "Spatial gene expression analysis",
+        "definition": "Process and analyze spatially resolved transcriptomic data to link gene expression measurements to physical coordinates within a tissue section.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-expression-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-neighborhood-analysis",
+        "label": "Spatial neighborhood analysis",
+        "definition": "Characterize the molecular composition and cell type enrichment of the local microenvironment around each cell or spot in spatial transcriptomic data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-network-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-omics-analysis",
+        "label": "Spatial omics analysis",
+        "definition": "Analysis of molecular profiling data that retains spatial coordinates within a tissue section.",
+        "source": "ai",
+        "recommended_for_annotation": false,
+        "parent_ids": [
+            "operation-data-analysis"
+        ]
+    },
+    {
+        "id": "operation-spatial-spot-cell-deconvolution",
+        "label": "Spatial spot/cell deconvolution",
+        "definition": "Estimate the cell type composition of each spatial capture unit using a single-cell reference expression atlas.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-cell-type-deconvolution",
+            "operation-quantification"
+        ]
+    },
+    {
+        "id": "operation-spatially-variable-gene-detection",
+        "label": "Spatially variable gene detection",
+        "definition": "Identify genes whose expression varies significantly across tissue space in spatially resolved transcriptomic data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-spatial-omics-analysis",
+            "operation-expression-analysis",
+            "operation-statistical-calculation"
+        ]
+    },
+    {
+        "id": "operation-topologically-associating-domain-tad-identification",
+        "label": "Topologically associating domain (TAD) identification",
+        "definition": "Partition the genome into self-interacting chromatin domains (TADs) separated by boundary regions of reduced contact frequency.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-genome-analysis",
+            "operation-clustering"
+        ]
+    },
+    {
+        "id": "operation-trajectory-inference",
+        "label": "Trajectory inference",
+        "definition": "Order cells along a continuous or branching path representing a biological process, inferring pseudotemporal progression from single-cell expression data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-modeling-and-simulation"
+        ]
+    },
+    {
+        "id": "operation-transcription-factor-footprinting",
+        "label": "Transcription factor footprinting",
+        "definition": "Identify transcription factor occupancy events from characteristic protection patterns within ATAC-seq or DNase-seq chromatin accessibility data.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-chromatin-organization-analysis",
+            "operation-transcription-factor-binding-site-prediction",
+            "operation-nucleic-acid-feature-detection"
+        ]
+    },
+    {
+        "id": "operation-transfer-learning",
+        "label": "Transfer learning",
+        "definition": "Adapt a machine learning model pre-trained on large biological datasets to a new prediction task by continued training on a smaller, task-specific dataset.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-machine-learning",
+            "operation-optimization-and-refinement"
+        ]
+    },
+    {
+        "id": "operation-umi-deduplication",
+        "label": "UMI deduplication",
+        "definition": "Collapse PCR duplicate reads sharing identical cell barcodes and UMIs to a single molecule count.",
+        "source": "ai",
+        "recommended_for_annotation": true,
+        "parent_ids": [
+            "operation-single-cell-analysis",
+            "operation-sequence-read-processing"
+        ]
+    }
+]
